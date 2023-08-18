@@ -65,79 +65,6 @@ div {
 </style>
 
 
-<!-- <style>
-  /* Styles for d-appendix (You've already provided these) */
-  d-appendix {
-    contain: layout style;
-    font-size: 0.8em;
-    line-height: 1.7em;
-    margin-top: 60px;
-    margin-bottom: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.5);
-    padding-top: 60px;
-    padding-bottom: 48px;
-  }
-  
-  d-appendix h3 {
-    grid-column: page-start / text-start;
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 1em;
-    margin-bottom: 0;
-    color: rgba(0, 0, 0, 0.65);
-  }
-  
-  d-appendix ol {
-    padding: 0 0 0 15px;
-  }
-
-  @media (min-width: 768px) {
-    d-appendix ol {
-      padding: 0 0 0 30px;
-      margin-left: -30px;
-    }
-  }
-
-  /* Applying d-appendix styles to Footnotes and References */
-  .content h3, .content h2 {
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 1em;
-    margin-bottom: 0;
-    color: rgba(0, 0, 0, 0.65);
-  }
-  
-  .content p, .content ol li {
-    font-size: 0.8em;
-    line-height: 1.7em;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .content ol {
-    padding: 0 0 0 15px;
-  }
-
-  @media (min-width: 768px) {
-    .content ol {
-      padding: 0 0 0 30px;
-      margin-left: -30px;
-    }
-  }
-
-  .content a {
-    color: rgba(0, 0, 0, 0.6);
-  }
-  
-  /* Styles for main content and headers (You've already provided these) */
-  h1 {
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    line-height: 1.4;
-  }
-</style> -->
-
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -365,7 +292,14 @@ div {
 
    <p>
        No Hugo dependency, no theme dependency, it’s a very stable format with the ability to customize just enough with a bit of effort. Think a self-hosted Medium.com in appearance. Very minimal, lightly themed, focused on writing and code! Again, I think that for someone getting started with creating websites or blogs it’s a very good starting point.
-   </p>   
+   </p> 
+   
+   <!-- Subsection: Recent Work -->
+  <h3 id = "recent_work" style="font-weight: bold;">Recent Work</h3>
+  <p>
+      This script tag will modify your post in your browser, adding the Distill styling and functionality. When we publish your article, we will bake in these transformations, but during development it’s handy to be able to preview it locally (It even works without a web server).
+  </p>
+   
 </div>
 
 
@@ -418,7 +352,7 @@ div {
   </ol>
 </div>
 
-  
+
 
 
 <!-- Table of Contents -->
@@ -427,24 +361,16 @@ div {
   <ul>
       <li><a href="#intro">Introduction</a></li>
       <li><a href="#approach">Approach</a></li>
-      <li><a href="#highlight">Highlight</a></li>
-      <!-- Add more sections as needed -->
+      <li>
+          <a href="#highlight">Highlight</a>
+          <!-- Nested list for subsections under Highlight -->
+          <ul>
+              <li><a href="#recent_work">Recent Work</a></li>
+          </ul>
+      </li>
+      <!-- Add more sections and subsections as needed -->
   </ul>
 </div>
-
-
-
-<!-- Table of Contents
-<div class="toc" style="position: fixed; top: 30%; left: 5px; border-right: 0.5px solid black; padding-right: 10px; width: 330px; word-wrap: break-word;">
-  <h3>Contents</h3>
-  <ul>
-      <li><a href="#intro">Introduction</a></li>
-      <li><a href="#approach">Approach</a></li>
-      <li><a href="#highlight">Highlight</a></li>
-  </ul>
-</div> -->
-
-
 
 
 
