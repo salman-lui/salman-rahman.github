@@ -36,43 +36,57 @@ div {
 
 <style>
   .toc {
-      position: fixed;
-      top: 30%;
+      position: sticky;
+      top: 20px;
       left: 5px;
-      border: 1px solid #ddd; /* Adds a light border */
-      padding: 10px; /* Add some spacing inside the box */
+      border: 1px solid #ddd;
+      padding: 15px 20px; /* Adjusted padding for better spacing */
       width: 330px;
       word-wrap: break-word;
-      background-color: #f9f9f9; /* Light background for better distinction */
-      font-family: 'Roboto', sans-serif; /* Font from Google fonts for better readability */
+      background-color: #f9f9f9;
+      font-family: 'Roboto', sans-serif;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+      border-radius: 8px; /* Rounded corners */
+      overflow: auto; /* In case the ToC becomes too long */
   }
 
   .toc h3 {
-      color: #333; /* Dark color for heading */
+      color: #333;
       font-weight: 500;
-      font-size: 18px;
-      margin-bottom: 10px; /* Space below heading */
+      font-size: 20px; /* Increased font size for a bolder appearance */
+      margin-bottom: 15px; 
+      border-bottom: 1px solid #ddd; /* Line below the title for separation */
+      padding-bottom: 10px; /* Spacing below the title */
   }
 
   .toc ul {
-      list-style-type: none; /* Remove bullet points */
-      padding-left: 0;
+      list-style-type: none;
+      padding-left: 5px; /* Small indentation for the list */
   }
 
   .toc li {
-      margin-bottom: 8px; /* Space between list items */
+      margin-bottom: 12px;
+      transition: transform 0.2s ease; /* Added transition for a hover effect */
+  }
+
+  .toc li:hover {
+      transform: translateX(5px); /* Shifts the list item slightly on hover */
   }
 
   .toc a {
-      color: #444; /* Change link color */
-      text-decoration: none; /* Remove underlines */
-      transition: color 0.3s ease; /* Smooth color transition on hover */
+      color: #444;
+      text-decoration: none;
+      padding: 5px 8px; /* Padding around the link for a better hover effect */
+      border-radius: 4px; /* Slight rounding of corners for the link hover effect */
+      transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   .toc a:hover {
-      color: #007BFF; /* Change link color on hover, can adjust as per preference */
+      background-color: #007BFF;
+      color: white; /* On hover, the link turns white with a blue background */
   }
 </style>
+
 
 
   <meta charset="utf-8">
@@ -202,7 +216,6 @@ div {
 
 <!-- Introduction Section -->
 
-  <!-- <h2 id = "intro" style="font-weight: bold;">Introduction</h2> -->
   <h2 id="intro" style="font-weight: bold; margin-top: -80px; padding-top: 80px;">Introduction</h2>
 
   <hr> <!-- Horizontal divider -->
@@ -252,7 +265,7 @@ div {
 
   <!-- Approach Section -->
 
-    <h2 id="approach" style="font-weight: bold;">Approach</h2>
+  <h2 id="approach" style="font-weight: bold; margin-top: -80px; padding-top: 80px;">Approach</h2>
     <hr> <!-- Horizontal divider -->
 
     <p>
@@ -298,8 +311,7 @@ div {
 
    <!-- Highlight Section -->
 
-
-   <h2 id="highlight" style="font-weight: bold;">Highlight</h2>
+   <h2 id="highlight" style="font-weight: bold; margin-top: -80px; padding-top: 80px;">Highlight</h2>
    <hr> <!-- Horizontal divider -->
 
    <p>
@@ -367,20 +379,6 @@ div {
 
 
 
-<!-- Table of Contents -->
-<!-- <div class="toc">
-  <h3>Contents</h3>
-  <ul>
-      <li><a href="#intro">Introduction</a></li>
-      <li><a href="#approach">Approach</a></li>
-      <li>
-          <a href="#highlight">Highlight</a>
-          <ul>
-              <li><a href="#recent_work">Recent Work</a></li>
-          </ul>
-      </li>
-  </ul>
-</div> -->
 
 <!-- Table of Contents -->
 <div class="toc">
