@@ -69,73 +69,53 @@ div {
 <style>
   .toc {
       position: fixed;
-      top: 20vh;  /* Adjusted for better mobile view */
-      left: 5vw; /* Responsive left positioning */
+      top: 30%;
+      left: 5px;
       border: 1px solid #ddd;
-      padding: 1rem;  /* Using rem for relative spacing */
-      width: 80vw; /* Adjusted for better mobile view */
-      max-height: 70vh; /* Maximum height so it doesn't run off screen */
+      padding: 15px 20px; /* Adjusted padding for better spacing */
+      width: 330px;
       word-wrap: break-word;
       background-color: #f9f9f9;
       font-family: 'Roboto', sans-serif;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      overflow: auto;
-      font-size: 0.8em;
-      line-height: 1.7em;
-      color: rgba(0, 0, 0, 0.5);
-      transition: width 0.3s ease; /* Smooth transition */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+      border-radius: 8px; /* Rounded corners */
+      overflow: auto; /* In case the ToC becomes too long */
   }
 
-  /* Media query for larger screens */
-  @media (min-width: 768px) {
-      .toc {
-          width: 330px; /* Set width for larger screens */
-          left: 2vw; /* Adjusted left positioning for larger screens */
-      }
-  }
   .toc h3 {
-      /* Styles from h2 of .content */
-      font-size: 15px;
+      color: #333;
       font-weight: 500;
-      margin-top: 1em;
-      margin-bottom: 0;
-      color: rgba(0, 0, 0, 0.65);
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
+      font-size: 20px; /* Increased font size for a bolder appearance */
+      margin-bottom: 15px; 
+      border-bottom: 1px solid #ddd; /* Line below the title for separation */
+      padding-bottom: 10px; /* Spacing below the title */
   }
 
   .toc ul {
       list-style-type: none;
-      padding: 0 0 0 30px; /* Increased indentation for subsections */
-      margin-top: 5px; /* A bit of margin on top for spacing */
+      padding-left: 5px; /* Small indentation for the list */
   }
 
   .toc li {
-      margin-bottom: 8px;
-      transition: transform 0.2s ease;
+      margin-bottom: 12px;
+      transition: transform 0.2s ease; /* Added transition for a hover effect */
   }
 
   .toc li:hover {
-      transform: translateX(5px);
+      transform: translateX(5px); /* Shifts the list item slightly on hover */
   }
 
   .toc a {
       color: #444;
       text-decoration: none;
-      padding: 5px 8px;
-      border-radius: 4px;
+      padding: 5px 8px; /* Padding around the link for a better hover effect */
+      border-radius: 4px; /* Slight rounding of corners for the link hover effect */
       transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   .toc a:hover {
       background-color: #007BFF;
-      color: white;
-  }
-
-  .toc .main-section {
-      font-weight: bold; /* Bold main sections for distinction */
-      margin-top: 2px; /* 8pxAdditional margin for clear separation between sections */
+      color: white; /* On hover, the link turns white with a blue background */
   }
 </style>
 
