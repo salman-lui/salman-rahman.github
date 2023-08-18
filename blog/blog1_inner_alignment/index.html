@@ -12,7 +12,16 @@ div {
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
+<style>
+  .img-fluid, .modal-dialog.cascading-modal.modal-avatar .modal-header, .video-fluid {
+      max-width: 100%;
+      height: auto;
+  }
 
+  .l-text, .l-body {
+      grid-column: text;
+  }
+</style>
 
 
 <!-- <style>
@@ -213,14 +222,6 @@ div {
 </div>
 
 
-.blog-figure {
-  max-width: 100%; /* This ensures that the image won't exceed its container's width */
-  height: auto;   /* This maintains the image's aspect ratio */
-  display: block; /* Ensures that the image is a block-level element */
-  margin-left: auto;  /* Centers the image horizontally */
-  margin-right: auto; /* Centers the image horizontally */
-}
-
 
 <!-- Blog Content -->
 
@@ -241,12 +242,16 @@ div {
   </p>
 
 
-  <!-- Figure Section -->
-
+<!-- Figure Section -->
+<div class="l-body">
   <figure>
-    <img class="blog-figure" src="fig/fig1.png" alt="Description of the figure for accessibility">
-    <figcaption>Optional caption for the figure if needed.</figcaption>
-</figure>
+      <img class="img-fluid rounded z-depth-1" src="fig/fig1.png" alt="Description of the figure for accessibility">
+      <figcaption style="text-align: center; margin-top: 10px; margin-bottom: 10px;">
+          Optional caption for the figure if needed.
+      </figcaption>
+  </figure>
+</div>
+
 
  <!-- Math -->
 
@@ -255,9 +260,9 @@ div {
   In order to build such a generative model, we first need a way to represent a probability distribution. One such way, as in likelihood-based models, is to directly model the probability density function (p.d.f.) or probability mass function (p.m.f.). Let \( f_\theta \) be a real-valued function parameterized by a learnable parameter \( \theta \). We can define a p.d.f. \( p_\theta(x) \) via
   </p>
   
-  \[
+  \begin{equation}
   p_\theta(x) = \frac{e^{-f_\theta(x)}}{Z_\theta}
-  \]
+  \end{equation}
   
   <p>
   where \( Z_\theta \) is a normalizing constant dependent on \( \theta \), such that \( \int p_\theta(x) dx = 1 \). Here the function \( f_\theta \) is often called an unnormalized probabilistic model, or energy-based model <a href="#ref7">[7]</a>.
