@@ -272,7 +272,53 @@ div {
   We can train \( f_\theta \) by maximizing the log-likelihood of the data.
   </p>  
 
+
+  <!-- Approach Section -->
+
+    <h2 id="approach" style="font-weight: bold;">Approach</h2>
+
+    <p>
+        No Hugo dependency, no theme dependency, it’s a very stable format with the ability to customize just enough with a bit of effort. Think a self-hosted Medium.com in appearance. Very minimal, lightly themed, focused on writing and code! Again, I think that for someone getting started with creating websites or blogs it’s a very good starting point.
+    </p>
+
+    <p>
+        With distill you render/knit your articles locally, so you can quickly check your work without having to deploy to a git branch or to production. I do think that eventually it is a good idea to have git branches for previews or collaboration, but that’s a lot to ask for an initial first stab at a blog/site.
+    </p>
+
+    <p>
+        distill also natively supports citations, footnotes and asides, a rich auto-generated table of contents, support for HTMLwidgets and/or custom javascript, and a reader friendly typography that is mobile friendly/auto-adapts to mobile.
+    </p>
+
+    <p>
+        Another nicety is the ability to import a post with import_post(). This means you can take an existing blogpost from another website and import it into your new blog. This “does not require the original R Markdown document used to author the post—you only need access to the published HTML of a post to import it.”
+    </p>
+
+    <p>
+        Lastly, I am always amazed at the power of both blogdown and the more recent hugodown, but you are still relying on a changing version of Hugo and your theme over time. For a personal blog I personally prefer distill because I can get busy, neglect my blog for a year, come back to write a new post, and it still just works.
+    </p>
+
+    <p>
+        However, blogdown and hugodown allow dramatically more customization. distill is truly an opinionated framework, and most of the easy customization you can do is fonts, colors, and the navbar. If you expect to create gorgeous custom-layout sites like education.rstudio.com or something like Desirée de Leon’s blog you’re likely going to be disappointed!
+    </p>
+
+    <p>
+        Again, for my blog I really just wanted a simple but in my opinion elegant minimalist theme, so I was fine with the tradeoff, as I would have built something similar with blogdown anyway!
+    </p>
+
+    <p>
+        Blogdown also supports other static site generators like Jekyll in place of Hugo, and a rich set of pre-built themes across the various generators. The structure of the site is extensible as well, so you can generate a site that truly looks like your own creation.
+    </p>
+
+    <p>
+        Lastly, note that you DO lose some niceties like hugo shortcodes for embedding, and again there is ONLY ONE THEME. Most appearance customization is done at the level of custom CSS.
+    </p>
+
+    <p>
+        If you’re still with me, here’s how to make it!
+    </p>
+
 </div>
+
 
 
 
@@ -328,7 +374,7 @@ div {
 
 
 <!-- Table of Contents -->
-<div class="toc" style="position: fixed; top: 30%; left: 5px; border-right: 0.5px solid black; padding-right: 10px; width: 335px; word-wrap: break-word;">
+<div class="toc" style="position: fixed; top: 30%; left: 5px; border-right: 0.5px solid black; padding-right: 10px; width: 330px; word-wrap: break-word;">
   <h3>Contents</h3>
   <ul>
       <li><a href="#intro">Introduction</a></li>
@@ -340,14 +386,7 @@ div {
 
 
 
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style> -->
+
 
   <!-- Footer -->
   <footer>
@@ -420,22 +459,6 @@ img {
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
   <script src="/assets/js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-
-  <!-- Script Used for Randomizing the Projects Order -->
-  <!-- <script type="text/javascript">
-    $.fn.shuffleChildren = function() {
-      $.each(this.get(), function(index, el) {
-        var $el = $(el);
-        var $find = $el.children();
-        $find.sort(function() {
-          return 0.5 - Math.random();
-        });
-        $el.empty();
-        $find.appendTo($el);
-      });
-    };
-    $("#projects").shuffleChildren();
-  </script> -->
 
   <!-- Project Cards Layout -->
   <script type="text/javascript">
