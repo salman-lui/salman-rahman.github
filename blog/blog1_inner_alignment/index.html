@@ -210,6 +210,13 @@ div {
 </div>
 
 
+.blog-figure {
+  max-width: 100%; /* This ensures that the image won't exceed its container's width */
+  height: auto;   /* This maintains the image's aspect ratio */
+  display: block; /* Ensures that the image is a block-level element */
+  margin-left: auto;  /* Centers the image horizontally */
+  margin-right: auto; /* Centers the image horizontally */
+}
 
 
 <!-- Blog Content -->
@@ -230,13 +237,14 @@ div {
       <a href="#ref8">[8]</a>, <a href="#ref9">[9]</a>.
   </p>
 
-  
+
   <!-- Figure Section -->
 
   <figure>
-    <img src="fig/fig1.png" alt="Description of the figure for accessibility">
+    <img class="blog-figure" src="fig/fig1.png" alt="Description of the figure for accessibility">
     <figcaption>Optional caption for the figure if needed.</figcaption>
 </figure>
+
 
 
 </div>
