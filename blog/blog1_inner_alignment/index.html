@@ -131,28 +131,6 @@ div {
 </div>
 
 
-       <!-- First Horizontal Divider -->
-    <hr style="border-top: 0.4px solid grey;">
-
-     <!-- Author's Details -->
-     <div class="author-details" style="display: flex; justify-content: space-between; padding: 0 15px;"> <!-- Added padding to match the paragraph margin -->
-         <div>
-             <strong>AUTHORS</strong><br>
-             Salman Rahman
-         </div>
-         <div>
-             <strong>AFFILIATIONS</strong><br>
-             New York University
-         </div>
-         <div>
-             <strong>PUBLISHED</strong><br>
-             May 5, 2023
-         </div>
-     </div>
-
-   <!-- Second Horizontal Divider -->
-   <hr style="border-top: 0.4px solid grey;">
- </div>
 
 
 <!-- Blog Content -->
@@ -188,6 +166,86 @@ div {
   </ol>
 
 </div>
+
+
+
+
+
+<div style="display: none">
+  <!-- Due to build system issues we include d-cite tags manually. -->
+  <!-- ... Your d-cite tags go here ... -->
+</div>
+
+<d-appendix>
+<style>
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+</style>
+
+<h3>Acknowledgments</h3>
+<p>
+  We are deeply grateful to Sandhini Agarwal, Daniela Amodei, Dario Amodei,
+  Tom Brown, Jeff Clune, Steve Dowling, Gretchen Krueger, Brice Menard,
+  Reiichiro Nakano, Aditya Ramesh, Pranav Shyam, Ilya Sutskever, and Martin
+  Wattenberg.
+</p>
+
+<!-- You can continue adding more sections like the Author Contributions, etc. here -->
+
+</d-appendix>
+
+
 
 <!-- Table of Contents -->
 <div class="toc" style="position: fixed; top: 20%; left: 5px; border-right: 0.5px solid black; padding-right: 10px; width: 335px; word-wrap: break-word;">
