@@ -88,7 +88,7 @@ div {
   </progress>
 
   <!-- Content -->
-  <div class="content">
+  <div class="content_bold">
     <style>
       h1{
           font-weight: bold; /* This makes the text bold */
@@ -96,6 +96,7 @@ div {
           line-height: 1.4; /* This adjusts the spacing between lines, if your title spans multiple lines */
       }
   </style>
+
       <h1>Generative Modeling by Estimating Gradients of the Data Distribution</h1>
 
   
@@ -135,7 +136,7 @@ div {
 
 <!-- Blog Content -->
 
-<div class="content">
+<div class="no-style">
 
   <!-- Introduction Section -->
   <h2 id = "intro" style="font-weight: bold;">Introduction</h2>
@@ -149,23 +150,18 @@ div {
       <a href="#ref6">[6]</a>, <a href="#ref7">[7]</a>, and variational auto-encoders (VAEs) 
       <a href="#ref8">[8]</a>, <a href="#ref9">[9]</a>.
   </p>
-  <h3>Footnotes</h3>
-  <p id="note1">1. Hereafter we only consider probability density functions. Probability mass functions are similar. <a href="#fn1ref">[↩]</a></p>
-  <p id="note2">2. Fisher divergence is typically between two distributions p and q, defined as... <a href="#fn2ref">[↩]</a></p>
-
 </div>
 
-<!-- Reference Section -->
+<!-- Reference Section
 <div class="content">
 
   <h2>References</h2>
   <ol>
       <li id="ref1">The neural autoregressive distribution estimator Larochelle, H. and Hinton, I., 2011. International Conference on Artificial Intelligence and Statistics, pp. 29--37.</li>
       <li id="ref2">Made: Masked autoencoder for distribution estimation Germain, M., Gregor, K., Murray, I. and Larochelle, H., 2015. International Conference on Machine Learning, pp. 881--889.</li>
-      <!-- Add the remaining references in the same format -->
   </ol>
 
-</div>
+</div> -->
 
 
 <style>
@@ -238,6 +234,28 @@ div {
     letter-spacing: 1.5px;
     line-height: 1.4;
   }
+
+  .no-style h3, .no-style h2 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    color: inherit;
+}
+
+.no-style p, .no-style ol li {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.no-style ol {
+    padding: inherit;
+}
+
+.no-style a {
+    color: inherit;
+}
 </style>
 
 
@@ -256,11 +274,6 @@ div {
     </ol>
   </div>
   
-
-
-<!-- You can continue adding more sections like the Author Contributions, etc. here -->
-
-</d-appendix>
 
 
 
