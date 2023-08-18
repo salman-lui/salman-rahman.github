@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Salman Rahman | Blog</title>
+  <title>Salman Rahman | Machine learning and satellites for sustainable agriculture</title>
   <meta name="description" content="A beautiful Jekyll theme for academics">
 
   <!-- Fonts and Icons -->
@@ -14,7 +20,7 @@
   <link rel="stylesheet" href="/assets/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/teaching/">
+  <link rel="canonical" href="/projects/agriculture/">
 </head>
 <body>
   <!-- Header -->
@@ -34,14 +40,24 @@
               
             </a>
           </li>
+          
             
-          <li class="nav-item ">
-            <a class="nav-link" href="/research/">
-              Research
-              
-            </a>
-        </li>
-        
+          
+            
+            
+          
+            
+          
+            
+              <li class="nav-item ">
+                  <a class="nav-link" href="/projects/">
+                    Research
+                    
+                  </a>
+              </li>
+            
+          
+            
               <li class="nav-item ">
                   <a class="nav-link" href="/publications/">
                     Publications
@@ -49,34 +65,29 @@
                   </a>
               </li>
             
-           
-              <!-- <li class="nav-item ">
+          
+            
+              <li class="nav-item ">
                   <a class="nav-link" href="/teaching/">
                     Teaching
                     
                   </a>
-              </li> -->
-            
-             
-               
+              </li>
 		
-		  <!-- <li class="nav-item ">
+		         <li class="nav-item ">
                   <a class="nav-link" href="/awards/">
                     Awards
                     
                   </a>
-              </li> -->
+              </li>
 		
-		
-             <li class="nav-item ">
+    
+                        <li class="nav-item ">
                   <a class="nav-link" href="/assets/pdf/cv_salman.pdf" target="_blank">
-                     CV
+                    CV
                     
                   </a>
               </li>
-            
-          
-          
             
           
         </ul>
@@ -84,37 +95,95 @@
     </div>
   </nav>
 
-<!-- Scrolling Progress Bar -->
-<progress id="progress" value="0">
-  <div class="progress-container">
-    <span class="progress-bar"></span>
+  <!-- Scrolling Progress Bar -->
+  <progress id="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+
+  <!-- Content -->
+  <div class="content">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb p-0 text-lowercase">
+    <li class="breadcrumb-item"><a href="/">home</a></li>
+    <li class="breadcrumb-item"><a href="/projects">Projects</a></li>
+    <li class="breadcrumb-item less">Data and optimization for sustainable agriculture</li>
+  </ol>
+</nav>
+
+<div class="row m-0" style="width: 100%;">
+  <div class="col-sm-12 p-0">
+    <h2>Data Science, Optimization, and Sustainable Development</h2>
+    <!-- Scrolling Progress Bar <h5 class="mb-4">developing a sustainable agricultural system to feed 2 billion people by the year 2030</h5>-->
   </div>
-</progress>
-  
-<!-- Blog Bar -->
-<div class="content">
-  <!-- Main Heading -->
-  <h1 style="color: green; font-size: 2.5em; text-align: center;">AI Safety Space</h1>
-  <hr> <!-- Divider -->
-  
-  <!-- Blog Posts Section -->
-  <section>
-      <!-- Blog Post 1 -->
-      <h2>
-        <a href="./blog1_inner_alignment/index.html" style="color: orange; font-weight: bold;">AI Safety 1.0</a>
-    </h2>  
-      <p>This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling. The resulting generative models, often called score-based generative models, have several important advantages over existing model families: GAN-level sample quality without adversarial training, flexible model architectures, exact log-likelihood computation, and inverse problem solving without re-training models. In this blog post, we will show you in more detail the intuition, basic concepts, and potential applications of score-based generative models.</p>
-      <small><i>May 5, 2023</i></small>
-  </section>
+	<div><p style="float: left;"><img src="../../assets/img/Sustainable_Development_Goals.png"  height="200" width="200" class="post_thumb" ></p>
+		<p style="margin-left:220px">In the year 2015, United Nation member states proposed a blueprint for a better and sustainable world named Sustainable Development Goal (SDG) with 17 goals and 169 targets which need to be accomplished by the year 2030. 
+			One of the major challenges is tracking the development to visualize the progress towards sustainability. 
+			The problems are more severe in developing and poor countries due to lack of reliable data sources. 
+			Our aim is to track the principal goals such as Climate Action (Goal-13), Food Security (Goal-2), Poverty (Goal-1), Water Security (Goal-6), Clean Energy (Goal-7), Health (Goal-3) and Education (Goal-4) using machine learning and remote sensing (as the satellite data are hugely available). 
+			We intend to develop a better machine learning algorithm which will incorporate historical and satellite data to track those goals with high accuracy. 
+			Though the satellite data is highly unstructured & noisy but we are trying to cope with the challenges.
+ </p>
+	</div>
+
+<div class="row m-0" style="width:100%;">
+	
+	<h5>More crops whilst saving drops using a linear programming optimization model</h5>
+<ul style="margin-left:10px">
+	<li><div id="bobu2020HRI" class="col p-0">
+		
+ Karnafuli Irrigation Project (KIP) is one of the most contributed irrigation projects in Bangladesh, which is established with an objective of an increase in crop production by about 35,000 tons. But, KIP is losing its performance due to low irrigation efficiency. This research determines the optimal use of irrigation water and irrigable area in the Karnafuli Irrigation Project of Bangladesh to maximize crop production and, subsequently, the net benefit considering climate change effects by developing an optimization model using linear programming. Increased crop production with available water drops ensures both food and water security. This study also contributes to the Food and Agriculture Organization (FAO) and the International Water Management Institute (IWMI) <b>‘more crops per drops’</b> theme.                         <span class="supplementary"><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ird.2649" target="_blank">[Paper]</a></span>                    
+		</div></li>
+	
+		<img src="../../assets/img/KIP_fig_framework.png" height="575" width="694" alt ="more crops per drops" class="center" >            
+
+		
+		
+  </ul>
+
 </div>
 
+	<div class="row m-0" style="width:100%;">
+	
+	<h5>Deep unsupervised sensor calibration improves crop classification</h5>
+<ul style="margin-left:10px">
+	<li><div id="bobu2020HRI" class="col p-0">
+		
+Here, I am combining deep learning, remote sensing, and computer vision to train high-resolution satellite imagery for a better crop monitoring system.        <!-- Footer         <span class="supplementary"><a href="/assets/pdf/coper-aaai/coper-aaai-paper.pdf" target="_blank">[Paper]</a></span>
+		</div></li>
+	
+	<!-- Footer 	<img src="../../assets/img/agriculture_1.jpg" height="300" width="500" alt ="more crops per drops" class="center" >            -->
 
+  </ul>
 
+</div>
+	
+	
+	
+	
+  <!-- <div class="col-sm-2 p-0 mt-auto mb-auto">
+    <img src="/assets/img/active_learning/active_learning_logo.svg" alt="project thumbnail">
+  </div> -->
+</div>
 
+<div class="container-fluid p-0 text-justify">
+  
 
-  <!-- Footer Salman Rahman -->
+</div>
+
+  </div>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+  <!-- Footer -->
   <footer>
-    &copy; Copyright 2023 Salman Rahman.
+    &copy; Copyright 2020 Salman Rahman.
     
     
   </footer>
@@ -184,6 +253,22 @@
   <script src="/assets/js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
+  <!-- Script Used for Randomizing the Projects Order -->
+  <!-- <script type="text/javascript">
+    $.fn.shuffleChildren = function() {
+      $.each(this.get(), function(index, el) {
+        var $el = $(el);
+        var $find = $el.children();
+        $find.sort(function() {
+          return 0.5 - Math.random();
+        });
+        $el.empty();
+        $find.appendTo($el);
+      });
+    };
+    $("#projects").shuffleChildren();
+  </script> -->
+
   <!-- Project Cards Layout -->
   <script type="text/javascript">
     var $grid = $('#projects');
@@ -216,4 +301,3 @@
   </script>
 </body>
 </html>
-
