@@ -68,16 +68,12 @@ div {
 
   .toc ul {
       list-style-type: none;
-      /* Padding from ol of .content */
-      padding: 0 0 0 15px;
-      @media (min-width: 768px) {
-        padding: 0 0 0 30px;
-        margin-left: -30px;
-      }
+      padding: 0 0 0 30px; /* Increased indentation for subsections */
+      margin-top: 5px; /* A bit of margin on top for spacing */
   }
 
   .toc li {
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       transition: transform 0.2s ease;
   }
 
@@ -96,6 +92,11 @@ div {
   .toc a:hover {
       background-color: #007BFF;
       color: white;
+  }
+
+  .toc .main-section {
+      font-weight: bold; /* Bold main sections for distinction */
+      margin-top: 15px; /* Additional margin for clear separation between sections */
   }
 </style>
 
@@ -398,19 +399,17 @@ div {
 <div class="toc">
   <h3>Contents</h3>
 
-  <div><a href="#intro">Introduction</a></div>
+  <div class="main-section"><a href="#intro">Introduction</a></div>
   <ul>
     <li><a href="#motivation">Motivation</a></li>
-</ul>
+  </ul>
 
-  <div><a href="#approach">Approach</a></div>
+  <div class="main-section"><a href="#approach">Approach</a></div>
 
-  <div><a href="#highlight">Highlight</a></div>
+  <div class="main-section"><a href="#highlight">Highlight</a></div>
   <ul>
       <li><a href="#recent_work">Recent Work</a></li>
   </ul>
-
-  <!-- Add more sections and subsections as needed -->
 </div>
 
 
