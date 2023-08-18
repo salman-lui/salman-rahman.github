@@ -23,6 +23,7 @@ div {
   }
 </style>
 
+
 <style>
   h1{
       font-weight: bold; /* This makes the text bold */
@@ -32,6 +33,30 @@ div {
 </style>
 
 
+<style>
+  .content-container {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 15px;
+  }
+
+  .horizontal-divider {
+      border-top: 0.4px solid grey;
+      max-width: 65%;
+      margin: 0 auto;
+  }
+
+  .author-details {
+      display: flex;
+      justify-content: space-between;
+      max-width: 65%;
+      margin: 0 auto;
+  }
+
+  .author-details div strong {
+      display: block;
+  }
+</style>
 
 
 <style>
@@ -183,6 +208,7 @@ div {
     </div>
   </progress>
 
+
   <!-- Heading and intro -->
   <div class="content">
 
@@ -193,31 +219,32 @@ div {
 </div>
 
 
-<div class="content-container" style="margin: 0 auto; max-width: 1200px; padding: 0 15px;">
+<div class="content-container">
 
   <!-- First Horizontal Divider -->
-  <hr style="border-top: 0.4px solid grey; max-width: 65%; margin: 0 auto;">
+  <hr class="horizontal-divider">
 
   <!-- Author's Details -->
-  <div class="author-details" style="display: flex; justify-content: space-between; max-width: 65%; margin: 0 auto;"> <!-- Added max-width and margin styles -->
+  <div class="author-details">
     <div>
-          <strong>AUTHORS</strong><br>
-          Salman Rahman
-      </div>
-      <div>
-          <strong>AFFILIATIONS</strong><br>
-          New York University
-      </div>
-      <div>
-          <strong>PUBLISHED</strong><br>
-          May 5, 2023
-      </div>
+      <strong>AUTHORS</strong>
+      Salman Rahman
+    </div>
+    <div>
+      <strong>AFFILIATIONS</strong>
+      New York University
+    </div>
+    <div>
+      <strong>PUBLISHED</strong>
+      May 5, 2023
+    </div>
   </div>
 
   <!-- Second Horizontal Divider -->
-  <hr style="border-top: 0.4px solid grey; max-width: 65%; margin: 0 auto;">
+  <hr class="horizontal-divider">
 
 </div>
+
 
 
 
