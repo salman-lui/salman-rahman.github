@@ -71,8 +71,8 @@ div {
       top: 30%;
       left: 5px;
       border: 1px solid #ddd;
-      padding: 15px 20px;
-      width: 330px;
+      padding: 1rem 1.5rem;  /* using rem for relative spacing */
+      max-width: 90%;        /* cap the width to a % of the viewport width */
       word-wrap: break-word;
       background-color: #f9f9f9;
       font-family: 'Roboto', sans-serif;
@@ -85,7 +85,12 @@ div {
       line-height: 1.7em;
       color: rgba(0, 0, 0, 0.5);
   }
-
+  /* Use media query to handle large screens */
+  @media (min-width: 768px) {
+      .toc {
+          width: 330px;   /* Use fixed width for larger screens */
+      }
+  }
   .toc h3 {
       /* Styles from h2 of .content */
       font-size: 15px;
