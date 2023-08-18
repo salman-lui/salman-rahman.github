@@ -68,27 +68,29 @@ div {
 <style>
   .toc {
       position: fixed;
-      top: 30%;
-      left: 5px;
+      top: 20vh;  /* Adjusted for better mobile view */
+      left: 5vw; /* Responsive left positioning */
       border: 1px solid #ddd;
-      padding: 1rem 1.5rem;  /* using rem for relative spacing */
-      max-width: 90%;        /* cap the width to a % of the viewport width */
+      padding: 1rem;  /* Using rem for relative spacing */
+      width: 80vw; /* Adjusted for better mobile view */
+      max-height: 70vh; /* Maximum height so it doesn't run off screen */
       word-wrap: break-word;
       background-color: #f9f9f9;
       font-family: 'Roboto', sans-serif;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       overflow: auto;
-
-      /* Styles from .content */
       font-size: 0.8em;
       line-height: 1.7em;
       color: rgba(0, 0, 0, 0.5);
+      transition: width 0.3s ease; /* Smooth transition */
   }
-  /* Use media query to handle large screens */
+
+  /* Media query for larger screens */
   @media (min-width: 768px) {
       .toc {
-          width: 330px;   /* Use fixed width for larger screens */
+          width: 330px; /* Set width for larger screens */
+          left: 2vw; /* Adjusted left positioning for larger screens */
       }
   }
   .toc h3 {
