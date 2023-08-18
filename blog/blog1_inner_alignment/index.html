@@ -10,7 +10,7 @@ div {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Salman Rahman | Inference and decision making under uncertainty</title>
+  <title>Salman Rahman | Combining machine learning and satellite imagery to address health and sustainability challenges</title>
   <meta name="description" content="A beautiful Jekyll theme for academics">
 
   <!-- Fonts and Icons -->
@@ -59,25 +59,37 @@ div {
           
             
               <li class="nav-item ">
-                  <a class="nav-link" href="/publications/">
-                    Publications
-                    
-                  </a>
-              </li>
-            
-          <!--
+                <a class="nav-link" href="/research/">
+                Research
+                  
+                </a>
+            </li>
             
               <li class="nav-item ">
+                <a class="nav-link" href="/blog/">
+                  Blogs
+                  
+                </a>
+            </li>
+          
+            
+              <!-- <li class="nav-item ">
                   <a class="nav-link" href="/teaching/">
                     Teaching
                     
                   </a>
               </li>
-             -->
+             
+		   <li class="nav-item ">
+                  <a class="nav-link" href="/awards/">
+                    Awards
+                    
+                  </a>
+              </li> -->
             
                         <li class="nav-item ">
-                  <a class="nav-link" href="/assets/pdf/salman_cv.pdf" target="_blank">
-                    Vitae
+                  <a class="nav-link" href="/assets/pdf/cv_salman.pdf" target="_blank">
+                    CV
                     
                   </a>
               </li>
@@ -97,24 +109,13 @@ div {
 
   <!-- Content -->
   <div class="content">
-    <nav aria-label="breadcrumb">
-  <ol class="breadcrumb p-0 text-lowercase">
-    <li class="breadcrumb-item"><a href="/">home</a></li>
-    <li class="breadcrumb-item"><a href="/projects">Projects</a></li>
-    <li class="breadcrumb-item less">Inference and decision making under uncertainty</li>
-  </ol>
-</nav>
+    <h1>Generative Modeling by Estimating Gradients of the Data Distribution</h1>
 
-<div class="row m-0" style="width: 100%;">
-  <div class="col-sm-12 p-0">
-    <h2>Inference and decision making under uncertainty</h2>
-   <!-- Header  <h5 class="mb-4">rethinking probabilistic models of human behavior</h5> -->
-  </div>
-	<div><p style="float: left;"><img src="../../assets/img/decision-making (1).png"  height="200" width="200" class="post_thumb" ></p>
-		<p style="margin-left:220px"> 
- Robust and accurate inference and decision making are challenging due to uncertainty, preference, and high dimensionality. The problem becomes more challenging with limited information. The aim of this project is to make a scalable and accurate inference to make better decisions and applying the concept in the real-world environment.
-		</p>
-	</div>
+    <p>
+        This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling. The resulting generative models, often called score-based generative models, have several important advantages over existing model families: GAN-level sample quality without adversarial training, flexible model architectures, exact log-likelihood computation, and inverse problem solving without re-training models. In this blog post, we will show you in more detail the intuition, basic concepts, and potential applications of score-based generative models.
+    </p>
+</div>
+
 
 <div class="row m-0" style="width:100%;">
 	
@@ -122,7 +123,10 @@ div {
 <ul style="margin-left:10px">
 	<li><div id="bobu2020HRI" class="col p-0">
 		
-Despite yielding considerable degrees of accuracy in landslide predictions, the outcomes of different landslide susceptibility models are prone to spatial disagreement; and therefore, uncertainties. Uncertainties in the results of various landslide susceptibility models create challenges in selecting the most suitable method to manage this complex natural phenomenon. This study aimed to propose an approach to reduce uncertainties in landslide prediction, diagnosing spatial agreement in machine learning-based landslide susceptibility maps.       <span class="supplementary"><a href="https://salmanrahman.org/assets/pdf/landslide-uncertainty/remotesensing-12-03347.pdf" target="_blank">[Paper]</a></span>                     
+Despite yielding considerable degrees of accuracy in landslide predictions, the outcomes of different landslide susceptibility models are prone to spatial disagreement; and therefore, uncertainties. 
+		Uncertainties in the results of various landslide susceptibility models create challenges in selecting the most suitable method to manage this complex natural phenomenon. 
+		This study aimed to propose an approach to reduce uncertainties in landslide prediction, diagnosing spatial agreement in machine learning-based landslide susceptibility maps.       
+		<span class="supplementary"><a href="http://salmanrahman.org/assets/pdf/landslide-uncertainty/remotesensing-12-03347.pdf" target="_blank">[Paper]</a></span>                     
 		</div></li>
 	</ul>
 	    <img src="../../assets/img/landslide_rohingya.JPG" height="500" width="1000" alt ="rohingya_landslide" class="center" >      
@@ -268,6 +272,3 @@ img {
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', '', 'auto');
     ga('send', 'pageview');
-  </script>
-</body>
-</html>
