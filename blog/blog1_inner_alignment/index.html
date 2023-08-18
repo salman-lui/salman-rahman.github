@@ -8,6 +8,9 @@ div {
 }
 </style>
 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 
 
@@ -245,7 +248,24 @@ div {
     <figcaption>Optional caption for the figure if needed.</figcaption>
 </figure>
 
+ <!-- Math -->
 
+
+<p>
+  In order to build such a generative model, we first need a way to represent a probability distribution. One such way, as in likelihood-based models, is to directly model the probability density function (p.d.f.) or probability mass function (p.m.f.). Let \( f_\theta \) be a real-valued function parameterized by a learnable parameter \( \theta \). We can define a p.d.f. \( p_\theta(x) \) via
+  </p>
+  
+  \[
+  p_\theta(x) = \frac{e^{-f_\theta(x)}}{Z_\theta}
+  \]
+  
+  <p>
+  where \( Z_\theta \) is a normalizing constant dependent on \( \theta \), such that \( \int p_\theta(x) dx = 1 \). Here the function \( f_\theta \) is often called an unnormalized probabilistic model, or energy-based model <a href="#ref7">[7]</a>.
+  </p>
+  
+  <p>
+  We can train \( f_\theta \) by maximizing the log-likelihood of the data.
+  </p>  
 
 </div>
 
