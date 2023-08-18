@@ -24,6 +24,47 @@ div {
 </style>
 
 
+<style>
+  .toc {
+      position: fixed;
+      top: 30%;
+      left: 5px;
+      border: 1px solid #ddd; /* Adds a light border */
+      padding: 10px; /* Add some spacing inside the box */
+      width: 330px;
+      word-wrap: break-word;
+      background-color: #f9f9f9; /* Light background for better distinction */
+      font-family: 'Roboto', sans-serif; /* Font from Google fonts for better readability */
+  }
+
+  .toc h3 {
+      color: #333; /* Dark color for heading */
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 10px; /* Space below heading */
+  }
+
+  .toc ul {
+      list-style-type: none; /* Remove bullet points */
+      padding-left: 0;
+  }
+
+  .toc li {
+      margin-bottom: 8px; /* Space between list items */
+  }
+
+  .toc a {
+      color: #444; /* Change link color */
+      text-decoration: none; /* Remove underlines */
+      transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+
+  .toc a:hover {
+      color: #007BFF; /* Change link color on hover, can adjust as per preference */
+  }
+</style>
+
+
 <!-- <style>
   /* Styles for d-appendix (You've already provided these) */
   d-appendix {
@@ -317,6 +358,14 @@ div {
         If you’re still with me, here’s how to make it!
     </p>
 
+
+   <!-- Highlight Section -->
+
+   <h2 id="highlight" style="font-weight: bold;">Highlight</h2>
+
+   <p>
+       No Hugo dependency, no theme dependency, it’s a very stable format with the ability to customize just enough with a bit of effort. Think a self-hosted Medium.com in appearance. Very minimal, lightly themed, focused on writing and code! Again, I think that for someone getting started with creating websites or blogs it’s a very good starting point.
+   </p>   
 </div>
 
 
@@ -372,17 +421,28 @@ div {
   
 
 
-
 <!-- Table of Contents -->
+<div class="toc">
+  <h3>Contents</h3>
+  <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#highlight">Highlight</a></li>
+      <!-- Add more sections as needed -->
+  </ul>
+</div>
+
+
+
+<!-- Table of Contents
 <div class="toc" style="position: fixed; top: 30%; left: 5px; border-right: 0.5px solid black; padding-right: 10px; width: 330px; word-wrap: break-word;">
   <h3>Contents</h3>
   <ul>
       <li><a href="#intro">Introduction</a></li>
-      <li><a href="#score-function">The score function, score-based models, and score matching and solving problem a lot</a></li>
-      <li><a href="#langevin-dynamics">Langevin dynamics</a></li>
-      <!-- Add more sections as needed -->
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#highlight">Highlight</a></li>
   </ul>
-</div>
+</div> -->
 
 
 
