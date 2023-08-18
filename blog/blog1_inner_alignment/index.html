@@ -65,33 +65,33 @@ div {
 </style>
 
 
+
 <style>
-  /* Base styles for the table of contents */
   .toc {
       position: fixed;
-      top: 20vh;
-      left: 5vw;
+      top: 20vh;  /* Adjusted for better mobile view */
+      left: 5vw; /* Responsive left positioning */
       border: 1px solid #ddd;
-      padding: 1rem;  
-      width: 80vw;
-      max-height: 70vh;
+      padding: 1rem;  /* Using rem for relative spacing */
+      width: 80vw; /* Adjusted for better mobile view */
+      max-height: 70vh; /* Maximum height so it doesn't run off screen */
       word-wrap: break-word;
       background-color: #f9f9f9;
       font-family: 'Roboto', sans-serif;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       overflow: auto;
-      font-size: 0.8rem; 
-      line-height: 1.6em; 
+      font-size: 0.8em;
+      line-height: 1.7em;
       color: rgba(0, 0, 0, 0.5);
-      transition: width 0.3s ease;
+      transition: width 0.3s ease; /* Smooth transition */
   }
 
-  /* Adapting the table of contents to larger screens */
-  @media(min-width: 768px) {
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
       .toc {
-          width: 35vw; 
-          left: 2vw;
+          width: 330px; /* Set width for larger screens */
+          left: 2vw; /* Adjusted left positioning for larger screens */
       }
   }
   .toc h3 {
@@ -104,21 +104,7 @@ div {
       border-bottom: 1px solid #ddd;
       padding-bottom: 10px;
   }
-  /* Adapting grid system for table of contents */
-  .toc {
-    display: grid;
-    grid-template-columns: [start] 1fr [middle] 1fr [end];
-    grid-column-gap: 1rem;
-  }
 
-  .toc .main-section {
-    grid-column: start / end;
-  }
-  
-  .toc ul {
-    grid-column: middle / end;
-  }
-  
   .toc ul {
       list-style-type: none;
       padding: 0 0 0 30px; /* Increased indentation for subsections */
