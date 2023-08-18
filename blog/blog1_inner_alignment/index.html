@@ -129,16 +129,65 @@ div {
  </div>
 
 
+<!-- Blog Content -->
+
+<div class="content">
+
+  <!-- Blog Title -->
+  <h1 style="font-weight: bold; letter-spacing: 1.5px; line-height: 1.4;">Generative Modeling by Estimating Gradients of the Data Distribution</h1>
+
+  <!-- Introduction Section -->
+  <h2 style="font-weight: bold;">Introduction</h2>
+  <p>
+      Existing generative modeling techniques can largely be grouped into two categories based on how they represent probability distributions.
+  </p>
+  <p>
+      Likelihood-based models, which directly learn the distribution’s probability density (or mass) function via (approximate) maximum likelihood. Typical likelihood-based models include autoregressive models 
+      <a href="#ref1">[1]</a>, <a href="#ref2">[2]</a>, <a href="#ref3">[3]</a>, normalizing flow models 
+      <a href="#ref4">[4]</a>, <a href="#ref5">[5]</a>, energy-based models (EBMs)
+      <a href="#ref6">[6]</a>, <a href="#ref7">[7]</a>, and variational auto-encoders (VAEs) 
+      <a href="#ref8">[8]</a>, <a href="#ref9">[9]</a>.
+  </p>
+  <h3>Footnotes</h3>
+  <p id="note1">1. Hereafter we only consider probability density functions. Probability mass functions are similar. <a href="#fn1ref">[↩]</a></p>
+  <p id="note2">2. Fisher divergence is typically between two distributions p and q, defined as... <a href="#fn2ref">[↩]</a></p>
+
+</div>
+
+<!-- Reference Section -->
+<div class="content">
+
+  <h2>References</h2>
+  <ol>
+      <li id="ref1">The neural autoregressive distribution estimator Larochelle, H. and Murray, I., 2011. International Conference on Artificial Intelligence and Statistics, pp. 29--37.</li>
+      <li id="ref2">Made: Masked autoencoder for distribution estimation Germain, M., Gregor, K., Murray, I. and Larochelle, H., 2015. International Conference on Machine Learning, pp. 881--889.</li>
+      <!-- Add the remaining references in the same format -->
+  </ol>
+
+</div>
+
+<!-- Table of Contents -->
+<div class="toc" style="position: fixed; top: 30%; left: 10px; border-right: 1px solid black; padding-right: 10px;">
+  <h3>Contents</h3>
+  <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#score-function">The score function, score-based models, and score matching</a></li>
+      <li><a href="#langevin-dynamics">Langevin dynamics</a></li>
+      <!-- Add more sections as needed -->
+  </ul>
+</div>
 
 
 
 
-<div class="container-fluid p-0 text-justify">
+<!-- <div class="container-fluid p-0 text-justify">
   
 
 </div>
 
-  </div>
+  </div> -->
+
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 img {
