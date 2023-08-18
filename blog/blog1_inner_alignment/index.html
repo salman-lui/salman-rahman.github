@@ -168,16 +168,8 @@ div {
 </div>
 
 
-
-
-
-<div style="display: none">
-  <!-- Due to build system issues we include d-cite tags manually. -->
-  <!-- ... Your d-cite tags go here ... -->
-</div>
-
-<d-appendix>
 <style>
+  /* Styles for d-appendix (You've already provided these) */
   d-appendix {
     contain: layout style;
     font-size: 0.8em;
@@ -189,7 +181,7 @@ div {
     padding-top: 60px;
     padding-bottom: 48px;
   }
-
+  
   d-appendix h3 {
     grid-column: page-start / text-start;
     font-size: 15px;
@@ -198,11 +190,7 @@ div {
     margin-bottom: 0;
     color: rgba(0, 0, 0, 0.65);
   }
-
-  d-appendix h3 + * {
-    margin-top: 1em;
-  }
-
+  
   d-appendix ol {
     padding: 0 0 0 15px;
   }
@@ -214,32 +202,68 @@ div {
     }
   }
 
-  d-appendix li {
-    margin-bottom: 1em;
+  /* Applying d-appendix styles to Footnotes and References */
+  .content h3, .content h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  .content p, .content ol li {
+    font-size: 0.8em;
+    line-height: 1.7em;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .content ol {
+    padding: 0 0 0 15px;
   }
 
-  d-appendix a {
+  @media (min-width: 768px) {
+    .content ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  .content a {
     color: rgba(0, 0, 0, 0.6);
   }
-
-  d-appendix > * {
-    grid-column: text;
-  }
-
-  d-appendix > d-footnote-list,
-  d-appendix > d-citation-list,
-  d-appendix > distill-appendix {
-    grid-column: screen;
+  
+  /* Styles for main content and headers (You've already provided these) */
+  h1 {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
   }
 </style>
 
-<h3>Acknowledgments</h3>
-<p>
-  We are deeply grateful to Sandhini Agarwal, Daniela Amodei, Dario Amodei,
-  Tom Brown, Jeff Clune, Steve Dowling, Gretchen Krueger, Brice Menard,
-  Reiichiro Nakano, Aditya Ramesh, Pranav Shyam, Ilya Sutskever, and Martin
-  Wattenberg.
-</p>
+<d-appendix>
+  <h3>Acknowledgments</h3>
+  <p>
+    We are deeply grateful to ...
+  </p>
+  </d-appendix>
+
+
+  <div class="content">
+    <h3>Footnotes</h3>
+    <p id="note1">1. Hereafter we only consider probability ... <a href="#fn1ref">[↩]</a></p>
+    <p id="note2">2. Fisher divergence is ... <a href="#fn2ref">[↩]</a></p>
+  </div>
+
+  <div class="content">
+    <h2>References</h2>
+    <ol>
+        <li id="ref1">The neural autoregressive distribution estimator ...</li>
+        <li id="ref2">Made: Masked autoencoder for distribution estimation ...</li>
+        <!-- Add the remaining references in the same format -->
+    </ol>
+  </div>
+  
+
 
 <!-- You can continue adding more sections like the Author Contributions, etc. here -->
 
@@ -248,7 +272,7 @@ div {
 
 
 <!-- Table of Contents -->
-<div class="toc" style="position: fixed; top: 20%; left: 5px; border-right: 0.5px solid black; padding-right: 10px; width: 335px; word-wrap: break-word;">
+<div class="toc" style="position: fixed; top: 30%; left: 5px; border-right: 0.5px solid black; padding-right: 10px; width: 335px; word-wrap: break-word;">
   <h3>Contents</h3>
   <ul>
       <li><a href="#intro">Introduction</a></li>
