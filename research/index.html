@@ -31,40 +31,34 @@ div {
     flex-wrap: nowrap; /* Disable wrapping */
 }
 
-
-
-.project-card .card {
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Ensures each card occupies the full height of its container */
-}
-
-.card-image, .card-details {
-    flex: 1; /* Distribute available space evenly */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-}
-
-.card-image img {
-    max-height: 150px; /* Example value; adjust as needed */
-    width: auto;
-    margin: 0 auto; /* Horizontally center the image */
-}
-
-.card-title, .card-description {
-    margin: 10px 0;
-}
-
-/* Additional reset to make sure both cards are identical */
-.card-image, .card-details {
-    margin: 0;
-    padding: 0;
+.project-card {
+    width: calc(50% - 10px); /* Adjust as needed, subtracting the margin for even spacing */
+    margin: 0 5px; /* Add margin to left and right for spacing */
 }
 
   .project-link {
       text-decoration: none;
       color: inherit;
+  }
+
+  .card-image img {
+      width: 100%;
+      height: auto;
+  }
+
+  .card-details {
+      padding: 15px;
+      text-align: left;  /* Left-aligning the text inside the card details */
+
+  }
+
+  .card-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+  }
+
+  .card-description {
+      font-size: 0.9em;
   }
 </style>
 
