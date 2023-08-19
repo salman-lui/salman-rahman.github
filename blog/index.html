@@ -5,68 +5,145 @@
 
   <!-- Add the following CSS to your styles to support the new layout -->
   <style>
+    /* Base */
     body {
-        font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #f7f9fc;  /* Slight off-white for a cleaner look */
     }
   
+    a {
+      transition: color 0.3s ease, background-color 0.3s ease; /* Added background-color transition */
+    }
+  
+    a:hover {
+      color: #007BFF;
+    }
+  
+    /* Header */
+    .navbar {
+      background-color: #FAFAFA; 
+      border-bottom: 1px solid #e0e0e0; 
+    }
+  
+    .navbar-brand {
+      color: #007BFF;
+    }
+  
+    .navbar-brand:hover {
+      opacity: 0.8; 
+    }
+  
+    .navbar-toggler-icon {
+      filter: brightness(0.6);
+    }
+  
+    .navbar-light .navbar-nav .nav-link {
+      color: #555;
+      transition: color 0.3s ease;
+    }
+  
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: #007BFF; 
+      background-color: #e9f5ff;  /* Hover effect for nav items */
+    }
+  
+    /* Main heading */
     .main-heading {
-        color: #2c3e50;  /* A darker shade for the main heading */
-        font-size: 3em;
-        text-align: center;
-        margin-top: 60px;
-        margin-bottom: 40px;
+      color: #555;
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 600;
+      letter-spacing: 0.05em; 
     }
   
     .divider {
-        border-bottom: 3px solid #e67e22; /* Made it more visible with a complementary color */
-        width: 50%;
-        margin: 20px auto;
-        opacity: 0.7;
+      border-bottom: 3px solid #007BFF;
+      width: 50%;
+      margin: 20px auto;
+      opacity: 0.7;
     }
   
-    h2 a {
-        transition: color 0.3s ease;
-        border-bottom: 1px dotted #888;
-        color: #2c3e50;
-        text-decoration: none;
+    /* Projects Grid */
+    .projects-grid {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      gap: 20px; 
     }
   
-    h2 a:hover {
-        color: #e67e22;
-        border-bottom: 1px solid #e67e22;
+    .project-card {
+      flex: 1;
+      margin: 0 5px;
+      transition: all 0.3s ease;
     }
   
-    p {
-        font-size: 1.1em;
-        line-height: 1.6;
-        color: #555;
-        max-width: 80%;
-        margin: 20px auto;
+    .project-card:hover {
+      transform: scale(1.02);
     }
   
-    small {
-        display: block;
-        margin-top: 15px;
-        font-style: italic;
-        color: #888;
+    .project-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
   
-    .read-more {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 10px 20px;
-        border: 1px solid #e67e22;
-        color: #e67e22;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s, color 0.3s;
+    .card {
+      overflow: hidden;
+      border-radius: 10px;
+      transition: all 0.3s ease;
     }
   
-    .read-more:hover {
-        background-color: #e67e22;
-        color: #fff;
+    .card:hover {
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     }
   
+    .card-image img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+  
+    .card:hover .card-image img {
+      transform: scale(1.05);
+    }
+  
+    .card-details {
+      padding: 15px;
+      background: linear-gradient(to right, #fafafa, #e9e9e9);
+    }
+  
+    .card-title {
+      font-weight: 600;
+      font-size: 1.4em;
+      margin-bottom: 8px;
+      color: #3dc0b0; 
+      letter-spacing: 0.05em; 
+    }
+  
+    .card-description {
+      color: #777;
+    }
+  
+    /* Additional refinements */
+    progress {
+      background: #e0e0e0;
+    }
+  
+    progress[value]::-webkit-progress-bar {
+      background: #e0e0e0;
+    }
+  
+    progress[value]::-webkit-progress-value {
+      background: #007BFF;
+    }
+  
+    progress[value]::-moz-progress-bar {
+      background: #007BFF;
+    }
   </style>
 
 
