@@ -68,7 +68,6 @@ div {
 /* Existing ToC styles */
 .toc {
     position: sticky;
-    flex: 1;  /* Adjust as per requirement */
     top: 80px; /* Adjust based on your design requirements */
     border: 1px solid #ddd;
     padding: 15px 20px;
@@ -95,15 +94,10 @@ div {
     margin-top: 50px;
 }
 
-/* Adjusting for the main title width */
-.main-title {
-    flex: 2;  /* Adjust as per requirement, this ensures the title takes up more space */
-    margin-right: 20px; /* Spacing between the title and table of contents */
-}
-
 .main-content {
+    flex-grow: 1;
     max-width: 800px;
-    margin: 20px auto;  /* Centering the main content */
+    margin-left: 40px;
 }
 
 
@@ -242,12 +236,6 @@ div {
 
 
   <div class="flex-container">
-
-        <!-- Heading -->
-        <div class="main-title">
-          <h1>Generative Modeling by Estimating Gradients of the Data Distribution</h1>
-      </div>
-
     <!-- Table of Contents -->
     <div class="toc">
         <h3>Contents</h3>
@@ -266,6 +254,8 @@ div {
   <div class="main-content">
 
   <div class="content">
+
+      <h1>Generative Modeling by Estimating Gradients of the Data Distribution</h1>
     <p>
         This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling. The resulting generative models, often called score-based generative models, have several important advantages over existing model families: GAN-level sample quality without adversarial training, flexible model architectures, exact log-likelihood computation, and inverse problem solving without re-training models. In this blog post, we will show you in more detail the intuition, basic concepts, and potential applications of score-based generative models.
     </p>
