@@ -28,12 +28,12 @@ div {
     justify-content: center; /* Center the items */
     align-items: center; /* Vertically align the items */
     margin-top: 30px;
-    flex-wrap: wrap; /* Disable wrapping */
+    flex-wrap: nowrap; /* Disable wrapping */
 }
 
 .project-card {
-    width: 100%; /* Takes the full width of the parent */
-    margin: 15px 0; /* Adds vertical spacing between the projects */
+    width: calc(50% - 10px); /* Adjust as needed, subtracting the margin for even spacing */
+    margin: 0 5px; /* Add margin to left and right for spacing */
 }
 /* Optional: If you want the cards to have even space between them but not on the outer edges */
 .projects-grid {
