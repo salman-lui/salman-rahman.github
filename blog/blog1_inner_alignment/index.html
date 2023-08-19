@@ -37,9 +37,8 @@ div {
       text-align: left; /* Add this line to align text to the left */
   }
 </style>
-
-
 <style>
+  /* Content Container Styles */
   .content-container {
       margin: 0 auto;
       max-width: 1200px;
@@ -62,15 +61,16 @@ div {
   .author-details div strong {
       display: block;
   }
-</style>
 
-
-<style>
+  /* Table of Content Styles */
   .toc {
-    flex-basis: 330px;   /* This will give it an initial width of 330px but allow it to adjust */
+      position: fixed;
+      top: 30%;
+      left: 5px;
       border: 1px solid #ddd;
-      padding: 15px 20px;  /* Using rem for relative spacing */
-      max-height: 70vh; /* Maximum height so it doesn't run off screen */
+      padding: 15px 20px;
+      width: 330px;
+      max-height: 70vh;
       word-wrap: break-word;
       background-color: #f9f9f9;
       font-family: 'Roboto', sans-serif;
@@ -80,23 +80,10 @@ div {
       font-size: 0.8em;
       line-height: 1.7em;
       color: rgba(0, 0, 0, 0.5);
-      transition: width 0.3s ease; /* Smooth transition */
+      transition: width 0.3s ease;
   }
 
-  /* Media query for larger screens */
-  @media (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column; /* Stack children vertically */
-    }
-    
-    .toc {
-        margin-bottom: 1rem;   /* Some margin between the ToC and main content */
-        flex-basis: auto;      /* Reset the width so it fills the container */
-    }
-}
-
   .toc h3 {
-      /* Styles from h2 of .content */
       font-size: 15px;
       font-weight: 500;
       margin-top: 1em;
@@ -108,8 +95,8 @@ div {
 
   .toc ul {
       list-style-type: none;
-      padding: 0 0 0 30px; /* Increased indentation for subsections */
-      margin-top: 5px; /* A bit of margin on top for spacing */
+      padding: 0 0 0 30px;
+      margin-top: 5px;
   }
 
   .toc li {
@@ -135,11 +122,18 @@ div {
   }
 
   .toc .main-section {
-      font-weight: bold; /* Bold main sections for distinction */
-      margin-top: 2px; /* 8pxAdditional margin for clear separation between sections */
+      font-weight: bold;
+      margin-top: 2px;
+  }
+
+  /* Media Query */
+  @media (min-width: 768px) {
+      .toc {
+          width: 330px;
+          left: 0.6vw;
+      }
   }
 </style>
-
 
 
 
