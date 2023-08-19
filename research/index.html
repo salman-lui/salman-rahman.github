@@ -7,6 +7,59 @@ div {
   text-justify: inter-word;
 }
 </style>
+
+<!-- Add the following CSS to your styles to support the new layout -->
+<style>
+  .main-heading {
+      color: green;
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .divider {
+      border-bottom: 2px solid green;
+      width: 60%;
+      margin: 20px auto;
+  }
+
+  .projects-grid {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      flex-wrap: wrap;
+  }
+
+  .project-card {
+      width: 48%; /* Adjust as needed */
+      margin-bottom: 20px;
+  }
+
+  .project-link {
+      text-decoration: none;
+      color: inherit;
+  }
+
+  .card-image img {
+      width: 100%;
+      height: auto;
+  }
+
+  .card-details {
+      padding: 15px;
+  }
+
+  .card-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+  }
+
+  .card-description {
+      font-size: 0.9em;
+  }
+</style>
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -72,10 +125,6 @@ div {
                     
                   </a>
               </li>
-            
-          
-          
-            
           
         </ul>
       </div>
@@ -89,63 +138,50 @@ div {
     </div>
   </progress>
 
-
-
-<!-- Research Bar -->
-<div class="content">
+<!-- Research Section -->
+<section class="content">
+  
   <!-- Main Heading -->
-  <h1 style="color: green; font-size: 2.5em; text-align: center;">AI Safety Research</h1>
-  <hr> <!-- Divider -->
-    
+  <h1 class="main-heading">AI Safety Research</h1>
+  <div class="divider"></div>
 
+  <!-- Projects Grid -->
+  <div id="projects" class="projects-grid">
 
-
-<div id="projects" class="row mt-2 pt-3" style="overflow: visible !important;">
-  
-          
-  
-  <div class="project-card">
-      
-        <a href="/research/alignment/">
-      
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/satellite_image.png" alt="project thumbnail" />
-          <div class="card-body">
-            <h5 class=""card-title">AI Alignment</h5>
-            <p class="card-text">making better and robust decisions by combining machine learning and satellite imagery.</p>
-            <div class="row ml-1 mr-1 p-0">
-              
-              
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-      
-                                          
+    <!-- AI Alignment Project -->
     <div class="project-card">
-      
-        <a href="/research/interpretability/">
-      
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/Sustainable_Development_Goals.png" alt="project thumbnail" />
-          <div class="card-body">
-            <h5 class=""card-title">Mechanistic Interpretability: Unveiling AI's Inner Processes</h5>
-            <p class="card-text">achieving sustainable development of the world.</p>
-            <div class="row ml-1 mr-1 p-0">
-              
-              
-            </div>
+      <a href="/research/alignment/" class="project-link">
+        <div class="card project-content">
+          <figure class="card-image">
+            <img src="/assets/img/satellite_image.png" alt="AI Alignment Project">
+          </figure>
+          <div class="card-details">
+            <h5 class="card-title">AI Alignment</h5>
+            <p class="card-description">Making better and robust decisions by combining machine learning and satellite imagery.</p>
           </div>
         </div>
       </a>
     </div>
-            
-                                          
-</div>
-
-
+      
+    <!-- Mechanistic Interpretability Project -->
+    <div class="project-card">
+      <a href="/research/interpretability/" class="project-link">
+        <div class="card project-content">
+          <figure class="card-image">
+            <img src="/assets/img/Sustainable_Development_Goals.png" alt="Mechanistic Interpretability Project">
+          </figure>
+          <div class="card-details">
+            <h5 class="card-title">Mechanistic Interpretability: Unveiling AI's Inner Processes</h5>
+            <p class="card-description">Achieving sustainable development of the world.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+      
   </div>
+
+</section>
+
 
   <!-- Core JavaScript Files -->
   <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
