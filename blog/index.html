@@ -4,32 +4,70 @@
 
 
   <!-- Add the following CSS to your styles to support the new layout -->
-<style>
-  .main-heading {
-      color: green;
-      font-size: 2.5em;
-      text-align: center;
-      margin-bottom: 20px;
-  }
-
-  .divider {
-      border-bottom: 2px solid green;
-      width: 60%;
-      margin: 20px auto;
-  }
-  /* Blog Post Link Style */
-h2 a {
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-    border-bottom: 2px dotted #888; /* Dotted underline */
-}
-
-h2 a:hover {
-    color: #e67e22; /* A shade of orange, change if needed */
-    text-decoration: none; /* Removing the default underline on hover */
-    border-bottom: 2px solid #e67e22; /* Solid underline on hover for emphasis */
-}
-
-</style>
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+  
+    .main-heading {
+        color: #2c3e50;  /* A darker shade for the main heading */
+        font-size: 3em;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+  
+    .divider {
+        border-bottom: 3px solid #e67e22; /* Made it more visible with a complementary color */
+        width: 50%;
+        margin: 20px auto;
+        opacity: 0.7;
+    }
+  
+    h2 a {
+        transition: color 0.3s ease;
+        border-bottom: 1px dotted #888;
+        color: #2c3e50;
+        text-decoration: none;
+    }
+  
+    h2 a:hover {
+        color: #e67e22;
+        border-bottom: 1px solid #e67e22;
+    }
+  
+    p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #555;
+        max-width: 80%;
+        margin: 20px auto;
+    }
+  
+    small {
+        display: block;
+        margin-top: 15px;
+        font-style: italic;
+        color: #888;
+    }
+  
+    .read-more {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: 1px solid #e67e22;
+        color: #e67e22;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+  
+    .read-more:hover {
+        background-color: #e67e22;
+        color: #fff;
+    }
+  
+  </style>
 
 
   <meta charset="utf-8">
@@ -124,8 +162,9 @@ h2 a:hover {
       <!-- Blog Post 1 -->
       <h2>
         <a href="./blog1_inner_alignment/index.html">AI Safety 1.0</a>
-    </h2>  
-    <p style="text-align: justify;">This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling. The resulting generative models, often called score-based generative models, have several important advantages over existing model families: GAN-level sample quality without adversarial training, flexible model architectures, exact log-likelihood computation, and inverse problem solving without re-training models. In this blog post, we will show you in more detail the intuition, basic concepts, and potential applications of score-based generative models.</p>
+      </h2>  
+      <p>This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling...</p>
+      <a href="./blog1_inner_alignment/index.html" class="read-more">Read More</a>
       <small><i>May 5, 2023</i></small>
   </section>
   
