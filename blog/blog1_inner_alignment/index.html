@@ -37,6 +37,8 @@ div {
       text-align: left; /* Add this line to align text to the left */
   }
 </style>
+
+
 <style>
   /* Content Container Styles */
   .content-container {
@@ -63,25 +65,38 @@ div {
   }
 
   /* Table of Content Styles */
-  .toc {
-      position: fixed;
-      top: 30%;
-      left: 5px;
-      border: 1px solid #ddd;
-      padding: 15px 20px;
-      width: 330px;
-      max-height: 70vh;
-      word-wrap: break-word;
-      background-color: #f9f9f9;
-      font-family: 'Roboto', sans-serif;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      overflow: auto;
-      font-size: 0.8em;
-      line-height: 1.7em;
-      color: rgba(0, 0, 0, 0.5);
-      transition: width 0.3s ease;
-  }
+/* Existing ToC styles */
+.toc {
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    width: 330px;
+    max-height: 70vh;
+    word-wrap: break-word;
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: auto;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    color: rgba(0, 0, 0, 0.5);
+    transition: width 0.3s ease;
+}
+
+/* New styles for the flex container and the main content */
+.flex-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    max-width: 800px;
+    margin-left: 40px;
+}
+
 
   .toc h3 {
       font-size: 15px;
@@ -216,7 +231,25 @@ div {
   </progress>
 
 
+
+  <div class="flex-container">
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h3>Contents</h3>
+        <div class="main-section"><a href="#intro">Introduction</a></div>
+        <ul>
+            <li><a href="#motivation">Motivation</a></li>
+        </ul>
+        <div class="main-section"><a href="#approach">Approach</a></div>
+        <div class="main-section"><a href="#highlight">Highlight</a></div>
+        <ul>
+            <li><a href="#recent-work">Recent Work</a></li>
+        </ul>
+    </div>
+
   <!-- Heading and intro -->
+  <div class="main-content">
+
   <div class="content">
 
       <h1>Generative Modeling by Estimating Gradients of the Data Distribution</h1>
@@ -421,12 +454,14 @@ div {
   </ol>
 </div>
 
+</div>
+
 
 
 
 
 <!-- Table of Contents -->
-<div class="toc">
+<!-- <div class="toc">
   <h3>Contents</h3>
 
   <div class="main-section"><a href="#intro">Introduction</a></div>
@@ -440,7 +475,7 @@ div {
   <ul>
       <li><a href="#recent-work">Recent Work</a></li>
   </ul>
-</div>
+</div> -->
 
 
   <!-- Core JavaScript Files -->
