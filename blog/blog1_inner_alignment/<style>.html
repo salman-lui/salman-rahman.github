@@ -1,0 +1,74 @@
+
+<style>
+    .toc {
+        position: fixed;
+        top: 30%;  /* Adjusted for better mobile view */
+        left: 5px; /* Responsive left positioning */
+        border: 1px solid #ddd;
+        padding: 15px 20px;  /* Using rem for relative spacing */
+        width: 330px;  /* Adjusted for better mobile view */
+        max-height: 70vh; /* Maximum height so it doesn't run off screen */
+        word-wrap: break-word;
+        background-color: #f9f9f9;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: auto;
+        font-size: 0.8em;
+        line-height: 1.7em;
+        color: rgba(0, 0, 0, 0.5);
+        transition: width 0.3s ease; /* Smooth transition */
+    }
+  
+    /* Media query for larger screens */
+    @media (min-width: 768px) {
+        .toc {
+            width: 330px; /* Set width for larger screens */
+            left: 2vw; /* Adjusted left positioning for larger screens */
+        }
+    }
+    .toc h3 {
+        /* Styles from h2 of .content */
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 1em;
+        margin-bottom: 0;
+        color: rgba(0, 0, 0, 0.65);
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+  
+    .toc ul {
+        list-style-type: none;
+        padding: 0 0 0 30px; /* Increased indentation for subsections */
+        margin-top: 5px; /* A bit of margin on top for spacing */
+    }
+  
+    .toc li {
+        margin-bottom: 8px;
+        transition: transform 0.2s ease;
+    }
+  
+    .toc li:hover {
+        transform: translateX(5px);
+    }
+  
+    .toc a {
+        color: #444;
+        text-decoration: none;
+        padding: 5px 8px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  
+    .toc a:hover {
+        background-color: #007BFF;
+        color: white;
+    }
+  
+    .toc .main-section {
+        font-weight: bold; /* Bold main sections for distinction */
+        margin-top: 2px; /* 8pxAdditional margin for clear separation between sections */
+    }
+  </style>
+  
