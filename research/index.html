@@ -24,16 +24,21 @@ div {
   }
 
   .projects-grid {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 30px;
-      flex-wrap: wrap;
-  }
+    display: flex;
+    justify-content: center; /* Center the items */
+    align-items: center; /* Vertically align the items */
+    margin-top: 30px;
+    flex-wrap: nowrap; /* Disable wrapping */
+}
 
-  .project-card {
-      width: 48%; /* Adjust as needed */
-      margin-bottom: 20px;
-  }
+.project-card {
+    width: calc(50% - 10px); /* Adjust as needed, subtracting the margin for even spacing */
+    margin: 0 5px; /* Add margin to left and right for spacing */
+}
+/* Optional: If you want the cards to have even space between them but not on the outer edges */
+.projects-grid {
+    justify-content: space-between;
+}
 
   .project-link {
       text-decoration: none;
