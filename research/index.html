@@ -35,6 +35,13 @@ div {
     width: calc(50% - 10px); /* Adjust as needed, subtracting the margin for even spacing */
     margin: 0 5px; /* Add margin to left and right for spacing */
 }
+
+.project-card .card {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    height: 100%; /* Use all available height */
+}
+
 /* Optional: If you want the cards to have even space between them but not on the outer edges */
 .projects-grid {
     justify-content: space-between;
@@ -45,21 +52,24 @@ div {
       color: inherit;
   }
 
-  .card-image img {
-      width: 100%;
-      height: auto;
-  }
+  .card-image {
+    height: 60%; /* allocate 60% of the height to image */
+    overflow: hidden; /* hide any overflowing parts */
+}
 
-  .card-details {
-      padding: 15px;
-      text-align: left;  /* Left-aligning the text inside the card details */
+.card-details {
+    height: 40%; /* allocate 40% of the height to details */
+}
 
-  }
+.card-image img {
+    height: 100%; 
+    object-fit: cover; /* Make sure images are resized in a way that doesn't break their aspect ratio */
+}
 
-  .card-title {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-  }
+/* Optional: if you want some more space between the title and the description */
+.card-title {
+    margin-bottom: 12px; /* Adjust to your preference */
+}
 
   .card-description {
       font-size: 0.9em;
