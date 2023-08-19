@@ -140,17 +140,10 @@
       color: #3dc0b0; 
       letter-spacing: 0.05em; 
     }
-  /* Blog Section */
-    .blog-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 0;
-}
+  
     .card-description {
-    text-align: justify;
-    margin-top: 10px;
-  }
+      color: #777;
+    }
   
     /* Additional refinements */
     progress {
@@ -251,23 +244,23 @@
   </div>
 </progress>
   
-<!-- Blog Posts Section -->
-<section class="blog-section">
-  <!-- Blog Post 1 -->
-  <div class="card">
-      <a href="./blog1_inner_alignment/index.html" class="project-link">
-          <div class="card-details">
-              <h2 class="card-title">
-                  AI Safety 1.0
-              </h2>
-              <p class="card-description">
-                  This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling...
-              </p>
-          </div>
-      </a>
-  </div>
-</section>
+<!-- Blog Section -->
+<section class="content">
 
+  <!-- Main Heading -->
+  <h1 class="main-heading">AI Safety Blogs</h1>
+  <div class="divider"></div>
+
+  <!-- Blog Posts Section -->
+  <section>
+      <!-- Blog Post 1 -->
+      <h2>
+        <a href="./blog1_inner_alignment/index.html">AI Safety 1.0</a>
+      </h2>  
+      <p style="text-align: justify;">This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling...</p>
+  </section>
+  
+</section>
 
 
   <!-- Core JavaScript Files -->
