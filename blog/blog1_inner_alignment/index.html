@@ -57,7 +57,6 @@ div {
       justify-content: space-between;
       max-width: 65%;
       margin: 0 auto;
-      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   }
 
   .author-details div strong {
@@ -87,12 +86,13 @@ div {
       transition: width 0.3s ease; /* Smooth transition */
   }
 
-  @media (max-width: 767px) {
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
       .toc {
-          top: 10px; 
-          left: 10px;
-          width: calc(100% - 20px); 
+          width: 330px; /* Set width for larger screens */
+          left: 2vw; /* Adjusted left positioning for larger screens */
       }
+  }
   .toc h3 {
       /* Styles from h2 of .content */
       font-size: 15px;
