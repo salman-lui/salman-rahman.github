@@ -54,15 +54,32 @@ div {
   }
 
   .author-details {
-      display: flex;
-      justify-content: space-between;
-      max-width: 65%;
-      margin: 0 auto;
-  }
+    display: flex;
+    justify-content: space-between;
+    max-width: 65%;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Adding a background color for a subtle effect */
+    padding: 10px 20px; /* Providing some spacing around the contents */
+    border-radius: 5px; /* Making the corners slightly rounded */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
 
-  .author-details div strong {
-      display: block;
-  }
+.author-details div {
+    transition: background-color 0.3s ease, color 0.3s ease; /* For smooth transition during hover effect */
+}
+
+.author-details div:hover {
+    background-color: #007BFF; /* Changing background color on hover */
+    color: white; /* Changing text color on hover */
+}
+
+.author-details div strong {
+    display: block;
+    font-weight: 700; /* Making the label bold */
+    margin-bottom: 8px; /* Providing space between the label and the name/details */
+}
+
+
 
   /* Table of Content Styles */
 /* Existing ToC styles */
