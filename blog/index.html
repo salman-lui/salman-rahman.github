@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+  <!-- Add the following CSS to your styles to support the new layout -->
+<style>
+  .main-heading {
+      color: green;
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .divider {
+      border-bottom: 2px solid green;
+      width: 60%;
+      margin: 20px auto;
+  }
+</style>
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -81,12 +100,13 @@
   </div>
 </progress>
   
-<!-- Blog Bar -->
-<div class="content">
+<!-- Blog Section -->
+<section class="content">
+
   <!-- Main Heading -->
-  <h1 style="color: green; font-size: 2.5em; text-align: center;">AI Safety Blogs</h1>
-  <hr> <!-- Divider -->
-  
+  <h1 class="main-heading">AI Safety Blogs</h1>
+  <div class="divider"></div>
+
   <!-- Blog Posts Section -->
   <section>
       <!-- Blog Post 1 -->
@@ -96,7 +116,9 @@
       <p>This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling. The resulting generative models, often called score-based generative models, have several important advantages over existing model families: GAN-level sample quality without adversarial training, flexible model architectures, exact log-likelihood computation, and inverse problem solving without re-training models. In this blog post, we will show you in more detail the intuition, basic concepts, and potential applications of score-based generative models.</p>
       <small><i>May 5, 2023</i></small>
   </section>
-</div>
+  
+</section>
+
 
   <!-- Core JavaScript Files -->
   <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
