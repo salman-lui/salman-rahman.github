@@ -1,173 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<style>
-div {
-  text-align: justify;
-  text-justify: inter-word;
-}
-</style>
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
 <style>
-  .img-fluid, .modal-dialog.cascading-modal.modal-avatar .modal-header, .video-fluid {
-      max-width: 100%;
-      height: auto;
-  }
-
-  .l-text, .l-body {
-      grid-column: text;
-  }
-</style>
-
-
-<style>
-  h1 {
-      font-family: 'Roboto', sans-serif; /* Setting the font */
-      font-size: 32px; /* Setting a larger font size */
-      font-weight: 500; /* bold Bold text */
-      line-height: 1.4; /* Adjusted spacing between lines */
-      word-spacing: 0; /* Ensuring normal spacing between words */
-      color: rgba(0, 0, 0, 0.65); /* color: #333 Slightly dark color for prominence */
-      margin-top: 1em; /* margin-top: 20px; Margin at the top */
-      margin-bottom: 0; /* margin-bottom: 40px; Margin at the bottom */
-      text-align: left; /* Add this line to align text to the left */
-  }
-</style>
-
-
-<style>
-  /* Content Container Styles */
-  .content-container {
-      margin: 0 auto;
-      max-width: 1200px;
-      padding: 0 15px;
-  }
-
-  .horizontal-divider {
-      border-top: 0.4px solid grey;
-      max-width: 65%;
-      margin: 0 auto;
-  }
-
-  .author-details {
-    display: flex;
-    justify-content: space-between;
-    max-width: 65%;
-    margin: 0 auto;
-    background-color: #f9f9f9; /* Adding a background color for a subtle effect */
-    padding: 10px 20px; /* Providing some spacing around the contents */
-    border-radius: 5px; /* Making the corners slightly rounded */
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+ /* Basic reset and typography */
+body, html {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: #f5f5f5;
 }
 
-.author-details div {
-    transition: background-color 0.3s ease, color 0.3s ease; /* For smooth transition during hover effect */
+/* Utility */
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.author-details div:hover {
-    background-color: #007BFF; /* Changing background color on hover */
-    color: white; /* Changing text color on hover */
+/* Text */
+div {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-.author-details div strong {
-    display: block;
-    font-weight: 700; /* Making the label bold */
-    margin-bottom: 8px; /* Providing space between the label and the name/details */
+h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.65);
+  margin: 20px 0 40px;
+  text-align: left;
 }
 
-
-
-  /* Table of Content Styles */
-/* Existing ToC styles */
-.toc {
-    position: sticky;
-    top: 80px; /* Adjust based on your design requirements */
-    border: 1px solid #ddd;
-    padding: 15px 20px;
-    width: 330px;
-    max-height: 70vh;
-    word-wrap: break-word;
-    background-color: #f9f9f9;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: auto;
-    font-size: 0.8em;
-    line-height: 1.7em;
-    color: rgba(0, 0, 0, 0.5);
-    transition: width 0.3s ease;
+/* Image and Video responsiveness */
+.img-fluid, .video-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
-/* New styles for the flex container and the main content */
+/* Content and layout */
+.content-container, .l-text, .l-body {
+  grid-column: text;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .flex-container {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .main-content {
-    flex-grow: 1;
-    max-width: 800px;
-    margin-left: 40px;
+  flex-grow: 1;
+  max-width: 800px;
+  margin-left: 40px;
 }
 
+.horizontal-divider {
+  border-top: 0.4px solid grey;
+  max-width: 65%;
+  margin: 20px auto;
+}
 
-  .toc h3 {
-      font-size: 15px;
-      font-weight: 500;
-      margin-top: 1em;
-      margin-bottom: 0;
-      color: rgba(0, 0, 0, 0.65);
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
-  }
+.author-details {
+  display: flex;
+  justify-content: space-between;
+  max-width: 65%;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
 
-  .toc ul {
-      list-style-type: none;
-      padding: 0 0 0 30px;
-      margin-top: 5px;
-  }
+.author-details div:hover {
+  background-color: #007BFF;
+  color: white;
+}
 
-  .toc li {
-      margin-bottom: 8px;
-      transition: transform 0.2s ease;
-  }
+.author-details div strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
 
-  .toc li:hover {
-      transform: translateX(5px);
-  }
+/* Table of Contents styles */
+.toc {
+  position: sticky;
+  top: 80px;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  width: 330px;
+  max-height: 70vh;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: auto;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.5);
+}
 
-  .toc a {
-      color: #444;
-      text-decoration: none;
-      padding: 5px 8px;
-      border-radius: 4px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-  }
+.toc h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
 
-  .toc a:hover {
-      background-color: #007BFF;
-      color: white;
-  }
+.toc ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
 
-  .toc .main-section {
-      font-weight: bold;
-      margin-top: 2px;
-  }
+.toc li {
+  margin: 8px 0;
+}
 
-  /* Media Query */
-  @media (min-width: 768px) {
-      .toc {
-          width: 330px;
-          left: 0.6vw;
-      }
+.toc a:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.toc .main-section {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .toc {
+    width: 330px;
+    left: 0.6vw;
   }
+}
 </style>
 
 
