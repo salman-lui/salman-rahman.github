@@ -8,29 +8,6 @@ div {
 }
 </style>
   
-<style>
-  .intro-container {
-      background-color: #f9f9f9; /* Light gray */
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-  }
-
-  .intro-text p {
-      font-size: 1.1em;
-      line-height: 1.6;
-  }
-
-  .intro-text a {
-      color: #007BFF; /* Change to any color you like */
-      transition: color 0.3s ease; /* Animation */
-  }
-
-  .intro-text a:hover {
-      color: #0056b3; /* Darker blue */
-      text-decoration: underline; /* Underline on hover */
-  }
-</style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -136,12 +113,13 @@ div {
 
 <!-- Introduction about me -->
 
-<div class="intro-container" style="display: flex; flex-wrap: wrap;">
-  <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="flex: 1; order: 2;">
+<div style="display: flex; flex-wrap: wrap;">
+  <div class="text-justify p-0">
+      <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
         <img class="profile-img img-responsive" src="/assets/img/salman.jpg" style="width: 300px; height: 400px;" alt="Salman's Portrait"/>
       </div>
-      <div class="intro-text text-justify p-0" style="flex: 2; order: 1; padding-right: 20px;">
-     <p><i class="fas fa-graduation-cap"></i>
+    
+     <p>
        I'm a Computer Science Ph.D. student at <a href="https://www.nyu.edu/" target="_blank">New York University</a>, dedicated to the development of safe, interpretable, and reliable artificial intelligence. Central to my work is addressing alignment problems in AI, striving to ensure that models resonate with shared human values. My research aims to unveil the mysteries within neural networks through mechanistic interpretability. The challenges in the healthcare domain drive my passion, prompting me to innovate solutions that are both precisely aligned and easily interpretable for medical applications. <a href="research">Dive deeper into my research here.</a>
     </p>
     
