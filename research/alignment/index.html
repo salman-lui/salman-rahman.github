@@ -112,19 +112,21 @@
     padding-bottom: 0.5rem; /* Padding at the bottom to give space between text and border */
 }
 
-      .paper-button {
+.paper-button {
     display: inline-block;
-    padding: 2px 5px;  /* Reduced padding to be less prominent */
+    padding: 0px 5px;  /* Removed vertical padding, kept horizontal padding */
+    line-height: 1.6;  /* Matching the line-height to the paragraph's line-height */
     color: white;
     background-color: #2C3E50;
     border-radius: 4px;
     text-decoration: none;
-    font-size: 1.1rem; /* Matching the font-size to the paragraph text */
-    font-weight: bold;
+    font-size: 1.1rem; /* As before, matching the font-size to the paragraph text */
+    font-weight: normal;  /* Change from bold to normal */
     transition: background-color 0.3s ease;
-    margin-left: 0.5rem;  /* Add a little space on the left of the button */
+    margin-left: 0.5rem;  /* As before, a little space on the left of the button */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 
 .paper-button:hover {
