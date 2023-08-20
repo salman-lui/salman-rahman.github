@@ -2,201 +2,200 @@
 <html lang="en">
 <head>
 
-<style>
-  /* Global */
-  body, div {
-      font-family: 'Roboto', sans-serif;
-      text-align: justify;
-      text-justify: inter-word;
-  }
-
-  /* Navbar */
-  #navbar {
-      background-color: #f9f9f9;
-  }
-
-  /* Content and Header Styles */
-  h1, h2 {
-      font-weight: 500;
-      line-height: 1.4;
-      color: rgba(0, 0, 0, 0.65);
-      margin-top: 1em;
-      margin-bottom: 1em;
-      text-align: left;
-  }
-
-  /* Content Container */
-  .content-container {
-      margin: 0 auto;
-      max-width: 1200px;
-      padding: 0 15px;
-  }
-
-  /* Dividers */
-  .horizontal-divider {
-      border-top: 0.4px solid grey;
-      max-width: 65%;
-      margin: 20px auto;
-  }
-
-  /* Author Details */
-  .author-details {
-      display: flex;
-      justify-content: space-between;
-      max-width: 65%;
-      margin: 20px auto;
-      background-color: #f9f9f9;
-      padding: 10px 20px;
-      border-radius: 5px;
-      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .author-details div {
-      transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .author-details div:hover {
-      background-color: #007BFF;
-      color: white;
-  }
-
-  .author-details div strong {
-      display: block;
-      font-weight: 700;
-      margin-bottom: 8px;
-  }
-
-  /* Table of Contents */
-  .toc {
-      position: sticky;
-      top: 80px;
-      border: 1px solid #ddd;
-      padding: 15px 20px;
-      width: 330px;
-      max-height: 70vh;
-      background-color: #f9f9f9;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      overflow: auto;
-      font-size: 0.8em;
-      line-height: 1.7em;
-      color: rgba(0, 0, 0, 0.5);
-      transition: width 0.3s ease;
-  }
-
-  .toc h3 {
-      font-size: 15px;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
-  }
-
-  .toc ul {
-      list-style-type: none;
-      padding: 0 0 0 30px;
-      margin-top: 5px;
-  }
-
-  .toc li {
-      margin-bottom: 8px;
-      transition: transform 0.2s ease;
-  }
-
-  .toc li:hover {
-      transform: translateX(5px);
-  }
-
-  .toc a {
-      color: #444;
-      text-decoration: none;
-      padding: 5px 8px;
-      border-radius: 4px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .toc .main-section {
-      font-weight: bold;
-      margin-top: 2px;
-  }
-
-  .toc a:hover {
-      background-color: #007BFF;
-      color: white;
-  }
-
-  /* Flex Container */
-  .flex-container {
-      display: flex;
-      align-items: start;
-      justify-content: center;
-      padding: 20px;
-      margin-top: 50px;
-  }
-
-  .main-content {
-      flex-grow: 1;
-      max-width: 800px;
-      margin-left: 40px;
-  }
-
-/* Enhanced Blog Title Style */
-.blog-title {
-    font-weight: 700;
-    color: #333;
-    border-bottom: 2px solid #333;
-    display: inline-block;
-    margin: 0 0 30px; /* Updated margin value */
-    padding-bottom: 10px;
-    transition: color 0.3s ease;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.blog-title:hover {
-    color: #333; /* Changing title color on hover */
-}
-
-/* Add a subtle text shadow for a bit of depth */
-.blog-title {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Styles specific to mobile screens */
-@media (max-width: 767px) {
-  .toc {
-      position: static;  /* Resetting position */
-      top: unset;  /* Unsetting top value */
-      width: 100%;  /* Setting width to full */
-      margin-bottom: 20px;  /* Adding a bit of space between ToC and main content */
-  }
-
-  /* Since we're moving ToC to the top, we might want to adjust the .flex-container as well */
-  .flex-container {
-      flex-direction: column;
-  }
-
-  .main-content {
-      margin-left: 0;  /* Resetting the margin-left */
-  }
-    /* Adjusting author-details for mobile view */
-    .author-details {
-      flex-direction: column;  /* Stacking the details vertically */
-      align-items: center;     /* Centering the content */
-      max-width: 100%;         /* Using full width */
-      padding: 10px 0;         /* Adjusting padding */
-  }
-
-  .author-details div {
-      text-align: center;      /* Ensuring all text is centered */
-      margin-bottom: 10px;     /* Adding some space between each detail */
-  }
-  .blog-title {
-        font-size: 1.5em;
-        margin: 15px 0 25px;
-        padding-bottom: 8px;
+  <style>
+    /* Global */
+    body, div {
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+        text-justify: inter-word;
     }
-}
-</style>
+  
+    /* Navbar */
+    #navbar {
+        background-color: #f9f9f9;
+    }
+  
+    /* Content and Header Styles */
+    h1, h2 {
+        font-weight: 500;
+        line-height: 1.4;
+        color: rgba(0, 0, 0, 0.65);
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: left;
+    }
+  
+    /* Content Container */
+    .content-container {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 15px;
+    }
+  
+    /* Dividers */
+    .horizontal-divider {
+        border-top: 0.4px solid grey;
+        max-width: 65%;
+        margin: 20px auto;
+    }
+  
+    /* Author Details */
+    .author-details {
+        display: flex;
+        justify-content: space-between;
+        max-width: 65%;
+        margin: 20px auto;
+        background-color: #f9f9f9;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .author-details div {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  
+    .author-details div:hover {
+        background-color: #007BFF;
+        color: white;
+    }
+  
+    .author-details div strong {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+  
+    /* Table of Contents */
+    .toc {
+        position: sticky;
+        top: 80px;
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        padding: 15px 20px;
+        width: 330px;
+        max-height: 70vh;
+        background-color: #f9f9f9;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: auto;
+        font-size: 0.8em;
+        line-height: 1.7em;
+        color: rgba(0, 0, 0, 0.5);
+        transition: width 0.3s ease;
+    }
+  
+    .toc h3 {
+        font-size: 15px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+  
+    .toc ul {
+        list-style-type: none;
+        padding: 0 0 0 30px;
+        margin-top: 5px;
+    }
+  
+    .toc li {
+        margin-bottom: 8px;
+        transition: transform 0.2s ease;
+    }
+  
+    .toc li:hover {
+        transform: translateX(5px);
+    }
+  
+    .toc a {
+        color: #444;
+        text-decoration: none;
+        padding: 5px 8px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .toc .main-section {
+        font-weight: bold;
+        margin-top: 2px;
+    }
+  
+    .toc a:hover {
+        background-color: #007BFF;
+        color: white;
+    }
+  
+    /* Flex Container */
+    .flex-container {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 50px;
+    }
+  
+    .main-content {
+        flex-grow: 1;
+        max-width: 800px;
+        margin-left: 40px;
+    }
+  
+    /* Enhanced Blog Title Style */
+    .blog-title {
+      font-weight: 700;
+      color: #333;
+      margin-top: 20px;
+      border-bottom: 2px solid #333;
+      display: inline-block;
+      margin: 0 0 30px; /* Updated margin value */
+      padding-bottom: 10px;
+      transition: color 0.3s ease;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+  
+    .blog-title:hover {
+      color: #007BFF; /* Changing title color on hover */
+    }
+  
+    /* Styles specific to mobile screens */
+    @media (max-width: 767px) {
+        .toc {
+            position: static;  /* Resetting position */
+            top: unset;  /* Unsetting top value */
+            width: 100%;  /* Setting width to full */
+            margin-bottom: 20px;  /* Adding a bit of space between ToC and main content */
+        }
+  
+        /* Since we're moving ToC to the top, we might want to adjust the .flex-container as well */
+        .flex-container {
+            flex-direction: column;
+        }
+  
+        .main-content {
+            margin-left: 0;  /* Resetting the margin-left */
+        }
+        
+        /* Adjusting author-details for mobile view */
+        .author-details {
+            flex-direction: column;  /* Stacking the details vertically */
+            align-items: center;     /* Centering the content */
+            max-width: 100%;         /* Using full width */
+            padding: 10px 0;         /* Adjusting padding */
+        }
+  
+        .author-details div {
+            text-align: center;      /* Ensuring all text is centered */
+            margin-bottom: 10px;     /* Adding some space between each detail */
+        }
+  
+        .blog-title {
+            font-size: 1.5em;
+            margin: 15px 0 25px;
+            padding-bottom: 8px;
+        }
+    }
+  </style>  
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
