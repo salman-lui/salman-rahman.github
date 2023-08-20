@@ -38,22 +38,52 @@
 
 <body>
 
-    <!-- Header -->
-    <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
-        <div class="container-fluid p-0">
-            <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Salman</span> Rahman</a>
-            <!-- ... rest of navbar ... -->
-        </div>
-    </nav>
 
-    <!-- Content -->
-    <div class="content">
-        <!-- Breadcrumbs -->
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb p-0 text-lowercase">
-                <!-- ... breadcrumbs ... -->
-            </ol>
-        </nav>
+        <!-- Header -->
+<nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
+  <div class="container-fluid p-0">
+      <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Salman</span> Rahman</a>
+      
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item">
+                  <a class="nav-link" href="/">About</a>
+              </li>
+              <li class="nav-item navbar-active font-weight-bold">
+                  <a class="nav-link" href="/research/">Research <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/blog/">Blog</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/assets/pdf/cv_salman.pdf" target="_blank">CV</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<!-- Content -->
+<div class="content">
+  <!-- Breadcrumbs -->
+  <nav aria-label="breadcrumb">
+      <ol class="breadcrumb p-0 text-lowercase">
+          <li class="breadcrumb-item"><a href="/">home</a></li>
+          <li class="breadcrumb-item"><a href="/research">Research</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Combining machine learning and satellite imagery to address health and sustainability challenges</li>
+      </ol>
+  </nav>
+  
+  <!-- Rest of your content can go here... -->
+</div>
+
 
         <!-- Research Topic Title & Description -->
         <div class="research-topic">
