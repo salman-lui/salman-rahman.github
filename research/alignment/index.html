@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,26 +13,70 @@
     <link rel="stylesheet" href="/assets/css/academicons.min.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="/projects/uncertainty/">
-    
+
     <!-- Internal Styles -->
     <style>
+        :root {
+            --primary-color: #333;
+            --secondary-color: #555;
+            --hover-color: #666;
+        }
+
         body {
             font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
         }
+
         .content {
-            margin-top: 50px;
-            margin-bottom: 50px;
+            padding: 50px 0;
             text-align: justify;
         }
+
         h2, h5 {
-            color: #333;
+            color: var(--primary-color);
         }
+
         p {
             font-size: 1.1rem;
-            color: #555;
+            color: var(--secondary-color);
         }
+
+        a {
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--hover-color);
+        }
+
+        nav {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        nav .nav-link {
+            transition: color 0.3s;
+        }
+
+        nav .nav-link:hover {
+            color: var(--hover-color);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .supplementary a {
+            font-weight: 700;
+        }
+
     </style>
 </head>
+
 <body>
 
 <!-- Navbar -->
