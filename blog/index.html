@@ -162,7 +162,35 @@
     progress[value]::-moz-progress-bar {
       background: #007BFF;
     }
-  </style>
+    /* Blog Section Enhancements */
+    .content {
+        background-color: #ffffff;  /* Making blog background consistent */
+        border-radius: 10px;
+        padding: 20px 40px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        margin: 60px 20px; /* Adds some space around the blog content */
+    }
+
+    /* Individual Blog Entry */
+    .blog-entry {
+        padding: 20px;
+        transition: background-color 0.3s;
+        border-radius: 8px;
+    }
+
+    .blog-entry:hover {
+        background-color: #f7f9fc; 
+    }
+
+    .blog-entry h2 {
+        margin-top: 0;
+    }
+
+    .blog-entry p {
+        margin: 10px 0;
+    }
+
+</style>
 
 
   <meta charset="utf-8">
@@ -228,11 +256,6 @@
                     
                   </a>
               </li>
-            
-          
-          
-            
-          
         </ul>
       </div>
     </div>
@@ -252,14 +275,13 @@
   <h1 class="main-heading">AI Safety Blogs</h1>
   <div class="divider"></div>
 
-  <!-- Blog Posts Section -->
-  <section>
       <!-- Blog Post 1 -->
-      <h2>
-        <a href="./blog1_inner_alignment/index.html">AI Safety 1.0</a>
-      </h2>  
-      <p style="text-align: justify;">This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling...</p>
-  </section>
+      <div class="blog-entry">
+        <h2>
+          <a href="./blog1_inner_alignment/index.html">AI Safety 1.0</a>
+        </h2>  
+        <p style="text-align: justify;">This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling...</p>
+    </div>
   
 </section>
 
