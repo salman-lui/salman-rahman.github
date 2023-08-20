@@ -140,13 +140,32 @@
       margin-left: 40px;
   }
 
-  /* Media Query */
-  @media (min-width: 768px) {
-      .toc {
-          width: 330px;
-          left: 0.6vw;
-      }
+/* Media Query */
+@media (min-width: 768px) {
+  .toc {
+      width: 330px;
+      left: 0.6vw;
   }
+}
+
+/* Styles specific to mobile screens */
+@media (max-width: 767px) {
+  .toc {
+      position: static;  /* Resetting position */
+      top: unset;  /* Unsetting top value */
+      width: 100%;  /* Setting width to full */
+      margin-bottom: 20px;  /* Adding a bit of space between ToC and main content */
+  }
+
+  /* Since we're moving ToC to the top, we might want to adjust the .flex-container as well */
+  .flex-container {
+      flex-direction: column;
+  }
+
+  .main-content {
+      margin-left: 0;  /* Resetting the margin-left */
+  }
+}
 </style>
 
 <script type="text/javascript" async
