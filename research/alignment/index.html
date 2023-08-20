@@ -14,49 +14,100 @@
     <link rel="canonical" href="/projects/uncertainty/">
     <!-- Internal Styles -->
     <style>
-          body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-        }
-            /* Navbar */
-    #navbar {
-        background-color: #f9f9f9;
-    }
-        .content {
-            padding: 80px 0;
-            text-align: justify;
-        }
-        h2 {
-            color: #333;
-            margin-bottom: 20px;
-            font-family: 'Roboto Slab', serif;
-        }
-        h5 {
-            color: #555;
-            margin-top: 40px;
-        }
-        p {
-            font-size: 1.1rem;
-            color: #666;
-            line-height: 1.6;
-        }
-        nav#navbar {
-            box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.02);
-        }
-        .navbar-brand.title {
-            color: #333;
-        }
-        .navbar-light .navbar-nav .nav-link {
-            color: #666;
-            transition: color 0.3s ease;
-        }
-        .navbar-light .navbar-nav .nav-link:hover {
-            color: #333;
-        }
-        .supplementary a {
-            color: #007bff;
-        }
-    </style>
+      body {
+          font-family: 'Roboto', sans-serif;
+          line-height: 1.6;
+      }
+  
+      /* Navbar */
+      #navbar {
+          background-color: #f9f9f9;
+          box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.02);
+      }
+  
+      .navbar-brand.title {
+          color: #333;
+      }
+  
+      .navbar-light .navbar-nav .nav-link {
+          color: #666;
+          transition: color 0.3s ease;
+      }
+  
+      .navbar-light .navbar-nav .nav-link:hover {
+          color: #333;
+      }
+  
+      .content {
+          padding: 80px 0;
+          text-align: justify;
+      }
+  
+      h2 {
+          color: #333;
+          margin-bottom: 20px;
+          font-family: 'Roboto Slab', serif;
+      }
+  
+      h5 {
+          color: #555;
+          margin-top: 40px;
+      }
+  
+      p {
+          font-size: 1.1rem;
+          color: #666;
+          line-height: 1.6;
+      }
+  
+      .supplementary a {
+          color: #007bff;
+      }
+  
+      /* Enhanced content styles */
+      .styled-container {
+          padding: 2rem;
+          background: #fafafa;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      }
+  
+      .content-title {
+          color: #2C3E50;
+          border-bottom: 2px solid #2C3E50;
+          padding-bottom: 0.5rem;
+          margin-bottom: 1rem;
+      }
+  
+      .content-paragraph {
+          color: #555;
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+      }
+  
+      blockquote {
+          font-style: italic;
+          padding-left: 1.5rem;
+          border-left: 3px solid #2C3E50;
+          margin: 1rem 0;
+      }
+  
+      .content-link, .paper-link {
+          color: #2C3E50;
+          text-decoration: underline;
+          transition: color 0.3s ease;
+      }
+  
+      .content-link:hover, .paper-link:hover {
+          color: #34495E;
+      }
+  
+      .research-subtitle {
+          color: #34495E;
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+      }
+  </style>  
 </head>
 
 <body>
@@ -81,21 +132,19 @@
 </nav>
 
 <!-- Main Content -->
-<div class="container content">
-    <h2>AI Alignment Problem</h2>
-    <p>Today's problems are pretty different from the problems we ultimately have to face when we have AI systems that are smarter than us. This “hard problem of alignment” is the version of the problem I'm most interested in:
-
-      How do we align systems on tasks that are difficult for humans to evaluate?
-      Moreover, the hard problem of alignment is the version of the problem for which the stakes are highest. Once we know how to build AI systems that can do hard tasks better than us, there'll be a lot of economic pressure to put them in charge of all kinds of economically valuable tasks. But if they are misaligned, they won't actually perform those tasks as we intend, and thus we face unintended consequences. For collaborations or insights, feel free to <a href="/contact">contact me</a>.</p>
-    
-    <!-- Research Topic Example -->
-    <h5>Training language models to follow instructions with human feedback</h5>
-    <p>
-          Making language models bigger does not inherently make them better at following a user's intent. 
-          For example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user. 
-          Moreover, InstructGPT models show improvements in truthfulness and reductions in toxic output generation while having minimal performance regressions on public NLP datasets. Even though InstructGPT still makes simple mistakes, our results show that fine-tuning with human feedback is a promising direction for aligning language models with human intent. <a href="http://salmanrahman.org/assets/pdf/landslide-uncertainty/remotesensing-12-03347.pdf" target="_blank">[Read the Paper]</a>. 
-    </p>
+<div class="styled-container content">
+  <h2 class="content-title">AI Alignment Problem</h2>
+  <p class="content-paragraph">Today's problems are pretty different from the problems we ultimately have to face when we have AI systems that are smarter than us. This “hard problem of alignment” is the version of the problem I'm most interested in:</p>
+  <blockquote>
+    How do we align systems on tasks that are difficult for humans to evaluate?
+  </blockquote>
+  <p class="content-paragraph">Moreover, the hard problem of alignment is the version of the problem for which the stakes are highest. Once we know how to build AI systems that can do hard tasks better than us, there'll be a lot of economic pressure to put them in charge of all kinds of economically valuable tasks. But if they are misaligned, they won't actually perform those tasks as we intend, and thus we face unintended consequences. For collaborations or insights, feel free to <a href="/contact" class="content-link">contact me</a>.</p>
+  
+  <!-- Research Topic Example -->
+  <h5 class="research-subtitle">Training language models to follow instructions with human feedback</h5>
+  <p class="content-paragraph">Making language models bigger does not inherently make them better at following a user's intent. For example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user. Moreover, InstructGPT models show improvements in truthfulness and reductions in toxic output generation while having minimal performance regressions on public NLP datasets. Even though InstructGPT still makes simple mistakes, our results show that fine-tuning with human feedback is a promising direction for aligning language models with human intent. <a href="http://salmanrahman.org/assets/pdf/landslide-uncertainty/remotesensing-12-03347.pdf" target="_blank" class="paper-link">[Read the Paper]</a>.</p>
 </div>
+
 
 <!-- ... [Rest of your code remains unchanged] ... -->
 
