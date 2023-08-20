@@ -69,15 +69,6 @@
       gap: 20px; 
     }
   
-    .project-card {
-      flex: 1;
-      margin: 0 5px;
-      transition: all 0.3s ease;
-    }
-  
-    .project-card:hover {
-      transform: scale(1.02);
-    }
   
     .project-link {
       text-decoration: none;
@@ -105,23 +96,41 @@
     .card:hover .card-image img {
       transform: scale(1.05);
     }
-  
-    .card-details {
-      padding: 15px;
-      background: linear-gradient(to right, #fafafa, #e9e9e9);
-    }
-  
-    .card-title {
-      font-weight: 600;
-      font-size: 1.4em;
-      margin-bottom: 8px;
-      color: #3dc0b0; 
-      letter-spacing: 0.05em; 
-    }
-  
-    .card-description {
-      color: #777;
-    }
+
+
+/* Enhanced Project Card Design */
+.project-card {
+    flex: 1;
+    margin: 0 5px;
+    transition: all 0.3s ease, box-shadow 0.5s ease; /* Added box-shadow transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Added initial soft shadow */
+    border-radius: 12px;  /* Rounded corners for the project card itself */
+    overflow: hidden;  /* Ensuring nothing goes beyond the rounded corners */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Card will move up slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Hover shadow is a bit deeper */
+}
+
+.card-details {
+    padding: 20px 15px;  /* Increased padding for a more spacious look */
+    background: linear-gradient(to right, #fafafa, #e9e9e9);
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.6em; /* Made the font size a bit larger */
+    margin-bottom: 8px;
+    color: #007BFF;  /* Changed the title color for consistency */
+    letter-spacing: 0.03em; /* Reduced letter-spacing for better readability */
+}
+
+.card-description {
+    color: #555;  /* Darkened the text color for better readability */
+    font-size: 1.1em;  /* Slightly increased font size for the description */
+}
+
   
     /* Additional refinements */
     progress {
