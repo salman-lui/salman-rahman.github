@@ -165,7 +165,20 @@
   .main-content {
       margin-left: 0;  /* Resetting the margin-left */
   }
+    /* Adjusting author-details for mobile view */
+    .author-details {
+      flex-direction: column;  /* Stacking the details vertically */
+      align-items: center;     /* Centering the content */
+      max-width: 100%;         /* Using full width */
+      padding: 10px 0;         /* Adjusting padding */
+  }
+
+  .author-details div {
+      margin-bottom: 10px;    /* Adding some space between each detail */
+  }
 }
+
+
 </style>
 
 <script type="text/javascript" async
