@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,70 +12,26 @@
     <link rel="stylesheet" href="/assets/css/academicons.min.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="/projects/uncertainty/">
-
+    
     <!-- Internal Styles -->
     <style>
-        :root {
-            --primary-color: #333;
-            --secondary-color: #555;
-            --hover-color: #666;
-        }
-
         body {
             font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
         }
-
         .content {
-            padding: 50px 0;
+            margin-top: 50px;
+            margin-bottom: 50px;
             text-align: justify;
         }
-
         h2, h5 {
-            color: var(--primary-color);
+            color: #333;
         }
-
         p {
             font-size: 1.1rem;
-            color: var(--secondary-color);
+            color: #555;
         }
-
-        a {
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: var(--hover-color);
-        }
-
-        nav {
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s;
-        }
-
-        nav .nav-link {
-            transition: color 0.3s;
-        }
-
-        nav .nav-link:hover {
-            color: var(--hover-color);
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .supplementary a {
-            font-weight: 700;
-        }
-
     </style>
 </head>
-
 <body>
 
 <!-- Navbar -->
@@ -104,11 +59,6 @@
     <p>Today's problems are pretty different from the problems we ultimately have to face when we have AI systems that are smarter than us. This “hard problem of alignment” is the version of the problem I'm most interested in:
 
       How do we align systems on tasks that are difficult for humans to evaluate?
-      
-      As AI progress continues, we'll get smarter and smarter models that can be applied to harder and harder tasks. However, AI progress doesn't change the range of tasks that humans understand. As tasks get harder, it also becomes harder for humans to evaluate whether a given behavior captures their intent.
-      
-      For tasks that are difficult to evaluate, many straightforward solutions such as RL from human feedback don't apply: Humans can't check everything the system does because the system might try to fool us in ways that are hard for us to detect.
-      
       Moreover, the hard problem of alignment is the version of the problem for which the stakes are highest. Once we know how to build AI systems that can do hard tasks better than us, there'll be a lot of economic pressure to put them in charge of all kinds of economically valuable tasks. But if they are misaligned, they won’t actually perform those tasks as we intend, and thus we face unintended consequences. For collaborations or insights, feel free to <a href="/contact">contact me</a>.</p>
     
     <!-- Research Topic Example -->
@@ -117,9 +67,6 @@
         <li>
           Making language models bigger does not inherently make them better at following a user's intent. 
           For example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user. 
-          In other words, these models are not aligned with their users. In this paper, we show an avenue for aligning language models with user intent on a wide range of tasks by fine-tuning with human feedback. 
-          Starting with a set of labeler-written prompts and prompts submitted through a language model API, we collect a dataset of labeler demonstrations of the desired model behavior, which we use to fine-tune GPT-3 using supervised learning. 
-          We then collect a dataset of rankings of model outputs, which we use to further fine-tune this supervised model using reinforcement learning from human feedback. We call the resulting models InstructGPT. In human evaluations on our prompt distribution, outputs from the 1.3 B parameter InstructGPT model are preferred to outputs from the 175B GPT-3, despite having 100x fewer parameters. 
           Moreover, InstructGPT models show improvements in truthfulness and reductions in toxic output generation while having minimal performance regressions on public NLP datasets. Even though InstructGPT still makes simple mistakes, our results show that fine-tuning with human feedback is a promising direction for aligning language models with human intent. <span class="supplementary"><a href="http://salmanrahman.org/assets/pdf/landslide-uncertainty/remotesensing-12-03347.pdf" target="_blank">[Read the Paper]</a></span>
         </li>
     </ul>
