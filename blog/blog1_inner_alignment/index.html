@@ -17,17 +17,12 @@
 
   /* Content and Header Styles */
   h1, h2 {
-    font-weight: 700;
-    font-size: 2.5em;  /* increased size */
-    line-height: 1.4;
-    color: white;  /* change to white for contrast */
-    margin-top: 2em;
-    margin-bottom: 2em;
-    text-align: center;  /* centered the title */
-    background: linear-gradient(90deg, rgba(0,123,255,1) 0%, rgba(0,97,204,1) 100%); /* subtle gradient */
-    padding: 15px 20px;  /* added padding */
-    border-radius: 10px;  /* rounded corners */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);  /* subtle shadow */
+      font-weight: 500;
+      line-height: 1.4;
+      color: rgba(0, 0, 0, 0.65);
+      margin-top: 1em;
+      margin-bottom: 1em;
+      text-align: left;
   }
 
   /* Content Container */
@@ -145,6 +140,25 @@
       margin-left: 40px;
   }
 
+/* Enhanced Blog Title Style */
+.blog-title {
+    font-weight: 700; /* Stronger weight for more emphasis */
+    color: #333; /* Darker for better contrast and readability */
+    border-bottom: 2px solid #007BFF; /* A subtle underline with the theme color */
+    display: inline-block; /* To ensure the border-bottom only spans under the text */
+    margin: 20px 0 30px; /* More margin to space it out from surrounding elements */
+    padding-bottom: 10px; /* Space between the text and the border */
+    transition: color 0.3s ease; /* Smooth color transition for hover effect */
+}
+
+.blog-title:hover {
+    color: #007BFF; /* Changing title color on hover */
+}
+
+/* Add a subtle text shadow for a bit of depth */
+.blog-title {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
 
 /* Styles specific to mobile screens */
 @media (max-width: 767px) {
@@ -175,7 +189,14 @@
       text-align: center;      /* Ensuring all text is centered */
       margin-bottom: 10px;     /* Adding some space between each detail */
   }
+  .blog-title {
+        font-size: 1.5em;
+        margin: 15px 0 25px;
+        padding-bottom: 8px;
+    }
 }
+
+
 </style>
 
 <script type="text/javascript" async
@@ -286,7 +307,7 @@
 
   <div class="content">
 
-      <h1>Generative Modeling by Estimating Gradients of the Data Distribution</h1>
+    <h1 class="blog-title">Generative Modeling by Estimating Gradients of the Data Distribution</h1>
     <p>
         This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling. The resulting generative models, often called score-based generative models, have several important advantages over existing model families: GAN-level sample quality without adversarial training, flexible model architectures, exact log-likelihood computation, and inverse problem solving without re-training models. In this blog post, we will show you in more detail the intuition, basic concepts, and potential applications of score-based generative models.
     </p>
