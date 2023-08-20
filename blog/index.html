@@ -12,7 +12,13 @@
       line-height: 1.6;
       background-color: #f7f9fc;  /* Slight off-white for a cleaner look */
     }
-
+    .blog-title {
+    color: #666; /* or any other preferred color */
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.8em; /* Adjust to suit your design */
+}
     h2 a {
         transition: color 0.3s ease;
         border-bottom: 1px dotted #888;
@@ -258,9 +264,9 @@
 
   <!-- Blog Post 1 -->
 <div class="blog-entry-content blog-entry">
-  <h2>
-      <a href="./blog1_inner_alignment/index.html">AI Safety 1.0</a>
-  </h2>  
+  <h5 class="blog-title">
+    <a href="./blog1_inner_alignment/index.html">AI Safety 1.0</a>
+</h5> 
   <p style="text-align: justify;">This blog post focuses on a promising new direction for generative modeling. We can learn score functions (gradients of log probability density functions) on a large number of noise-perturbed data distributions, then generate samples with Langevin-type sampling...</p>
 </div>
 
