@@ -8,142 +8,138 @@
       font-family: 'Roboto', sans-serif;
       color: #333;
       line-height: 1.6;
-      background-color: #f7f9fc;
+      background-color: #f7f9fc;  /* Slight off-white for a cleaner look */
     }
-    
+  
     a {
-      transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; 
+      transition: color 0.3s ease, background-color 0.3s ease; /* Added background-color transition */
     }
-    
+  
     a:hover {
       color: #007BFF;
-      transform: scale(1.02); /* subtle zoom on hover */
     }
-    
+  
     /* Header */
     .navbar {
-      background: linear-gradient(45deg, #f9f9f9, #e7e9ec);
-      border-bottom: 2px solid #e0e0e0;
+      background-color: #FAFAFA; 
+      border-bottom: 1px solid #e0e0e0; 
     }
-    
+  
     .navbar-brand {
-        color: #007BFF;
+      color: #007BFF;
     }
-    
+  
     .navbar-brand:hover {
-        opacity: 0.8; 
+      opacity: 0.8; 
     }
-    
+  
     .navbar-toggler-icon {
-        filter: brightness(0.6);
+      filter: brightness(0.6);
     }
-    
+  
     .navbar-light .navbar-nav .nav-link {
-        color: #555;
-        transition: color 0.3s ease;
+      color: #555;
+      transition: color 0.3s ease;
     }
-    
+  
     .navbar-light .navbar-nav .nav-link:hover {
-        color: #007BFF; 
-        background-color: #e9f5ff;  
+      color: #007BFF; 
+      background-color: #e9f5ff;  /* Hover effect for nav items */
     }
-    
+  
     /* Main heading */
     .main-heading {
       color: #2C3E50;
-      font-size: 2.8em;
+      font-size: 2.5em;
       text-align: center;
-      margin-bottom: 25px;
-      letter-spacing: -0.02em; 
+      margin-bottom: 20px;
     }
-    
+  
     .divider {
       border-bottom: 3px solid #2C3E50;
-      width: 50%; 
+      width: 60%;
       margin: 20px auto;
     }
-    
+  
     /* Projects Grid */
     .projects-grid {
       display: flex;
       justify-content: space-between;
-      margin-top: 45px; 
-      gap: 25px;
-      flex-wrap: wrap;
+      margin-top: 40px;
+      gap: 20px; 
     }
-    
+  
     .project-card {
-      flex: 0 0 calc(33.33% - 10px);
+      flex: 1;
       margin: 0 5px;
-      transition: transform 0.3s ease;
+      transition: all 0.3s ease;
     }
-    
+  
     .project-card:hover {
       transform: scale(1.02);
     }
-    
+  
     .project-link {
-        text-decoration: none;
-        color: inherit;
-        display: block;
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
-    
+  
     .card {
-        overflow: hidden;
-        border-radius: 10px;
-        transition: all 0.3s ease;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: all 0.3s ease;
     }
-    
+  
     .card:hover {
-        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     }
-    
+  
     .card-image img {
-        width: 100%;
-        height: auto;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
     }
-    
+  
     .card:hover .card-image img {
-        transform: scale(1.05);
+      transform: scale(1.05);
     }
-    
+  
     .card-details {
-      padding: 20px; 
-      background: linear-gradient(to top left, #fafafa, #e9e9e9);
+      padding: 15px;
+      background: linear-gradient(to right, #fafafa, #e9e9e9);
     }
-    
+  
     .card-title {
       font-weight: 600;
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      color: #3dc0b0; 
-      letter-spacing: 0.04em; 
+      font-size: 1.4em;
+      margin-bottom: 8px;
+      color: #2C3E50; 
+      letter-spacing: 0.05em; 
     }
-    
+  
     .card-description {
-      color: #666;
-      font-weight: 300;
+      color: #777;
     }
-    
+  
     /* Additional refinements */
     progress {
-        background: #e0e0e0;
+      background: #e0e0e0;
     }
-    
+  
     progress[value]::-webkit-progress-bar {
-        background: #e0e0e0;
+      background: #e0e0e0;
     }
-    
+  
     progress[value]::-webkit-progress-value {
-        background: #007BFF;
+      background: #007BFF;
     }
-    
+  
     progress[value]::-moz-progress-bar {
-        background: #007BFF;
+      background: #007BFF;
     }
-  </style>  
+  </style>
   
   
 
