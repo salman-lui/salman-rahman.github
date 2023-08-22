@@ -1,147 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <style>
     /* Base */
     body {
       font-family: 'Roboto', sans-serif;
       color: #333;
       line-height: 1.6;
-      background-color: #f7f9fc;  /* Slight off-white for a cleaner look */
+      background-color: #f5f7fa;
     }
-  
+
     a {
-      transition: color 0.3s ease, background-color 0.3s ease; /* Added background-color transition */
+      transition: color 0.3s ease, background-color 0.3s ease;
     }
-  
+
     a:hover {
-      color: #007BFF;
+      color: #0056b3;
     }
-  
+
     /* Header */
     .navbar {
-      background-color: #FAFAFA; 
-      border-bottom: 1px solid #e0e0e0; 
+      background-color: #fff;
+      border-bottom: 2px solid #e0e0e0;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     }
-  
+
     .navbar-brand {
-      color: #007BFF;
+      color: #0056b3;
+      font-weight: 600;
     }
-  
+
     .navbar-brand:hover {
-      opacity: 0.8; 
+      opacity: 0.8;
     }
-  
+
     .navbar-toggler-icon {
       filter: brightness(0.6);
     }
-  
+
     .navbar-light .navbar-nav .nav-link {
-      color: #555;
-      transition: color 0.3s ease;
+      color: #666;
+      transition: color 0.3s ease, background-color 0.3s ease;
     }
-  
+
     .navbar-light .navbar-nav .nav-link:hover {
-      color: #007BFF; 
-      background-color: #e9f5ff;  /* Hover effect for nav items */
+      color: #0056b3;
+      background-color: #e9f5ff;
     }
-  
+
     /* Main heading */
     .main-heading {
       color: #2C3E50;
-      font-size: 2.5em;
+      font-size: 2.8em;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      padding-top: 80px;
     }
-  
+
     .divider {
       border-bottom: 3px solid #2C3E50;
-      width: 60%;
-      margin: 20px auto;
+      width: 50%;
+      margin: 30px auto;
+      opacity: 0.6;
     }
-  
+
     /* Projects Grid */
     .projects-grid {
       display: flex;
       justify-content: space-between;
-      margin-top: 40px;
-      gap: 20px; 
+      margin-top: 60px;
+      gap: 30px;
     }
-  
+
     .project-card {
       flex: 1;
-      margin: 0 5px;
-      transition: all 0.3s ease;
+      margin: 0 10px;
+      transition: all 0.5s ease;
+      opacity: 0.9;
     }
-  
+
     .project-card:hover {
-      transform: scale(1.02);
+      transform: translateY(-5px);
+      opacity: 1;
     }
-  
+
     .project-link {
       text-decoration: none;
       color: inherit;
       display: block;
     }
-  
+
     .card {
       overflow: hidden;
-      border-radius: 10px;
+      border-radius: 12px;
       transition: all 0.3s ease;
     }
-  
-    .card:hover {
-      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    }
-  
+
     .card-image img {
       width: 100%;
       height: auto;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
     }
-  
+
     .card:hover .card-image img {
       transform: scale(1.05);
     }
-  
+
     .card-details {
-      padding: 15px;
+      padding: 20px;
       background: linear-gradient(to right, #fafafa, #e9e9e9);
     }
-  
+
     .card-title {
-      font-weight: 600;
-      font-size: 1.4em;
-      margin-bottom: 8px;
-      color: #3dc0b0; 
-      letter-spacing: 0.05em; 
+      font-weight: 700;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #3dc0b0;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
-  
+
     .card-description {
-      color: #777;
+      color: #888;
+      font-style: italic;
     }
-  
+
     /* Additional refinements */
     progress {
       background: #e0e0e0;
     }
-  
+
     progress[value]::-webkit-progress-bar {
       background: #e0e0e0;
     }
-  
+
     progress[value]::-webkit-progress-value {
-      background: #007BFF;
+      background: #0056b3;
     }
-  
+
     progress[value]::-moz-progress-bar {
-      background: #007BFF;
+      background: #0056b3;
     }
   </style>
-  
-  
 
 
   <meta charset="utf-8">
