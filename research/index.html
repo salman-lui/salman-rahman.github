@@ -69,12 +69,18 @@
       gap: 20px; 
     }
   
-    .project-card {
+    /* .project-card {
       flex: 1;
       margin: 0 5px;
       transition: all 0.3s ease;
-    }
-  
+    } */
+    .project-card {
+    flex: 1;
+    max-width: calc(50% - 10px); /* Consider 10px for the gap between two cards */
+    box-sizing: border-box; /* To ensure padding and borders are included in the width */
+    transition: all 0.3s ease;
+}
+
     .project-card:hover {
       transform: scale(1.02);
     }
@@ -252,18 +258,6 @@
             </div>
         </a>
     </div>
-
-      <!-- Mechanistic Interpretability Project
-      <div class="project-card">
-          <a href="/research/interpretability/" class="project-link">
-              <div class="card project-content">
-                  <div class="card-details">
-                      <h5 class="card-title">Mechanistic Interpretability</h5>
-                      <p class="card-description"><i>Unveiling AI's inner processes.</i></p>
-                  </div>
-              </div>
-          </a>
-      </div> -->
 
   </div>
 </section>
