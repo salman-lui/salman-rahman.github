@@ -64,19 +64,20 @@
     /* Projects Grid */
     .projects-grid {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       margin-top: 40px;
       gap: 20px; 
     }
-  
+
     .project-card {
-      flex: 1;
-      margin: 0 5px;
-      transition: all 0.3s ease;
+      width: 300px;
+      margin: 0 10px;
+      transition: all 0.3s ease, box-shadow 0.5s ease;
     }
 
     .project-card:hover {
-      transform: scale(1.02);
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
   
     .project-link {
