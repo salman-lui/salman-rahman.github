@@ -21,6 +21,71 @@
       width: 60%;
       margin: 20px auto;
     }
+    .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.col-sm-1, .col-sm-11, .col-sm-2, .col-sm-8 {
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.preview figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform .4s ease-in-out;
+}
+
+.preview img:hover {
+    transform: scale(1.05);
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.author {
+    margin-bottom: 10px;
+}
+
+.periodical {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.links a {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color .3s ease-in-out;
+}
+
+.links a:hover {
+    background-color: #0056b3;
+}
+
+.badges {
+    margin-top: 10px;
+}
+
+.badges span {
+    display: inline-block;
+    margin-right: 10px;
+}
 </style>
 
 
@@ -129,18 +194,19 @@
 <!-- Year 2023 -->
 
 
+
 <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
   <div class="col-sm-1 mt-2 p-0 pr-1">
-    <h3 class="bibliography-year">2023</h3>
-  </div><div class="col-sm-11 p-0">
-    <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
-
-      <div class="col-sm-1 p-0 abbr">
-  
-    <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.mdpi.com/1996-1073/16/3/1494" target="_blank">
-      Energies
-      </a>
-    </div>
+      <h3 class="bibliography-year">2023</h3>
+  </div>
+  <div class="col-sm-11 p-0">
+      <ol class="bibliography">
+          <li>
+              <div class="bibliography-item">
+                  <!-- Image Preview -->
+                  <div class="preview-container">
+                      <img src="img/depth_scale.png" alt="Publication Image" class="preview">
+                  </div>
 
 
 <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
