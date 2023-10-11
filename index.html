@@ -37,7 +37,38 @@
     color: #007bff;
 }
         
-    </style>
+    /* Styling for the new card sections */
+    .card-section {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        background-color: #f5f8fa;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card-section-icon {
+        flex: 0 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 1.5rem;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .card-section-content {
+        flex: 1;
+        padding: 10px 20px;
+    }
+
+    .card-section-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+</style>
 </head>
 
 <body>
@@ -125,18 +156,38 @@
               I'm a Computer Science Ph.D. student at <a href="https://www.nyu.edu/" target="_blank" class="content-link">New York University</a>. My research revolves around the development and understanding of artificial intelligence, prioritizing its safety, reliability, and ethical implications. <a href="research" class="content-link">Dive deeper into my research here.</a>
           </p>
 
-          <!-- Modified sections with styles for appeal -->
-          <div style="background-color: #f5f8fa; padding: 15px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 15px;">
-              <strong>AI Alignment:</strong> Creating an AI agent that behaves in accordance with what a human wants.
+         <!-- New card sections -->
+         <div class="card-section">
+          <div class="card-section-icon">
+              <i class="material-icons">adjust</i>
           </div>
+          <div class="card-section-content">
+              <div class="card-section-title">AI Alignment:</div>
+              Creating an AI agent that behaves in accordance with what a human wants.
+          </div>
+      </div>
 
-          <div style="background-color: #f5f8fa; padding: 15px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 15px;">
-              <strong>AI Ethics:</strong> Delving into fairness, addressing toxicity, and mitigating bias in large language and vision models.
+      <div class="card-section">
+          <div class="card-section-icon">
+              <i class="material-icons">adjust</i>
           </div>
+          <div class="card-section-content">
+              <div class="card-section-title">AI Ethics:</div>
+              Delving into fairness, addressing toxicity, and mitigating bias in large language and vision models.
+          </div>
+      </div>
 
-          <div style="background-color: #f5f8fa; padding: 15px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 15px;">
-              <strong>AI Governance:</strong> Establishing rules for AI to align and uphold ethics.
+      <div class="card-section">
+          <div class="card-section-icon">
+              <i class="material-icons">adjust</i>
           </div>
+          <div class="card-section-content">
+              <div class="card-section-title">AI Governance:</div>
+              Establishing rules for AI to align and uphold ethics.
+          </div>
+      </div>
+
+  </div>
           
           <p>
             Earlier in my academic journey, I delved into computational sustainability during my undergrad and master's studies. 
