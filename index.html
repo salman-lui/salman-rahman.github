@@ -19,67 +19,56 @@
 
     <!-- Inline Styles -->
     <style>
-      body {
-          font-family: 'Roboto', sans-serif;
-          line-height: 1.6;
-      }
+        div {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        /* Navbar */
+        #navbar {
+    background-color: #f9f9f9;
+    }
+    .news .content-link, .content-link {
+    color: #2C3E50;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
 
-      #navbar {
-          background-color: #333;
-      }
+.news .content-link:hover, .content-link:hover {
+    color: #007bff;
+}
+        
+    /* Styling for the new card sections */
+    .card-section {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        background-color: #f5f8fa;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
 
-      #navbar .navbar-nav .nav-link {
-          color: #f9f9f9;
-          padding: 10px 20px;
-      }
+    .card-section-icon {
+        flex: 0 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 1.5rem;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px 0 0 5px;
+    }
 
-      #navbar .navbar-nav .nav-link:hover {
-          background-color: #555;
-      }
+    .card-section-content {
+        flex: 1;
+        padding: 10px 20px;
+    }
 
-      h1 {
-          font-size: 2.5em;
-          margin-bottom: 10px;
-      }
-
-      .content-link, .content-link:hover {
-          color: #007bff;
-          text-decoration: none;
-      }
-
-      .card-section {
-          padding: 15px;
-          margin-bottom: 20px;
-          transition: box-shadow 0.3s;
-      }
-
-      .card-section:hover {
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .card-section-icon i {
-          font-size: 24px;
-      }
-
-      .card-section-title {
-          margin-top: 0;
-      }
-
-      .news .title {
-          font-size: 1.5em;
-          border-bottom: 2px solid #ddd;
-          margin-bottom: 20px;
-          padding-bottom: 10px;
-      }
-
-      .badge {
-          margin-right: 5px;
-      }
-
-      .badge:hover {
-          text-decoration: none;
-      }
-  </style>
+    .card-section-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+</style>
 </head>
 
 <body>
@@ -160,6 +149,9 @@
   <!-- Introduction about me -->
   <div style="display: flex; flex-wrap: wrap;">
       <div class="text-justify p-0">
+          <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
+              <img class="profile-img img-responsive" src="/assets/img/salman.jpg" style="width: 300px; height: 400px;" alt="Salman's Portrait"/>
+          </div>
           <p>
               I'm a Computer Science Ph.D. student at <a href="https://www.nyu.edu/" target="_blank" class="content-link">New York University</a>. My research revolves around the development and understanding of artificial intelligence, prioritizing its safety, reliability, and ethical implications. <a href="research" class="content-link">Dive deeper into my research here.</a>
           </p>
