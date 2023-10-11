@@ -19,56 +19,60 @@
 
     <!-- Inline Styles -->
     <style>
-        div {
-            text-align: justify;
-            text-justify: inter-word;
-        }
-        /* Navbar */
-        #navbar {
-    background-color: #f9f9f9;
-    }
-    .news .content-link, .content-link {
-    color: #2C3E50;
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
-
-.news .content-link:hover, .content-link:hover {
-    color: #007bff;
-}
-        
-    /* Styling for the new card sections */
-    .card-section {
-        display: flex;
-        align-items: center;
-        border-radius: 5px;
-        margin-bottom: 15px;
-        background-color: #f5f8fa;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .card-section-icon {
-        flex: 0 0 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        font-size: 1.5rem;
-        background-color: #007bff;
-        color: #fff;
-        border-radius: 5px 0 0 5px;
-    }
-
-    .card-section-content {
-        flex: 1;
-        padding: 10px 20px;
-    }
-
-    .card-section-title {
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-</style>
+      /* Typography Improvements */
+      body {
+          font-family: 'Roboto', sans-serif;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Roboto Slab', serif;
+      }
+  
+      /* Whitespace & Layout */
+      .content {
+          padding: 20px;
+      }
+      
+      /* Hover Effects */
+      a:hover {
+          text-decoration: none;
+          opacity: 0.8;
+      }
+  
+      /* Navbar Enhancements */
+      #navbar {
+          background: linear-gradient(180deg, #f9f9f9, #f1f1f1);
+          border-bottom: 1px solid #e0e0e0;
+      }
+  
+      /* Consistent Link Colors */
+      .content-link, .content-link:hover {
+          color: #007bff;
+      }
+      
+      /* Buttons and Badges */
+      .badge {
+          border: 1px solid #ddd;
+          transition: all 0.3s ease;
+      }
+      
+      .badge:hover {
+          background-color: #007bff;
+          color: white;
+          border-color: #007bff;
+      }
+  
+      /* Cards Enhancements */
+      .card-section-icon {
+          background-color: #007bff;
+          transition: all 0.3s ease;
+      }
+      
+      .card-section:hover .card-section-icon {
+          background-color: #0056b3;
+      }
+  </style>
+  
 </head>
 
 <body>
