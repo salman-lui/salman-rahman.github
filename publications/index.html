@@ -21,6 +21,27 @@
       width: 60%;
       margin: 20px auto;
     }
+    .tablink {
+    background-color: #f9f9f9;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 17px;
+    width: 20%;
+    transition: 0.3s;
+}
+
+.tablink:hover {
+    background-color: #ddd;
+}
+
+.tabcontent {
+    display: none;
+    padding: 50px;
+    border-top: none;
+}
 </style>
 
 
@@ -114,6 +135,35 @@
   <p style="text-align: center;"><small>* Indicates co-first authors</small></p>
 
 
+
+
+  <div class="tabs">
+    <button class="tablink" onclick="openTab('selected', this)">Selected and Recent Papers</button>
+    <button class="tablink" onclick="openTab('all', this)">All</button>
+    <button class="tablink" onclick="openTab('aiethics', this)">AI Ethics and Fairness</button>
+    <button class="tablink" onclick="openTab('robustness', this)">Robustness</button>
+    <button class="tablink" onclick="openTab('compSustainability', this)">Computational Sustainability</button>
+</div>
+
+<div id="selected" class="tabcontent">
+    <!-- Content for Selected and Recent Papers tab -->
+</div>
+
+<div id="all" class="tabcontent">
+    <!-- Content for All tab -->
+</div>
+
+<div id="aiethics" class="tabcontent">
+    <!-- Content for AI Ethics and Fairness tab -->
+</div>
+
+<div id="robustness" class="tabcontent">
+    <!-- Content for Robustness tab -->
+</div>
+
+<div id="compSustainability" class="tabcontent">
+    <!-- Content for Computational Sustainability tab -->
+</div>
 
 
 <!-- Year 2023 -->
@@ -1192,6 +1242,26 @@
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
   <script src="/assets/js/common.js"></script>
+
+  function openTab(tabId, elmnt) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(tabId).style.display = "block";
+    elmnt.style.backgroundColor = '#ccc';
+}
+
+// Set the default tab to open
+document.addEventListener("DOMContentLoaded", function() {
+    openTab('selected', document.getElementsByClassName("tablink")[0]);
+});
+
 
   <!-- Scrolling Progress Bar -->
   <script type="text/javascript">
