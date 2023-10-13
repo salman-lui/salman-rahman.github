@@ -21,27 +21,6 @@
       width: 60%;
       margin: 20px auto;
     }
-    .tablink {
-    background-color: #f9f9f9;
-    color: black;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px 15px;
-    font-size: 17px;
-    width: 20%;
-    transition: 0.3s;
-}
-
-.tablink:hover {
-    background-color: #ddd;
-}
-
-.tabcontent {
-    display: none;
-    padding: 50px;
-    border-top: none;
-}
 </style>
 
 
@@ -136,173 +115,52 @@
 
 
 
+  <!-- Add Bootstrap CSS and JavaScript links -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <div class="tabs">
-    <button class="tablink" onclick="openTab('selected', this)">Selected and Recent Papers</button>
-    <button class="tablink" onclick="openTab('all', this)">All</button>
-    <button class="tablink" onclick="openTab('aiethics', this)">AI Ethics and Fairness</button>
-    <button class="tablink" onclick="openTab('robustness', this)">Robustness</button>
-    <button class="tablink" onclick="openTab('compSustainability', this)">Computational Sustainability</button>
-</div>
+<!-- Add the Tab Navigation -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#recent">Selected and Recent Papers</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#all">All</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#ethics">AI Ethics and Fairness</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#robustness">Robustness</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#sustainability">Computational Sustainability</a>
+  </li>
+</ul>
 
-<div id="selected" class="tabcontent">
-    <!-- Content for Selected and Recent Papers tab -->
-
-<div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-  
-  <div id="solar_ai" class="col p-0">
- <h5 class="title mb-0">Out of Distribution Performance of State of Art Vision Model</h5>
-    <div class="author">
-         
-              <nobr><em>Salman Rahman</em></nobr>
-          
-           and
-               <nobr><a href="https://scholar.google.ca/citations?user=xXZLYFwAAAAJ&hl=en&oi=sra" target="_blank">Wonkwon Lee</a>.</nobr>
-              
-            
-          
-        
-      
-    </div>
-
-    <div>
-      <p class="periodical font-italic">
-        
-        arXiv preprint.
-
-        
-      </p>
-    </div>
-  
-    <div class="col p-0">
-      
-            <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#ood-vision-abstract" role="button" aria-expanded="false" aria-controls="ood-vision-abstract">Abstract</a>
-      <a class="badge grey waves-effect font-weight-light mr-1" href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank">PDF</a>
-      
-      
-      
-    </div>
-  
-    
-    <div class="col mt-2 p-0">
-      <div id="ood-vision-abstract" class="collapse">
-        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-               <p align="justify"> The vision transformer (ViT) has advanced to the cutting edge in the visual recognition task. 
-                Transformers are more robust than CNN, according to the latest research. ViT's self-attention mechanism, according to the claim, makes it more robust than CNN. 
-                Even with this, we discover that these conclusions are based on unfair experimental conditions and just comparing a few models, which did not allow us to depict the entire scenario of robustness performance. 
-                In this study, we investigate the performance of 58 state-of-the-art computer vision models in a unified training setup based not only on attention and convolution mechanisms but also on neural networks based on a combination of convolution and attention mechanisms, sequence-based model, complementary search, and network-based method. 
-                Our research demonstrates that robustness depends on the training setup and model types, and performance varies based on out-of-distribution type. Our research will aid the community in better understanding and benchmarking the robustness of computer vision models.
-              </div>
-    </div>
-    
-
-
-
-</div>
-</div>
-</div>
-</li> </ol>
-</div>
-</div>
-
-
-
-</div>
-
-<div id="all" class="tabcontent">
-    <!-- Content for All tab -->
-</div>
-
-<div id="aiethics" class="tabcontent">
-    <!-- Content for AI Ethics and Fairness tab -->
-</div>
-
-<div id="robustness" class="tabcontent">
-    <!-- Content for Robustness tab -->
-</div>
-
-<div id="compSustainability" class="tabcontent">
-    <!-- Content for Computational Sustainability tab -->
-
-<div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-  
-  <div id="solar_ai" class="col p-0">
- <h5 class="title mb-0">Current scenario of solar energy applications in Bangladesh: techno-economic perspective, policy implementation, and possibility of the integration of artificial intelligence.</h5>
-    <div class="author">
-    
-      
-      <nobr><a href="https://www.researchgate.net/profile/Monirul_Islam16" target="_blank">Monirul Islam Miskat</a>,</nobr>
-
-      <nobr>Protap Sarker,</nobr>
-
-      <nobr><a href="https://www.researchgate.net/profile/Hemal-Chowdhury">Hemal Chowdhury</a>,</nobr>
-      
-      <nobr><a href="https://www.researchgate.net/profile/Tamal-Chowdhury-3" target="_blank">Tamal Chowdhury</a>,</nobr>
-         
-              <nobr><em>Salman Rahman</em>,</nobr>
-      <nobr><a href="https://scholar.google.com/citations?user=TonY0XIAAAAJ&hl=en" target="_blank">Nazia Hossain</a>,</nobr>
-      <nobr>Piyal Chowdhury,</nobr>
-          
-           and
-               <nobr><a href="https://www.researchgate.net/profile/Sadiq-Sait" target="_blank">Sadiq M. Sait</a>.</nobr>
-              
-            
-          
-        
-      
-    </div>
-
-    <div>
-      <p class="periodical font-italic">
-        
-        Energies, 2023.
-
-        
-      </p>
-    </div>
-  
-    <div class="col p-0">
-      
-            <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#solar_ai-abstract" role="button" aria-expanded="false" aria-controls="solar_ai-abstract">Abstract</a>
-        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#solar_ai-cite" role="button" aria-expanded="false" aria-controls="solar_ai-cite">Cite</a>
-      <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.mdpi.com/1996-1073/16/3/1494" target="_blank">Link</a>
-      
-      
-      
-    </div>
-  
-    
-    <div class="col mt-2 p-0">
-      <div id="solar_ai-abstract" class="collapse">
-        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-               <p align="justify"> Bangladesh is blessed with abundant solar resources. Solar power is considered the most desirable energy source to mitigate the high energy demand of this densely populated country. Although various articles deal with solar energy applications in Bangladesh, no detailed review can be found in the literature. Therefore, in this study, we report on the current scenario of renewable energy in Bangladesh and the most significant potential of solar energy’s contribution among multiple renewable energy resources in mitigating energy demand. One main objective of this analysis was to outline the overall view of solar energy applications in Bangladesh to date, as well as the ongoing development of such projects. The technical and theoretical solar energy potential and the technologies available to harvest solar energy were also investigated. A detailed techno-economic design of solar power applications for the garment industry was also simulated to determine the potential of solar energy for this specific scenario. Additionally, renewable energy policies applied in Bangladesh to date are discussed comprehensively, with an emphasis on various ongoing projects undertaken by the government. Moreover, we elaborate global insight into solar power applications and compare Bangladesh’s current solar power scenario with that of other regions worldwide. Furthermore, the potential of artificial intelligence to accelerate solar energy enhancement is delineated comprehensively. Therefore, in this study, we determined the national scenarios of solar power implementation in Bangladesh and projected the most promising approaches for large-scale solar energy applications using artificial intelligence approaches.
-              </div>
-    </div>
-    
-      <div class="col mt-2 p-0">
-      <div id="solar_ai-cite" class="collapse">
-        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-    @article{miskat2023current,<br>
-      title={Current scenario of solar energy applications in Bangladesh: techno-economic perspective, policy implementation, and possibility of the integration of artificial intelligence},<br>
-      author={Miskat, Monirul Islam and Sarker, Protap and Chowdhury, Hemal and Chowdhury, Tamal and Rahman, Md Salman and Hossain, Nazia and Chowdhury, Piyal and Sait, Sadiq M},<br>
-      journal={Energies},<br>
-      volume={16},<br>
-      number={3},<br>
-      pages={1494},<br>
-      year={2023},<br>
-      publisher={MDPI}
-    }
-        </div>
-      </div>
-    </div>
-    
-    
-    
+<!-- Add Tab Content -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="recent">
+    <!-- Add content for "Selected and Recent Papers" tab here -->
+  </div>
+  <div class="tab-pane container fade" id="all">
+    <!-- Add content for "All" tab here -->
+  </div>
+  <div class="tab-pane container fade" id="ethics">
+    <!-- Add content for "AI Ethics and Fairness" tab here -->
+  </div>
+  <div class="tab-pane container fade" id="robustness">
+    <!-- Add content for "Robustness" tab here -->
+  </div>
+  <div class="tab-pane container fade" id="sustainability">
+    <!-- Add content for "Computational Sustainability" tab here -->
   </div>
 </div>
-</div>
-</li> 
-</div>
+
+
+
 
 
 <!-- Year 2023 -->
@@ -1381,26 +1239,6 @@
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
   <script src="/assets/js/common.js"></script>
-
-  <!-- function openTab(tabId, elmnt) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(tabId).style.display = "block";
-    elmnt.style.backgroundColor = '#ccc';
-}
-
-// Set the default tab to open
-document.addEventListener("DOMContentLoaded", function() {
-    openTab('selected', document.getElementsByClassName("tablink")[0]);
-}); -->
-
 
   <!-- Scrolling Progress Bar -->
   <script type="text/javascript">
