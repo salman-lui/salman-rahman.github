@@ -159,19 +159,6 @@
 
 
 
-  <!-- Add Bootstrap CSS and JavaScript links -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-   <!-- Adding Bootstrap CSS and JS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-
-
 
 <!-- Tab navigation -->
 <div class="tabs">
@@ -557,6 +544,13 @@
         max = getMax();
         setWidth();
       });
+    }
+        // Your new code: Activate "Selected and Recent Papers" tab when "/publications/" is in the URL
+        if (window.location.href.indexOf("/publications/") !== -1) {
+        $('.nav-pills .nav-link').removeClass('active');
+        $('.nav-pills .nav-link[href="#recent"]').addClass('active');
+        $('.tab-content .tab-pane').removeClass('show active');
+        $('#recent').addClass('show active');
     }
   });
 </script>
