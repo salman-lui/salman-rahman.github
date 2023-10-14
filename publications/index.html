@@ -39,24 +39,30 @@
 }
 
 .paper {
-    padding: 15px 0;
+    padding: 25px 0; /* Increased padding */
     border-bottom: 1px solid #e0e0e0;
 }
 
-.paper:last-child {
-    border-bottom: none;
-}
 .content-link {
     color: #2C3E50;
-    text-decoration: underline;
+    font-size: 1.2em; /* Increase size of the paper title for emphasis */
+    text-decoration: none; /* Remove underline for cleaner look */
     transition: color 0.3s ease;
 }
+
+.content-link:hover {
+    text-decoration: underline; /* Add underline on hover for interaction feedback */
+}
+
 .authors {
     font-weight: 600;
+    font-size: 1.1em; /* Slightly larger font for authors */
 }
 
 .publication {
+    display: block; /* Move publication to next line */
     color: #888;
+    margin-top: 10px; /* Add some space between authors and publication */
 }
 </style>
 
@@ -191,18 +197,17 @@
 
 <div class="tab-content">
 
-  <div class="tab-pane fade show active" id="recent">
-
-        <h4>
-            <a href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank" class="content-link">Out of Distribution Performance of State of Art Vision Model</a>
-        </h4>
-        <p><span class="authors">Salman Rahman, Wonkwon Lee</span> - <span class="publication">arXiv preprint, 2023</span></p>
-
+  <div class="tab-pane fade show active papers-list" id="recent">
+        <div class="paper">
+            <h4>
+                <a href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank" class="content-link">Out of Distribution Performance of State of Art Vision Model</a>
+            </h4>
+            <p><span class="authors">Salman Rahman, Wonkwon Lee</span><span class="publication">arXiv preprint, 2023</span></p>
+        </div>
+        <!-- You can replicate the above structure for other papers in this section. -->
   </div>
 </div>
 
-
-</div>
 
 </section>
 
