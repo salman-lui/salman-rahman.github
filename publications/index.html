@@ -21,6 +21,16 @@
       width: 60%;
       margin: 20px auto;
     }
+    /* Add styles for tabs */
+    .tabs .nav-pills .nav-link {
+        border-radius: 0;
+        margin: 5px 10px;
+    }
+
+    .tabs .nav-pills .nav-link.active {
+        background-color: #2C3E50;
+        color: white;
+    }
 </style>
 
 
@@ -121,29 +131,98 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- Add the Tab Navigation -->
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#recent">Selected and Recent Papers</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#all">All</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#ethics">AI Ethics and Fairness</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#robustness">Robustness</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#sustainability">Computational Sustainability</a>
-  </li>
-</ul>
+   <!-- Adding Bootstrap CSS and JS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-<!-- Add Tab Content -->
+
+
+
+
+<!-- Tab navigation -->
+<div class="tabs">
+  <ul class="nav nav-pills justify-content-center">
+      <li class="nav-item">
+          <a class="nav-link active" data-toggle="pill" href="#recent">Selected and Recent Papers</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#all">All</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#robustness">Robustness</a>
+      </li>
+      <!-- Add more tabs if needed -->
+  </ul>
+</div>
+
+      
+
+<!-- Tab contents -->
+<div class="tab-content">
+
+  <div class="tab-pane fade show active" id="recent">
+      <!-- Recent papers content goes here -->
+
+      <!-- Your new paper details -->
+      <h3><a href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank">Out of Distribution Performance of State of Art Vision Model</a></h3>
+      <p><strong>Authors:</strong> Salman Rahman, Wonkwon Lee</p>
+      <p><strong>Publication:</strong> arXiv preprint, 2023</p>
+
+      <!-- Other papers can be added similarly... -->
+  </div>
+
+  <div class="tab-pane fade" id="all">
+      <!-- All papers content goes here -->
+  </div>
+
+  <div class="tab-pane fade" id="robustness">
+      <!-- Robustness papers content goes here -->
+
+      <!-- Your new paper details again for this tab -->
+      <h3><a href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank">Out of Distribution Performance of State of Art Vision Model</a></h3>
+      <p><strong>Authors:</strong> Salman Rahman, Wonkwon Lee</p>
+      <p><strong>Publication:</strong> arXiv preprint, 2023</p>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 <div class="tab-content">
   <div class="tab-pane container active" id="recent">
-    <!-- Add content for "Selected and Recent Papers" tab here -->
 
 
 <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
@@ -151,13 +230,6 @@
     <h3 class="bibliography-year">2023</h3>
   </div><div class="col-sm-11 p-0">
     <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
-
-      <!-- <div class="col-sm-1 p-0 abbr">
-  
-        <span class="badge font-weight-bold light-green darken-1 align-middle">
-          arXiv
-        </span>
-    </div> -->
 
 
 <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
@@ -207,34 +279,9 @@
 </li> </ol>
 </div>
 </div>
-  </div>
+  </div> -->
   
   
-  <div class="tab-pane container fade" id="ethics">
-    <!-- Add content for "AI Ethics and Fairness" tab here -->
-  </div>
-
-
-
-  <div class="tab-pane container fade" id="robustness">
-    <!-- Add content for "Robustness" tab here -->
-  </div>
-
-
-  <div class="tab-pane container fade" id="sustainability">
-    <!-- Add content for "Computational Sustainability" tab here -->
-  </div>
-
-
-
-  <div class="tab-pane container fade" id="all">
-    <!-- Add content for "All" tab here -->
-  </div>
-
-
-
-
-</div>
 
 
 
