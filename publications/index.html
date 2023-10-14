@@ -57,15 +57,14 @@
     text-decoration: underline; /* Add underline on hover for interaction feedback */
 }
 
-.authors {
-    font-weight: 600;
-    font-size: 1.1em; /* Slightly larger font for authors */
-}
-
 .publication {
     display: block; /* Move publication to next line */
     color: #888;
     margin-top: 10px; /* Add some space between authors and publication */
+}
+.paper-title, .authors, .publication {
+    font-size: 16px; /* Adjust this value as needed */
+    display: block;  /* Makes them appear on separate lines */
 }
 </style>
 
@@ -195,21 +194,23 @@
   </ul>
 </div>
 
+
       
-
-<!-- Tab contents -->
-
 <!-- Tab contents -->
 <div class="tab-content">
   <div class="tab-pane fade show active papers-list" id="recent">
         <div class="paper">
-            <h4>
-                <a href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank" class="content-link">Out of Distribution Performance of State of Art Vision Model</a>
-            </h4>
-            <p><span class="authors"><span class="author-self">Salman Rahman</span>, Wonkwon Lee</span><br><span class="publication">arXiv preprint, 2023</span></p>
+            <p>
+                <span class="paper-title">
+                    <a href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank" class="content-link">Out of Distribution Performance of State of Art Vision Model</a>
+                </span>
+            </p>
+            <p><span class="authors"><span class="author-self">Salman Rahman</span>, Wonkwon Lee</span></p>
+            <p><span class="publication">arXiv preprint, 2023</span></p>
         </div>
   </div>
 </div>
+
 
 
 
