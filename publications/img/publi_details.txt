@@ -1,0 +1,1069 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="tab-content">
+  <div class="tab-pane container active" id="recent">
+
+
+<div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+  <div class="col-sm-1 mt-2 p-0 pr-1">
+    <h3 class="bibliography-year">2023</h3>
+  </div><div class="col-sm-11 p-0">
+    <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
+
+
+<div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+  
+  <div id="solar_ai" class="col p-0">
+ <h5 class="title mb-0">Out of Distribution Performance of State of Art Vision Model</h5>
+    <div class="author">
+         
+              <nobr><em>Salman Rahman</em></nobr>
+          
+           and
+               <nobr><a href="https://scholar.google.ca/citations?user=xXZLYFwAAAAJ&hl=en&oi=sra" target="_blank">Wonkwon Lee</a>.</nobr>
+    </div>
+
+    <div>
+      <p class="periodical font-italic">
+        arXiv preprint.
+
+        
+      </p>
+    </div>
+  
+    <div class="col p-0">
+      
+            <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#ood-vision-abstract" role="button" aria-expanded="false" aria-controls="ood-vision-abstract">Abstract</a>
+      <a class="badge grey waves-effect font-weight-light mr-1" href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank">PDF</a>
+      
+      
+      
+    </div>
+  
+    
+    <div class="col mt-2 p-0">
+      <div id="ood-vision-abstract" class="collapse">
+        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify"> The vision transformer (ViT) has advanced to the cutting edge in the visual recognition task. 
+                Transformers are more robust than CNN, according to the latest research. ViT's self-attention mechanism, according to the claim, makes it more robust than CNN. 
+                Even with this, we discover that these conclusions are based on unfair experimental conditions and just comparing a few models, which did not allow us to depict the entire scenario of robustness performance. 
+                In this study, we investigate the performance of 58 state-of-the-art computer vision models in a unified training setup based not only on attention and convolution mechanisms but also on neural networks based on a combination of convolution and attention mechanisms, sequence-based model, complementary search, and network-based method. 
+                Our research demonstrates that robustness depends on the training setup and model types, and performance varies based on out-of-distribution type. Our research will aid the community in better understanding and benchmarking the robustness of computer vision models.
+              </div>
+    </div>
+
+</div>
+</div>
+</div>
+</li> </ol>
+</div>
+</div>
+  </div> -->
+  
+  
+
+
+
+
+<!-- Previous Research on Computational Sustainability -->
+<!-- Description about the research -->
+<div style="border-top: 1px solid #ddd;"></div>
+<div class="research-description" style="font-weight: bold; padding-top: 10px; padding-bottom: 10px;">
+  <a href="#" data-toggle="collapse" data-target="#computationalResearchSection" style="text-decoration: none; color: inherit;">
+      Computational Sustainability Research
+  </a>
+</div>
+
+<!-- Collapsible Content -->
+<div id="computationalResearchSection" class="collapse">
+  <!-- Year 2023 -->
+
+
+<div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+  <div class="col-sm-1 mt-2 p-0 pr-1">
+    <h3 class="bibliography-year">2023</h3>
+  </div><div class="col-sm-11 p-0">
+    <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
+
+      <!-- <div class="col-sm-1 p-0 abbr">
+  
+    <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.mdpi.com/1996-1073/16/3/1494" target="_blank">
+      Energies
+      </a>
+    </div> -->
+
+
+<div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+  
+  <div id="solar_ai" class="col p-0">
+ <h5 class="title mb-0">Current scenario of solar energy applications in Bangladesh: techno-economic perspective, policy implementation, and possibility of the integration of artificial intelligence.</h5>
+    <div class="author">
+    
+      
+      <nobr><a href="https://www.researchgate.net/profile/Monirul_Islam16" target="_blank">Monirul Islam Miskat</a>,</nobr>
+
+      <nobr>Protap Sarker,</nobr>
+
+      <nobr><a href="https://www.researchgate.net/profile/Hemal-Chowdhury">Hemal Chowdhury</a>,</nobr>
+      
+      <nobr><a href="https://www.researchgate.net/profile/Tamal-Chowdhury-3" target="_blank">Tamal Chowdhury</a>,</nobr>
+         
+              <nobr><em>Salman Rahman</em>,</nobr>
+      <nobr><a href="https://scholar.google.com/citations?user=TonY0XIAAAAJ&hl=en" target="_blank">Nazia Hossain</a>,</nobr>
+      <nobr>Piyal Chowdhury,</nobr>
+          
+           and
+               <nobr><a href="https://www.researchgate.net/profile/Sadiq-Sait" target="_blank">Sadiq M. Sait</a>.</nobr>
+              
+            
+          
+        
+      
+    </div>
+
+    <div>
+      <p class="periodical font-italic">
+        
+        Energies, 2023.
+
+        
+      </p>
+    </div>
+  
+    <div class="col p-0">
+      
+            <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#solar_ai-abstract" role="button" aria-expanded="false" aria-controls="solar_ai-abstract">Abstract</a>
+        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#solar_ai-cite" role="button" aria-expanded="false" aria-controls="solar_ai-cite">Cite</a>
+      <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.mdpi.com/1996-1073/16/3/1494" target="_blank">Link</a>
+      
+      
+      
+    </div>
+  
+    
+    <div class="col mt-2 p-0">
+      <div id="solar_ai-abstract" class="collapse">
+        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify"> Bangladesh is blessed with abundant solar resources. Solar power is considered the most desirable energy source to mitigate the high energy demand of this densely populated country. Although various articles deal with solar energy applications in Bangladesh, no detailed review can be found in the literature. Therefore, in this study, we report on the current scenario of renewable energy in Bangladesh and the most significant potential of solar energy’s contribution among multiple renewable energy resources in mitigating energy demand. One main objective of this analysis was to outline the overall view of solar energy applications in Bangladesh to date, as well as the ongoing development of such projects. The technical and theoretical solar energy potential and the technologies available to harvest solar energy were also investigated. A detailed techno-economic design of solar power applications for the garment industry was also simulated to determine the potential of solar energy for this specific scenario. Additionally, renewable energy policies applied in Bangladesh to date are discussed comprehensively, with an emphasis on various ongoing projects undertaken by the government. Moreover, we elaborate global insight into solar power applications and compare Bangladesh’s current solar power scenario with that of other regions worldwide. Furthermore, the potential of artificial intelligence to accelerate solar energy enhancement is delineated comprehensively. Therefore, in this study, we determined the national scenarios of solar power implementation in Bangladesh and projected the most promising approaches for large-scale solar energy applications using artificial intelligence approaches.
+              </div>
+    </div>
+    
+      <div class="col mt-2 p-0">
+      <div id="solar_ai-cite" class="collapse">
+        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+    @article{miskat2023current,<br>
+      title={Current scenario of solar energy applications in Bangladesh: techno-economic perspective, policy implementation, and possibility of the integration of artificial intelligence},<br>
+      author={Miskat, Monirul Islam and Sarker, Protap and Chowdhury, Hemal and Chowdhury, Tamal and Rahman, Md Salman and Hossain, Nazia and Chowdhury, Piyal and Sait, Sadiq M},<br>
+      journal={Energies},<br>
+      volume={16},<br>
+      number={3},<br>
+      pages={1494},<br>
+      year={2023},<br>
+      publisher={MDPI}
+    }
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  </div>
+</div>
+</div>
+</li> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
+<!-- <div class="col-sm-1 p-0 abbr">
+  
+  <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://link.springer.com/article/10.1007/s11356-022-24889-3" target="_blank">
+    ESPR
+      </a>
+    
+  
+</div> -->
+<div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+  
+  <div id="advance_thermo" class="col p-0">
+ <h5 class="title mb-0">Advanced thermodynamics analysis for sustainable residential sector: a case study of Turkish residential sector.</h5>
+    <div class="author">
+    
+      
+      <nobr><a href="https://www.researchgate.net/profile/Monirul_Islam16" target="_blank">Monirul Islam Miskat*</a>,</nobr>
+         
+      <nobr><em>Salman Rahman*</em>,</nobr>
+              <nobr><a href="https://scholar.google.com.au/citations?user=4I3NbmMAAAAJ&hl=en" target="_blank">Quddus Tushar</a>,</nobr>
+              <nobr>Shishir Barai,</nobr>
+      <nobr><a href="https://scholar.google.com/citations?user=TonY0XIAAAAJ&hl=en" target="_blank">Nazia Hossain</a>,</nobr>
+      <nobr>Md. Fazleh Rabbi,</nobr>
+      <nobr>Nadia Sultana Nisha,</nobr>
+          
+           and
+               <nobr><a href="https://www.researchgate.net/profile/Sadiq-Sait" target="_blank">Sadiq M. Sait</a>.</nobr>
+              
+            
+          
+        
+      
+    </div>
+
+    <div>
+      <p class="periodical font-italic">
+        
+        Environmental Science and Pollution Research, 2023.
+
+        
+      </p>
+    </div>
+  
+    <div class="col p-0">
+      
+            <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#advance_thermo-abstract" role="button" aria-expanded="false" aria-controls="advance_thermo-abstract">Abstract</a>
+        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#advance_thermo-cite" role="button" aria-expanded="false" aria-controls="advance_thermo-cite">Cite</a>
+      <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.sciencedirect.com/science/article/pii/S004896972107371X?via%3Dihub" target="_blank">Link</a>
+      
+      
+      
+    </div>
+  
+    
+    <div class="col mt-2 p-0">
+      <div id="advance_thermo-abstract" class="collapse">
+        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify"> Energy sustainability plays a crucial role in the development of any country. With the booming economy of Turkey, it is necessary to ensure energy sustainability in every sector. The residential sector plays a vital role in energy consumption in Turkey and improving sustainability in this sector can foster Turkey’s development. This study introduced first-time sustainability indicators of Turkey’s residential sector to determine the energy and exergy analyses through a thermodynamics-derived approach based on the data from 2000 to 2017. Monte Carlo simulations have been performed for energy source variation. Possible distribution uncertainties show that natural gas (0.78–0.76), biofuels, and waste (0.39–0.43) are dominant parameters for energy and exergy. Improvement of biofuels and waste, renewable-based energy sources can be a feasible solution for fossil fuel replacement. In Turkey’s residential sector, energy efficiency varies from 27.51 to 35.65%, while exergy efficiency ranges from 25.85 to 34.06%. The sustainability index for Turkey ranges from 1.34 to 1.51. In Turkey, around 65.93 to 74.14% of fossil fuel has been depleted in the last 18 years, which leads to lesser exergetic sustainability. Inefficient cooking, heating appliances, and lighting devices lead to higher exergy loss. Therefore, this study demonstrates the exergy analysis and prediction of the upcoming consequences of this analysis. In the future, Turkey can use higher efficient devices, especially in heating, lighting, and mechanical energy-related appliances, and electricity can be used to attain higher exergetic efficiency. Performed analysis and uncertainties of parameters will assist policymakers in selecting suitable alternative strategies in Turkey’s residential sector for sustainable decision-making.
+      </div>
+    </div>
+    
+      <div class="col mt-2 p-0">
+      <div id="advance_thermo-cite" class="collapse">
+        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+  @article{miskat2023advanced,<br>
+    title={Advanced thermodynamics analysis for sustainable residential sector: a case study of Turkish residential sector},<br>
+    author={Miskat, Monirul Islam and Rahman, Salman and Tushar, Quddus and Barai, Shishir and Hossain, Nazia and Rabbi, Fazleh and Nisha, Nadia Sultana and Sait, Sadiq},<br>
+    journal={Environmental Science and Pollution Research},<br>
+    volume={30},<br>
+    number={13},<br>
+    pages={36646--36662},<br>
+    year={2023},<br>
+    publisher={Springer}
+  }
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  </div>
+</div>
+</div>
+</li> </ol>
+</div>
+</div>
+
+
+<!-- Year 2022 -->
+
+
+<div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+  <div class="col-sm-1 mt-2 p-0 pr-1">
+    <h3 class="bibliography-year">2022</h3>
+  </div><div class="col-sm-11 p-0">
+    <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
+<!-- <div class="col-sm-1 p-0 abbr">
+  
+  
+  <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://link.springer.com/article/10.1007/s11356-022-20339-2" target="_blank">
+     ECPR
+      </a>
+    
+  
+</div> -->
+<div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+  
+  <div id="solar_pv_techno" class="col p-0">
+  <h5 class="title mb-0">A simulation study of techno-economics and resilience of the solar PV irrigation system against grid outages.</h5>
+    <div class="author">
+
+      <nobr><a href="https://www.researchgate.net/profile/Hemal-Chowdhury">Hemal Chowdhury</a>,</nobr>
+      
+      <nobr><a href="https://www.researchgate.net/profile/Tamal-Chowdhury-3" target="_blank">Tamal Chowdhury</a>,</nobr>
+      
+
+            
+              
+             
+      <nobr><em>Salman Rahman</em>,</nobr>
+       
+      <nobr><a href="https://www.researchgate.net/profile/Hasan-Masrur" target="_blank">Hasan Masrur</a>,</nobr>
+
+            and
+              <nobr><a href="https://scholar.google.com/citations?user=Suf3AT0AAAAJ&hl=en" target="_blank">Tomonobu Senjyu</a>.</nobr>
+            
+          
+        
+      
+    </div>
+
+    <div>
+      <p class="periodical font-italic">
+         Environmental Science and Pollution Research, 2022.
+
+        
+ 
+        
+      </p>
+    </div>
+  
+    <div class="col p-0">
+      
+        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#solar_pv_techno-abstract" role="button" aria-expanded="false" aria-controls="solar_pv_techno-abstract">Abstract</a>
+              <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#solar_pv_techno-cite" role="button" aria-expanded="false" aria-controls="solar_pv_techno-cite">Cite</a>
+      
+                <a class="badge grey waves-effect font-weight-light mr-1" href="https://link.springer.com/article/10.1007/s11356-022-20339-2" target="_blank">Link</a>
+                
+
+      
+ 
+      
+      
+    </div>
+  
+    
+    <div class="col mt-2 p-0">
+      <div id="solar_pv_techno-abstract" class="collapse">
+        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+             <p align="justify"> Water is the most fundamental need for better yield in agriculture. Worldwide, diesel and electricity are typically used to pump water which contributes to atmospheric pollution. Besides, a power outage affects the irrigation process badly. Without water, the crop may wither away, causing a substantial economic loss. This paper discusses the resilience of a solar PV system during a power outage. HOMER Pro software was used to perform the techno-economic analysis of solar-based irrigation for four major divisions of Bangladesh, while 1-hour power outage was assigned in REopt lite to model the survivability of the system against the grid outage. The simulation outcomes showed that the energy cost is $0.1496/kWh, $0.1502/kWh, $0.1557/kWh, and $0.1576/kWh for Rajshahi, Sylhet, Dhaka, and Chattogram, respectively. About 45% of excess electricity can be stored after fulfilling all requirements. The system is more economical than a microgrid-based water pumping system and a diesel-based system, and the photovoltaic system is technically and economically suitable to pump water if the nearest grid connection is impossible. When connected to the main utility grid, the system can survive without grid power for several hours, subject to daytime outages.
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+        <div class="col mt-2 p-0">
+      <div id="solar_pv_techno-cite" class="collapse">
+        <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+  @article{chowdhury2022simulation, <br>
+    title={A simulation study of techno-economics and resilience of the solar PV irrigation system against grid outages},<br>
+    author={Chowdhury, Hemal and Chowdhury, Tamal and Rahman, Md Salman and Masrur, Hasan and Senjyu, Tomonobu},<br>
+    journal={Environmental Science and Pollution Research},<br>
+    volume={29},<br>
+    number={43},<br>
+    pages={64846--64857},<br>
+    year={2022},<br>
+    publisher={Springer}
+  }
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  </div>
+</div>
+</div>
+</li></ol>
+</div>
+</div>
+
+
+<!-- Year 2021 -->
+
+    <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+    <div class="col-sm-1 mt-2 p-0 pr-1">
+      <h3 class="bibliography-year">2021</h3>
+    </div><div class="col-sm-11 p-0">
+      <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
+  <!-- <div class="col-sm-1 p-0 abbr">
+    
+      
+      <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.sciencedirect.com/journal/science-of-the-total-environment" target="_blank">
+      Sci. <br> Total Env
+        </a>
+      
+    
+  </div> -->
+  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+    
+    <div id="salman01" class="col p-0">
+   <h5 class="title mb-0">Estimation of the healthcare waste generation during COVID-19 pandemic in Bangladesh.</h5>
+      <div class="author">
+        
+          
+            
+ 
+                <nobr><a href="https://www.researchgate.net/profile/Tamal-Chowdhury-3" target="_blank">Tamal Chowdhury</a>,</nobr>
+        
+        <nobr><a href="https://www.researchgate.net/profile/Hemal-Chowdhury">Hemal Chowdhury</a>,</nobr>
+        
+        
+           
+                <nobr><em>Salman Rahman</em>,</nobr>
+        <nobr><a href="https://scholar.google.com/citations?user=TonY0XIAAAAJ&hl=en" target="_blank">Nazia Hossain</a>,</nobr>
+        <nobr><a href="https://www.researchgate.net/profile/Ashfaq-Ahmed-19" target="_blank">Ashfaq Ahmed</a>,</nobr>
+            
+             and
+                 <nobr><a href="https://www.researchgate.net/profile/Sadiq-Sait" target="_blank">Sadiq M. Sait</a>.</nobr>
+                
+              
+            
+          
+        
+      </div>
+
+      <div>
+        <p class="periodical font-italic">
+          
+          Science of The Total Environment, 2021.
+          
+        </p>
+      </div>
+    
+      <div class="col p-0">
+        
+              <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#waste-abstract" role="button" aria-expanded="false" aria-controls="waste-abstract">Abstract</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#wastecite-abstract" role="button" aria-expanded="false" aria-controls="wastecite-abstract">Cite</a>
+        <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.sciencedirect.com/science/article/pii/S004896972107371X?via%3Dihub" target="_blank">Link</a>
+        
+        
+        
+      </div>
+    
+      
+      <div class="col mt-2 p-0">
+        <div id="waste-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                 <p align="justify">   COVID-19 pandemic-borne wastes imposed a severe threat to human lives as well as the total environment. Improper handling of these wastes increases the possibility of future transmission. Therefore, immediate actions are required from both local and international authorities to mitigate the amount of waste generation and ensure proper disposal of these wastes, especially for low-income and developing countries where solid waste management is challenging. In this study, an attempt is made to estimate healthcare waste generated during the COVID-19 pandemic in Bangladesh. This study includes infected, ICU, deceased, isolated and quarantined patients as the primary sources of medical waste. Results showed that COVID-19 medical waste from these patients was 658.08 tons in March 2020 and increased to 16,164.74 tons in April 2021. A top portion of these wastes was generated from infected and quarantined patients. Based on survey data, approximate daily usage of face masks and hand gloves is also determined. Probable waste generation from COVID-19 confirmatory tests and vaccination has been simulated. Finally, several guidelines are provided to ensure the country's proper disposal and management of COVID-related wastes.
+          </div>
+        </div>
+      </div>
+      
+        <div class="col mt-2 p-0">
+        <div id="wastecite-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+ @article{chowdhury2021estimation, <br>
+  title={Estimation of the healthcare waste generation during COVID-19 pandemic in Bangladesh}, <br>
+  author={Chowdhury, Tamal and Chowdhury, Hemal and Rahman, Md Salman and Hossain, Nazia and Ahmed, Ashfaq and Sait, Sadiq M}, <br>
+  journal={Science of The Total Environment}, <br>
+  pages={152295}, <br>
+  year={2021}, <br>
+  publisher={Elsevier}
+}
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li> 
+      
+      
+      
+      <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
+  <!-- <div class="col-sm-1 p-0 abbr">
+    
+    
+    <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://onlinelibrary.wiley.com/journal/15310361" target="_blank">
+       I&D
+        </a>
+      
+    
+  </div> -->
+  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+    
+    <div id="more_crops" class="col p-0">
+    <h5 class="title mb-0">More crops whilst saving drops using an optimization model—a case from Bangladesh.</h5>
+      <div class="author">
+        
+          
+            <nobr><a href="https://scholar.google.com/citations?hl=en&user=o-Fr6O0AAAAJ&view_op=list_works" target="_blank">Md. Reaz Akter Mullick</a>,</nobr>
+              
+                
+               
+        <nobr><em>Salman Rahman</em>,</nobr>
+         
+   
+  
+              and
+                <nobr><a href="https://scholar.google.com/citations?hl=en&user=PAfuJtwAAAAJ&view_op=list_works" target="_blank">Md. Panjarul Haque</a>.</nobr>
+              
+            
+          
+        
+      </div>
+
+      <div>
+        <p class="periodical font-italic">
+          
+           In Irrigation and Drainage. 2021, 1-19; https://doi.org/10.1002/ird.2649.
+          
+   
+          
+        </p>
+      </div>
+    
+      <div class="col p-0">
+        
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#optimization-abstract" role="button" aria-expanded="false" aria-controls="cov-citation">Abstract</a>
+                <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#optimizationcite-abstract" role="button" aria-expanded="false" aria-controls="optimizationcite-abstract">Cite</a>
+        
+                  <a class="badge grey waves-effect font-weight-light mr-1" href="https://onlinelibrary.wiley.com/doi/full/10.1002/ird.2649" target="_blank">Link</a>
+                  
+
+        
+   
+        
+        
+      </div>
+    
+      
+      <div class="col mt-2 p-0">
+        <div id="optimization-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify"> This study aims to determine the optimal use of irrigation water and irrigable area in the Karnafuli Irrigation Project (KIP) of Bangladesh by developing an optimization model using linear programming. The project consists of two units, namely, Halda and Ichamati, and the units are fed with Karnafuli river water. Required data were collected from several government offices and from the CMIP5 model. Considering existing cropping practice, irrigation supply, and future climate, the optimization model was run for four different scenarios. Climate change‐induced effects appeared as non‐significant in the optimization. In the Halda Unit, the existing cropping intensity is 136%, whereas optimal cropping intensity can be increased up to 200%. In the Ichamati Unit, optimal cropping intensity for all scenarios is in between 175% and 200%, where the existing intensity is 150%. An increase in cropping intensity in both the units in optimal scenarios results in higher benefits. At the same time, the implementation of the optimal situation in the KIP can save 20% of the diverted water, indicating the possibility of greater yields and subsequent greater benefits even if the existing water supply is saved. The outcomes of the research have been communicated to the regional extension office for implementation.
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+          <div class="col mt-2 p-0">
+        <div id="optimizationcite-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+@article{mullick2021more, <br>
+  title={More crops whilst saving drops using an optimization model—A case from Bangladesh},<br>
+  author={Mullick, Md Reaz Akter and Rahman, Md Salman and Haque, Md Panjarul},<br>
+  journal={Irrigation and Drainage},<br>
+  publisher={Wiley Online Library}
+}
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li> 
+        
+    
+    <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
+      <!-- <div class="col-sm-1 p-0 abbr">
+
+    <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.sciencedirect.com/science/article/pii/S2352710221002023?dgcid=author" target="_blank">
+       JBE
+        </a>
+      
+    
+  </div> -->
+  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+    
+    <div id="stand_alone" class="col p-0">
+    <h5 class="title mb-0">Design of a stand-alone energy hybrid system for a makeshift health care center: A case study.</h5>
+      <div class="author">
+        
+          
+            <nobr><a href="https://www.researchgate.net/profile/Tamal_Chowdhury3" target="_blank">Tamal Chowdhury</a>,</nobr>
+              <nobr><a href="https://www.researchgate.net/profile/Hemal_Chowdhury2" target="_blank">Hemal Chowdhury</a>,</nobr>
+                
+                  <nobr>Samiul Hasan,</nobr>
+        <nobr><em>Salman Rahman</em>,</nobr>
+         <nobr><a href="https://scholar.google.com/citations?user=c0KGOgEAAAAJ&hl=en" target="_blank">M.M.K.Bhuiya</a>,</nobr>
+   
+  
+              and
+                 <nobr>Piyal Chowdhury.</nobr>
+              
+            
+          
+        
+      </div>
+
+      <div>
+        <p class="periodical font-italic">
+          
+           Journal of Building Engineering, 2021.
+          
+   
+          
+        </p>
+      </div>
+    
+      <div class="col p-0">
+        
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#cov-citation" role="button" aria-expanded="false" aria-controls="cov-citation">Abstract</a>
+        
+           <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#cov-abstract" role="button" aria-expanded="false" aria-controls="cov-abstract">Cite</a>
+        
+                   <a class="badge grey waves-effect font-weight-light mr-1" href="/assets/pdf/paper/covid_hybrid_energy_system.pdf" target="_blank">PDF</a>
+        
+        <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.sciencedirect.com/science/article/pii/S2352710221002023?dgcid=author" target="_blank">Link</a>
+   
+        
+        
+      </div>
+    
+      
+      <div class="col mt-2 p-0">
+        <div id="cov-citation" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify"> Worldwide, health care sectors are experiencing massive pressure due to the emergence of COVID-19. Many temporary health care centers have been set up to treat infected patients. Increasing energy consumption in these centers is responsible for both rising energy demand and emission. Implementation of renewable energy-based hybrid stone-alone systems can play a vital role in optimizing increasing energy demand. The aim of this analysis is to design a stand-alone system for a temporary health care center located in Saint Martin Island, Bangladesh. This is the first study which highlights the power management of a hospital load. Homer Pro software is used to design the preliminary model, and the proposed configuration comprises PV/Converter/WIND/Battery/Generator. It is observed that the Levelized cost of the proposed system is $0.4688. This system's Levelized cost of energy (LCOE) is 35% lower than the solar home system (SHS). The payback period (PB), rate of investment (ROI), and internal rate of return (IROR) of the optimized system are seven years, 10, and 13%, respectively. The proposed configuration is environmentally sustainable as it generates 27% less CO2 than a diesel-based fuel system.
+          </div>
+        </div>
+      </div>
+      
+        <div class="col mt-2 p-0">
+        <div id="cov-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify"> 
+                @article{adnan2020improving,<br>
+  title={Improving spatial agreement in machine learning-based landslide susceptibility mapping},<br>
+  author={Adnan, Mohammed Sarfaraz Gani and Rahman, Md Salman and Ahmed, Nahian and Ahmed, Bayes and Rabbi, Md and Rahman, Rashedur M and others}, <br>
+  journal={Remote Sensing},<br>
+  volume={12},<br>
+  number={20},<br>
+  pages={3347},<br>
+  year={2020},<br>
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+      
+       <li><div class="row m-0 mt-3 p-0">
+  <!-- <div class="col-sm-1 p-0 abbr">
+       <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.sciencedirect.com/science/article/pii/B9780128231395000046" target="_blank">
+       Book<br>Chapter 
+        </a>
+      
+    
+  </div> -->
+  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+    
+    <div id="biofuel-production" class="col p-0">
+    <h5 class="title mb-0">Biofuel production from food waste biomass and application of machine learning for process management.</h5>
+      <div class="author">
+        
+          <nobr><a href="https://www.researchgate.net/profile/Hemal_Chowdhury2" target="_blank">Hemal Chowdhury</a></nobr>
+            <nobr><a href="https://www.researchgate.net/profile/Tamal_Chowdhury3" target="_blank">Tamal Chowdhury</a>,</nobr>
+             
+                 
+                 <nobr><a href="https://scholar.google.com/citations?user=D5kImJYAAAAJ&hl=en" target="_blank">Pranta Barua</a>,</nobr>
+        
+    
+        <nobr><em>Salman Rahman</em>,</nobr>
+         
+   <nobr><a href="https://scholar.google.com/citations?user=TonY0XIAAAAJ&hl=en" target="_blank">Nazia Hossain</a>,</nobr>
+  
+              and
+              <nobr><a href="https://scholar.google.com/citations?user=SApMLIkAAAAJ&hl=en" target="_blank">Anish Khan</a>.</nobr>
+              
+            
+          
+        
+      </div>
+
+      <div>
+        <p class="periodical font-italic">
+          
+           In Advanced Technology for the Conversion of Waste into Fuels and Chemicals, Volume 1: Biological Processes. Chapter 3, Woodhead Publishing, 2021; https://doi.org/10.1016/B978-0-12-823139-5.00004-6.
+          
+   
+          
+        </p>
+      </div>
+    
+      <div class="col p-0">
+        
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#biofuel-abstract" role="button" aria-expanded="false" aria-controls="biofuel-abstract">Abstract</a>
+        
+            <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#bio-abstract" role="button" aria-expanded="false" aria-controls="bio-abstract">Cite</a>
+                <!--     <a class="badge grey waves-effect font-weight-light mr-1" href="/assets/pdf/paper/covid_hybrid_energy_system.pdf" target="_blank">PDF</a>   -->
+        
+        <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.sciencedirect.com/science/article/pii/B9780128231395000046" target="_blank">Link</a>
+   
+        
+        
+      </div>
+    
+      
+      <div class="col mt-2 p-0">
+        <div id="biofuel-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify">Food waste (FW) utilization has been harnessed in the recent decades for biofuel production worldwide due to sustainable environmental concern. To attain the upcoming circular economy goal, FW sources have been emphasized notably for biofuel production in several regions of the world. Currently, research has been focused on the advancement of FW conversion technologies. The application of machine learning has been manifested as an eminent innovation to encounter this phenomenon. In many regions worldwide, FWs generated from households, restaurants are dumped in landfills or incinerated to recover energy circular economy and sustainable environment. Therefore, this chapter demonstrated the global FW scenario, related concerns, and several biofuels generated from waste. Various conversion technologies for FW conversion to biofuel production such as biodiesel, bioethanol, methane, hydrogen have been extensively elaborated in this chapter. This chapter also provides a detailed overview of machine learning in the prediction of waste generation. Hence, the prospect of numerous machine learning mechanisms in FW prediction and bioenergy yield has been discussed in this chapter. The overview of this chapter concluded that FW pretreatment to the end products utilization through integrated and machine learning technology approach can play a positive role soon to mitigate the high demand of biofuel and minimize environmental pollution.
+          </div>
+        </div>
+      </div>
+
+       <div class="col mt-2 p-0">
+        <div id="bio-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify"> 
+                @incollection{chowdhury2021biofuel,<br>
+  title={Biofuel production from food waste biomass and application of machine learning for process management},<br>
+  author={Chowdhury, Hemal and Chowdhury, Tamal and Barua, Pranta and Rahman, Md Salman and Hossain, Nazia and Khan, Anish},<br>
+  booktitle={Advanced Technology for the Conversion of Waste into Fuels and Chemicals},<br>
+  pages={77--99},<br>
+  year={2021},<br>
+  publisher={Elsevier}
+}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+
+
+
+<li><div class="row m-0 mt-3 p-0">
+  <!-- <div class="col-sm-1 p-0 abbr">
+    <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.sciencedirect.com/science/article/pii/B9780128231395000046" target="_blank">
+    Book<br>Chapter 
+     </a>
+  </div> -->
+  
+  
+    <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+      
+      <div id="membrane_based" class="col p-0">
+      <h5 class="title mb-0">Membrane-based technologies for industrial wastewater treatment and resource recovery.</h5>
+        <div class="author">
+          
+            
+              <nobr><a href="https://www.researchgate.net/profile/Tamal_Chowdhury3" target="_blank">Tamal Chowdhury</a>,</nobr>
+                <nobr><a href="https://www.researchgate.net/profile/Hemal_Chowdhury2" target="_blank">Hemal Chowdhury</a>,</nobr>
+                   
+                   <nobr><a href="https://www.researchgate.net/profile/Monirul_Islam16" target="_blank">Monirul Islam Miskat</a>,</nobr>
+          
+      
+          <nobr><em>Salman Rahman</em>,</nobr>
+           
+     
+    
+                and
+                <nobr><a href="https://scholar.google.com/citations?user=TonY0XIAAAAJ&hl=en" target="_blank">Nazia Hossain</a>.</nobr>
+                
+              
+            
+          
+        </div>
+  
+        <div>
+          <p class="periodical font-italic">
+            
+             In Membrane-Based Hybrid Processes for Wastewater Treatment. Chapter 19, Elsevier, 2021; https://doi.org/10.1016/B978-0-12-823804-2.00005-7.
+            
+     
+            
+          </p>
+        </div>
+      
+        <div class="col p-0">
+          
+            <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#memb-abstract" role="button" aria-expanded="false" aria-controls="memb-abstract">Abstract</a>
+            <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#membr-cite" role="button" aria-expanded="false" aria-controls="membr-cite">Cite</a>
+            
+                  <!--     <a class="badge grey waves-effect font-weight-light mr-1" href="/assets/pdf/paper/covid_hybrid_energy_system.pdf" target="_blank">PDF</a>   -->
+          
+          <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.sciencedirect.com/science/article/pii/B9780128238042000057" target="_blank">Link</a>
+     
+          
+          
+        </div>
+      
+        
+        <div class="col mt-2 p-0">
+          <div id="memb-abstract" class="collapse">
+            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                 <p align="justify"> Water scarcity for industrial utilization has been appeared as a global issue in this modern era. Different types of wastewater containing heavy metals are continuously contaminating water. To resolve this contamination, various technologies have been adopted to reduce and among them membrane technologies have been considered more effective compared to conventional wastewater treatment technologies due to the isolation capability of nutrients and heavy metals at low concentration. This study demonstrated the comprehensive analysis on the numerous membrane technologies for wastewater pretreatment processes. Furthermore, recovering valuable resources such as nutrients through membrane technologies has been outlined in this chapter what could lead to economic and environmental feasibility. The overview of this chapter summarized that wastewater treatment and resource recovery via implementations of membrane technologies can play an excellent role in near future effectively for wastewater treatment, purification, and resource recovery in chemical, biochemical, food, and manufacturing industrial sector.
+            </div>
+          </div>
+        </div>
+        
+          <div class="col mt-2 p-0">
+          <div id="membr-cite" class="collapse">
+            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                 <p align="justify"> 
+                 @incollection{chowdhury2021membrane,<br>
+    title={Membrane-based technologies for industrial wastewater treatment and resource recovery},<br>
+    author={Chowdhury, Tamal and Chowdhury, Hemal and Miskat, Monirul Islam and Rahman, Md Salman and Hossain, Nazia},<br>
+    booktitle={Membrane-Based Hybrid Processes for Wastewater Treatment},<br>
+    pages={403--421},<br>
+    year={2021},<br>
+    publisher={Elsevier}
+  }
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  </li></ol>
+</div>
+</div>
+
+  
+
+        <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+          <div class="col-sm-1 mt-2 p-0 pr-1">
+            <h3 class="bibliography-year">2020</h3>
+          </div><div class="col-sm-11 p-0">
+            <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
+        <!-- <div class="col-sm-1 p-0 abbr">
+    
+      
+       <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="http://eeer.org/" target="_blank">
+       EER
+        </a>
+      
+    
+  </div> -->
+  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+    
+    <div id="hydro_power" class="col p-0">
+    <h5 class="title mb-0">An overview of the hydropower production potential in Bangladesh to meet the energy requirements.</h5>
+      <div class="author">
+        
+          
+            
+              
+                
+                 <nobr><a href="https://www.researchgate.net/profile/Monirul_Islam16" target="_blank">Monirul Islam Miskat</a>,</nobr>
+        
+       
+          
+          <nobr><a href="https://www.researchgate.net/profile/Ashfaq_Ahmed12" target="_blank">Ashfaq Ahmed</a>,</nobr>
+        
+        <nobr><em>Salman Rahman</em>,</nobr>
+        
+         <nobr><a href="https://www.researchgate.net/profile/Hemal_Chowdhury2" target="_blank">Hemal Chowdhury</a>,</nobr>
+            
+          
+                    
+        <nobr><a href="https://www.researchgate.net/profile/Tamal_Chowdhury3" target="_blank">Tamal Chowdhury</a>,</nobr>
+          
+            <nobr>Piyal Chowdhury,</nobr>
+        
+     
+        
+           <nobr><a href="https://www.researchgate.net/profile/Sadiq_Sait" target="_blank">Sadiq M. Sait</a>,</nobr>
+                   
+        
+  
+          
+         
+              and
+                 <nobr><a href="https://scholar.google.com/citations?user=5el-pW0AAAAJ&hl=en" target="_blank">Young-Kwon Park</a>.</nobr>
+              
+            
+          
+        
+      </div>
+
+      <div>
+        <p class="periodical font-italic">
+          
+          Environmental Engineering Research, 2020. 
+          
+   
+          
+        </p>
+      </div>
+    
+      <div class="col p-0">
+        
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#hydro-abstract" role="button" aria-expanded="false" aria-controls="hydro-abstract">Abstract</a>
+        
+             <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#hydropower-cite" role="button" aria-expanded="false" aria-controls="hydropower-cite">Cite</a>
+                   <a class="badge grey waves-effect font-weight-light mr-1" href="http://eeer.org/upload/eer-2020-514.pdf" target="_blank">PDF</a>
+        
+        <a class="badge grey waves-effect font-weight-light mr-1" href="http://eeer.org/journal/view.php?doi=10.4491/eer.2020.514" target="_blank">Link</a>
+   
+        
+        
+      </div>
+    
+      
+      <div class="col mt-2 p-0">
+        <div id="hydro-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify"> Current environmental catastrophes generating from fossil fuel power generation has attracted the attention of energy planners to look for sustainable energy sources. Hydropower is one of the oldest energy sources that have been utilized all over the world to generate electricity, especially in remote areas. Being one of the most densely populated countries, the majority of power demand is fulfilled from fossil fuel. Despite having lots of rivers, Bangladesh has not explored its true potential. So, this paper presents a comprehensive review of the current hydropower potential in Bangladesh. Locations having hydropower potential is evaluated. Different technologies used for hydropower generation have been reviewed. Moreover, global hydropower potential has also been discussed in this study. Based on the economic and environmental study, it is found that small scale hydropower is most feasible in Bangladesh to provide sustainable energy. With a reasonable flow rate, 232 rivers of Bangladesh can be utilized small scale hydropower generation as well as ensuring energy security for remote people. The current study is believed to provide useful information in advancing the generation of hydropower based electricity in Bangladesh.
+          </div>
+        </div>
+      </div>
+        <div class="col mt-2 p-0">
+        <div id="hydropower-cite" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify"> 
+              @article{islam2020overview, <br>
+  title={An overview of the hydropower production potential in Bangladesh to meet the energy requirements}, <br>
+  author={Islam Miskat, Monirul and Ahmed, Ashfaq and Rahman, Md and Chowdhury, Hemal and Chowdhury, Tamal and Chowdhury, Piyal and M Sait, Sadiq and Park, Young-Kwon and others},<br>
+  journal={Environmental Engineering Research},<br>
+  year={2020},<br>
+  publisher={The Korean Society of Environmental Engineers}
+}
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li><div class="row m-0 mt-3 p-0">
+  <!-- <div class="col-sm-1 p-0 abbr">
+    
+      
+       <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.mdpi.com/journal/remotesensing" target="_blank">
+      Remote<br>Sensing 
+        </a> 
+      
+    
+  </div> -->
+  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+    
+    <div id="Stretcu2017UnderstandingTN" class="col p-0">
+     <h5 class="title mb-0">Improving spatial agreement in machine learning-based landslide susceptibility mapping.</h5>
+      <div class="author">
+        
+          
+            
+                  <nobr><a href="https://www.sarfarazadnan.me/" target="_blank">Mohammed Sarfaraz Gani Adnan</a>,</nobr>
+        
+        <nobr><em>Salman Rahman</em>,</nobr>
+        
+         <nobr><a href="https://scholar.google.com/citations?user=cQ_tP48AAAAJ&hl=en" target="_blank">Nahian Ahmed</a>,</nobr>
+            
+           <nobr><a href="https://www.bayesahmed.com/" target="_blank">Bayes Ahmed</a>,</nobr>
+        <nobr>Md. Fazleh Rabbi,</nobr>
+              and
+                 <nobr><a href="http://ece.northsouth.edu/people/rashedur-rahman/" target="_blank">Rashedur M. Rahman</a>.</nobr>
+            
+          
+        
+      </div>
+
+      <div>
+        <p class="periodical font-italic">
+          
+         Remote Sensing, 2020.
+          
+        </p>
+      </div>
+    
+      <div class="col p-0">
+        
+                 <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#landslide-abstract" role="button" aria-expanded="false" aria-controls="landslide-abstract">Abstract</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#mllandslide-abstract" role="button" aria-expanded="false" aria-controls="mllandslide-abstract">Cite</a>
+        
+        <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/salmanrahmannishat/machine-learning-for-rohingya-refugee-landslide-prediction" target="_blank">Code</a>
+        
+          <a class="badge grey waves-effect font-weight-light mr-1" href="/assets/pdf/landslide-uncertainty/remotesensing-12-03347.pdf" target="_blank">PDF</a>
+        
+        <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.mdpi.com/2072-4292/12/20/3347" target="_blank">Link</a>
+        
+        
+      </div>
+    
+      
+      <div class="col mt-2 p-0">
+        <div id="landslide-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+             <p align="justify"> Despite yielding considerable degrees of accuracy in landslide predictions, the outcomes of different landslide susceptibility models are prone to spatial disagreement; and therefore, uncertainties. Uncertainties in the results of various landslide susceptibility models create challenges in selecting the most suitable method to manage this complex natural phenomenon. 
+              This study aimed to propose an approach to reduce uncertainties in landslide prediction, diagnosing spatial agreement in machine learning-based landslide susceptibility maps. It first developed landslide susceptibility maps of Cox’s Bazar district of Bangladesh, applying four machine learning algorithms: K-Nearest Neighbor (KNN), Multi-Layer Perceptron (MLP), Random Forest (RF), and Support Vector Machine (SVM), featuring hyperparameter optimization of 12 landslide conditioning factors. The results of all the four models yielded very high prediction accuracy, with the area under the curve (AUC) values range between 0.93 to 0.96. 
+              The assessment of spatial agreement of landslide predictions showed that the pixel-wise correlation coefficients of landslide probability between various models range from 0.69 to 0.85, indicating the uncertainty in predicted landslides by various models, despite their considerable prediction accuracy. The uncertainty was addressed by establishing a Logistic Regression (LR) model, incorporating the binary landslide inventory data as the dependent variable and the results of the four landslide susceptibility models as independent variables. The outcomes indicated that the RF model had the highest influence in predicting the observed landslide locations, followed by the MLP, SVM, and KNN models. Finally, a combined landslide susceptibility map was developed by integrating the results of the four machine learning-based landslide predictions. The combined map resulted in better spatial agreement (correlation coefficients range between 0.88 and 0.92) and greater prediction accuracy (0.97) compared to the individual models. 
+              The modelling approach followed in this study would be useful in minimizing uncertainties of various methods and improving landslide predictions.
+          </div>
+        </div>
+      </div>
+      
+          <div class="col mt-2 p-0">
+        <div id="mllandslide-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+               <p align="justify"> 
+          @article{adnan2020improving, <br>
+  title={Improving spatial agreement in machine learning-based landslide susceptibility mapping},<br>
+  author={Adnan, Mohammed Sarfaraz Gani and Rahman, Md Salman and Ahmed, Nahian and Ahmed, Bayes and Rabbi, Md and Rahman, Rashedur M and others},<br>
+  journal={Remote Sensing},<br>
+  volume={12},<br>
+  number={20},<br>
+  pages={3347},<br>
+  year={2020},<br>
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+</li></ol>
+    </div>
+  </div>
