@@ -47,17 +47,19 @@
 }
 
 .content-link {
-    color: #2C3E50;
+    color: #3498db; /* Light blue color to indicate it's a link */
     font-size: 1.2em;
-    text-decoration: none; /* Removing underline */
-    transition: color 0.3s ease, border 0.3s ease; /* Keep the transition for smooth effect */
-    padding-bottom: 2px; 
-    display: inline-block; 
+    text-decoration: none; /* Removing default underline */
+    transition: color 0.3s ease; /* Smooth transition for the color */
+    padding-bottom: 2px;
+    display: inline-block;
+    border-bottom: 1px dotted #3498db; /* Subtle dotted line to further indicate it's a link */
 }
 
 .content-link:hover {
-  color: #007bff;
+    color: #007bff; /* Darker blue color for hover */
 }
+
 
 .publication {
     display: block; /* Move publication to next line */
