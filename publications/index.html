@@ -48,9 +48,12 @@
 
 .content-link {
     color: #2C3E50;
-    font-size: 1.2em; /* Increase size of the paper title for emphasis */
-    text-decoration: none; /* Remove underline for cleaner look */
-    transition: color 0.3s ease;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s ease, border 0.3s ease; /* Add transition for border too */
+    border-bottom: 2px solid #2C3E50; /* Add a border at the bottom */
+    padding-bottom: 2px; /* Add a little padding to give space between the link text and the underline */
+    display: inline-block; /* Needed for padding to work correctly */
 }
 
 .content-link:hover {
