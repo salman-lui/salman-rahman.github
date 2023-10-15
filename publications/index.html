@@ -4,74 +4,76 @@
   
 <!-- Add the following CSS to your styles to support the new layout -->
 <style>
-   /* Main heading */
-   .main-heading {
-      color: #2C3E50;
-      font-size: 2em;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+  /* Updated styles */
 
-    /* Navbar */
-    /* #navbar {
-        background-color: #f9f9f9;
-    } */
-  
-    .divider {
-      border-bottom: 3px solid #2C3E50;
-      width: 60%;
-      margin: 20px auto;
-    }
-    /* Add styles for tabs */
-    .tabs .nav-pills .nav-link {
-        border-radius: 0;
-        margin: 5px 10px;
-    }
+  body {
+      font-family: 'Roboto', sans-serif;
+  }
 
-    .tabs .nav-pills .nav-link.active {
-        background-color: #2C3E50;
-        color: white;
-    }
-    .papers-list {
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
+  /* Enhancing the main heading with shadow for depth */
+  .main-heading {
+     color: #2C3E50;
+     font-size: 2.4em;
+     text-align: center;
+     margin-bottom: 25px;
+     text-shadow: 1px 1px 2px #aaa;
+  }
 
-.paper {
-    padding: 5px 0; 
-    border-bottom: 1px solid #e0e0e0;
-}
-.tab-content {
-    font-family: 'Roboto', sans-serif; /* 'Roboto' is just an example, you can choose any font you like */
-}
+  .divider {
+     border-bottom: 3px solid #2C3E50;
+     width: 60%;
+     margin: 25px auto;
+  }
 
-.content-link {
-    color: #3498db; /* Light blue color to indicate it's a link */
-    font-size: 1.0em;
-    text-decoration: none; /* Removing default underline */
-    transition: color 0.3s ease; /* Smooth transition for the color */
-    padding-bottom: 2px;
-    display: inline-block;
-}
+  .tabs .nav-pills .nav-link {
+       border-radius: 0;
+       margin: 5px 10px;
+       transition: background-color 0.3s ease; /* Added transition */
+  }
 
-.publication {
-    display: block; /* Move publication to next line */
-    color: #888;
-    margin-top: 10px; /* Add some space between authors and publication */
-}
-.paper-title, .authors, .publication {
-    font-size: 16px; /* Adjust this value as needed */
-    display: block;  /* Makes them appear on separate lines */
-}
-.author-self {
-    background-color: #f7f2e0; /* A softer shade close to an off-white or very pale yellow */
-    padding: 2px 5px;  /* Small padding around the name for better visibility */
-    border-radius: 3px; /* Optional: rounded corners */
-    font-weight: bold;  /* Optional: bold font */
-}
+  .tabs .nav-pills .nav-link:hover {
+       background-color: #465A65; /* Slightly darker shade for hover */
+       color: white;
+  }
+
+  .tabs .nav-pills .nav-link.active {
+       background-color: #2C3E50;
+       color: white;
+  }
+
+  .papers-list {
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  }
+
+  .paper {
+      padding: 15px 0; 
+      border-bottom: 1px solid #e0e0e0;
+  }
+
+  .content-link:hover {
+      color: #2C3E50; /* Darker shade for hover */
+  }
+
+  .author-self {
+      background-color: #f9f9f9; /* Updated color for consistency */
+      border: 1px solid #e0e0e0; /* Added border */
+  }
+
+  nav#navbar {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  }
+
+  progress[value] {
+     appearance: none;
+     width: 100%;
+     height: 3px;
+     color: #2C3E50;
+  }
 </style>
+
 
 
 <meta charset="utf-8">
