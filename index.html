@@ -68,6 +68,33 @@
         font-weight: bold;
         margin-bottom: 5px;
     }
+    .papers-list {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.paper {
+    padding: 5px 0; 
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.publication {
+    display: block; /* Move publication to next line */
+    color: #888;
+    margin-top: 10px; /* Add some space between authors and publication */
+}
+.paper-title, .authors, .publication {
+    font-size: 16px; /* Adjust this value as needed */
+    display: block;  /* Makes them appear on separate lines */
+}
+.author-self {
+    background-color: #f7f2e0; /* A softer shade close to an off-white or very pale yellow */
+    padding: 2px 5px;  /* Small padding around the name for better visibility */
+    border-radius: 3px; /* Optional: rounded corners */
+    font-weight: bold;  /* Optional: bold font */
+}
 </style>
 </head>
 
@@ -202,132 +229,28 @@
         <div class="news mt-3 p-0">
           <h4 class="title mb-4 p-0"><b>Selected Publications</b></h4>
           <!-- <h1 class="main-heading">Selected Publications</h1> -->
-  
-
-  <!-- Publication 1 -->
-  <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
-    <div class="col-sm-11 p-0">
-      <ol class="bibliography">
-        <li>
-          <div class="row m-0 mt-3 p-0">
-  
-  
-  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-    
-    <div id="solar_ai" class="col p-0">
-   <h5 class="title mb-0">Out of Distribution Performance of State of Art Vision Model</h5>
-      <div class="author">
-           
-                <nobr><em>Salman Rahman</em></nobr>
-            
-             and
-                 <nobr><a href="https://scholar.google.ca/citations?user=xXZLYFwAAAAJ&hl=en&oi=sra" target="_blank">Wonkwon Lee</a>.</nobr>
-                
-              
-            
-          
-        
-      </div>
-  
-      <div>
-        <p class="periodical font-italic">
-          
-          arXiv preprint.
-  
-          
+  <!-- Selected and Recent Papers content -->
+  <div class="tab-pane fade show active papers-list" id="recent">
+    <div class="paper">
+        <p>
+            <span class="paper-title">
+                <a href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank" class="content-link">Out of Distribution Performance of State of Art Vision Model</a>
+            </span>
         </p>
-      </div>
-    
-      <div class="col p-0">
-        
-              <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#ood-vision-abstract" role="button" aria-expanded="false" aria-controls="ood-vision-abstract">Abstract</a>
-        <a class="badge grey waves-effect font-weight-light mr-1" href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank">PDF</a>
-        
-        
-        
-      </div>
-    
-      
-      <div class="col mt-2 p-0">
-        <div id="ood-vision-abstract" class="collapse">
-          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                 <p align="justify"> The vision transformer (ViT) has advanced to the cutting edge in the visual recognition task. 
-                  Transformers are more robust than CNN, according to the latest research. ViT's self-attention mechanism, according to the claim, makes it more robust than CNN. 
-                  Even with this, we discover that these conclusions are based on unfair experimental conditions and just comparing a few models, which did not allow us to depict the entire scenario of robustness performance. 
-                  In this study, we investigate the performance of 58 state-of-the-art computer vision models in a unified training setup based not only on attention and convolution mechanisms but also on neural networks based on a combination of convolution and attention mechanisms, sequence-based model, complementary search, and network-based method. 
-                  Our research demonstrates that robustness depends on the training setup and model types, and performance varies based on out-of-distribution type. Our research will aid the community in better understanding and benchmarking the robustness of computer vision models.
-                </div>
-      </div>
-      
-  
-  
-  
-  </div>
-  </div>
-  </div>
-  </li> </ol>
-  </div>
-  </div>
+        <p><span class="authors"><span class="author-self">Salman Rahman</span>, Wonkwon Lee</span></p>
+        <p><span class="publication">arXiv preprint, 2023</span></p>
+    </div>
 
-
-<!-- Publication 2 -->
-<div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
-  <div class="col-sm-11 p-0">
-      <ol class="bibliography">
-          <li>
-              <div class="row m-0 mt-3 p-0">
-                  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-                      <div id="Stretcu2017UnderstandingTN" class="col p-0">
-                          <h5 class="title mb-0">Improving spatial agreement in machine learning-based landslide susceptibility mapping.</h5>
-                          <div class="author">
-                              <nobr><a href="https://www.sarfarazadnan.me/" target="_blank">Mohammed Sarfaraz Gani Adnan</a>,</nobr>
-                              <nobr><em>Salman Rahman</em>,</nobr>
-                              <nobr><a href="https://scholar.google.com/citations?user=cQ_tP48AAAAJ&hl=en" target="_blank">Nahian Ahmed</a>,</nobr>
-                              <nobr><a href="https://www.bayesahmed.com/" target="_blank">Bayes Ahmed</a>,</nobr>
-                              <nobr>Md. Fazleh Rabbi,</nobr>
-                              and
-                              <nobr><a href="http://ece.northsouth.edu/people/rashedur-rahman/" target="_blank">Rashedur M. Rahman</a>.</nobr>
-                          </div>
-                          <div>
-                              <p class="periodical font-italic">Remote Sensing, 2020.</p>
-                          </div>
-                          <div class="col p-0">
-                              <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#landslide-abstract" role="button" aria-expanded="false" aria-controls="landslide-abstract">Abstract</a>
-                              <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#mllandslide-abstract" role="button" aria-expanded="false" aria-controls="mllandslide-abstract">Cite</a>
-                              <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/salmanrahmannishat/machine-learning-for-rohingya-refugee-landslide-prediction" target="_blank">Code</a>
-                              <a class="badge grey waves-effect font-weight-light mr-1" href="/assets/pdf/landslide-uncertainty/remotesensing-12-03347.pdf" target="_blank">PDF</a>
-                              <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.mdpi.com/2072-4292/12/20/3347" target="_blank">Link</a>
-                          </div>
-                          <div class="col mt-2 p-0">
-                              <div id="landslide-abstract" class="collapse">
-                                  <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                                      <p align="justify"> Despite yielding considerable degrees of accuracy in landslide predictions, the outcomes of different landslide susceptibility models are prone to spatial disagreement; and therefore, uncertainties. Uncertainties in the results of various landslide susceptibility models create challenges in selecting the most suitable method to manage this complex natural phenomenon. 
-                                        This study aimed to propose an approach to reduce uncertainties in landslide prediction, diagnosing spatial agreement in machine learning-based landslide susceptibility maps. It first developed landslide susceptibility maps of Cox’s Bazar district of Bangladesh, applying four machine learning algorithms: K-Nearest Neighbor (KNN), Multi-Layer Perceptron (MLP), Random Forest (RF), and Support Vector Machine (SVM), featuring hyperparameter optimization of 12 landslide conditioning factors. The results of all the four models yielded very high prediction accuracy, with the area under the curve (AUC) values range between 0.93 to 0.96. 
-                                        The assessment of spatial agreement of landslide predictions showed that the pixel-wise correlation coefficients of landslide probability between various models range from 0.69 to 0.85, indicating the uncertainty in predicted landslides by various models, despite their considerable prediction accuracy. The uncertainty was addressed by establishing a Logistic Regression (LR) model, incorporating the binary landslide inventory data as the dependent variable and the results of the four landslide susceptibility models as independent variables. The outcomes indicated that the RF model had the highest influence in predicting the observed landslide locations, followed by the MLP, SVM, and KNN models. Finally, a combined landslide susceptibility map was developed by integrating the results of the four machine learning-based landslide predictions. The combined map resulted in better spatial agreement (correlation coefficients range between 0.88 and 0.92) and greater prediction accuracy (0.97) compared to the individual models. 
-                                        The modelling approach followed in this study would be useful in minimizing uncertainties of various methods and improving landslide predictions.</p>
-                                  </div>
-                              </div>
-                              <div id="mllandslide-abstract" class="collapse">
-                                  <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                                      <p align="justify">@article{adnan2020improving, <br>
-                                        title={Improving spatial agreement in machine learning-based landslide susceptibility mapping},<br>
-                                        author={Adnan, Mohammed Sarfaraz Gani and Rahman, Md Salman and Ahmed, Nahian and Ahmed, Bayes and Rabbi, Md and Rahman, Rashedur M and others},<br>
-                                        journal={Remote Sensing},<br>
-                                        volume={12},<br>
-                                        number={20},<br>
-                                        pages={3347},<br>
-                                        year={2020},<br>
-                                        publisher={Multidisciplinary Digital Publishing Institute}
-                                      }</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </li>
-      </ol>
-  </div>
+<!-- Paper 10 -->
+<div class="paper">
+<p>
+  <span class="paper-title">
+      <a href="https://www.mdpi.com/2072-4292/12/20/3347" target="_blank" class="content-link">Improving Spatial Agreement in Machine Learning-based Landslide Susceptibility Mapping</a>
+  </span>
+</p>
+<p><span class="authors">Mohammed Sarfaraz Gani Adnan, <span class="author-self">Salman Rahman</span>, Nahian Ahmed, Bayes Ahmed, Md. Fazleh Rabbi, Rashedur M. Rahman</span></p>
+<p><span class="publication">Remote Sensing, 2020</span></p>
+</div>
 </div>
 
 
