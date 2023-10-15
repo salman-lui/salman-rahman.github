@@ -10,7 +10,6 @@
       font-family: 'Roboto', sans-serif;
   }
 
-  /* Enhancing the main heading with shadow for depth */
   .main-heading {
      color: #2C3E50;
      font-size: 2em;
@@ -25,19 +24,30 @@
      margin: 25px auto;
   }
 
+  .tabs {
+     padding: 10px 20px;
+     background: #f9f9f9;
+     border-radius: 12px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     margin: 20px 0;
+  }
+
   .tabs .nav-pills .nav-link {
-       border-radius: 0;
+       border-radius: 8px;
        margin: 5px 10px;
-       transition: background-color 0.3s ease; /* Added transition */
+       font-weight: 500; /* Make text bolder */
+       transition: background-color 0.3s ease;
+       padding: 8px 16px; /* Increased padding */
   }
 
   .tabs .nav-pills .nav-link:hover {
-       background-color: #465A65; /* Slightly darker shade for hover */
+       background-color: #465A65;
        color: white;
+       transform: translateY(-2px); /* subtle lift on hover */
   }
 
   .tabs .nav-pills .nav-link.active {
-       background-color: #2C3E50;
+       background: linear-gradient(135deg, #2C3E50 0%, #465A65 100%);
        color: white;
   }
 
@@ -45,7 +55,7 @@
       padding: 15px;
       background-color: #f9f9f9;
       border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .paper {
@@ -54,16 +64,16 @@
   }
 
   .content-link:hover {
-      color: #2C3E50; /* Darker shade for hover */
+      color: #2C3E50;
   }
 
   .author-self {
-      background-color: #f9f9f9; /* Updated color for consistency */
-      border: 1px solid #e0e0e0; /* Added border */
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
   }
 
   nav#navbar {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   progress[value] {
@@ -190,7 +200,6 @@
   </li>
   </ul>
 </div>
-
 
       
 <!-- Tab contents: -->
