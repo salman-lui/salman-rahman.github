@@ -3,59 +3,27 @@
 <head>
   
 <!-- Add the following CSS to your styles to support the new layout -->
- <!-- Inline Styles -->
- <style>
-  div {
-      text-align: justify;
-      text-justify: inter-word;
-  }
-  /* Navbar */
-  #navbar {
-background-color: #f9f9f9;
-}
-.news .content-link, .content-link {
-color: #2C3E50;
-text-decoration: underline;
-transition: color 0.3s ease;
-}
+<style>
+   /* Main heading */
+   .main-heading {
+      color: #2C3E50;
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-.news .content-link:hover, .content-link:hover {
-color: #007bff;
-}
+    /* Navbar */
+    /* #navbar {
+        background-color: #f9f9f9;
+    } */
   
-/* Styling for the new card sections */
-.card-section {
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  background-color: #f5f8fa;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.card-section-icon {
-  flex: 0 0 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  font-size: 1.5rem;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px 0 0 5px;
-}
-
-.card-section-content {
-  flex: 1;
-  padding: 10px 20px;
-}
-
-.card-section-title {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-  /* Add styles for tabs */
-  .tabs .nav-pills .nav-link {
+    .divider {
+      border-bottom: 3px solid #2C3E50;
+      width: 60%;
+      margin: 20px auto;
+    }
+    /* Add styles for tabs */
+    .tabs .nav-pills .nav-link {
         border-radius: 0;
         margin: 5px 10px;
     }
@@ -64,32 +32,44 @@ color: #007bff;
         background-color: #2C3E50;
         color: white;
     }
-.papers-list {
-font-family: Arial, sans-serif;
-padding: 10px;
-background-color: #f9f9f9;
-border-radius: 5px;
+    .papers-list {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
 }
 
 .paper {
-padding: 5px 0; 
-border-bottom: 1px solid #e0e0e0;
+    padding: 5px 0; 
+    border-bottom: 1px solid #e0e0e0;
+}
+.tab-content {
+    font-family: 'Roboto', sans-serif; /* 'Roboto' is just an example, you can choose any font you like */
+}
+
+.content-link {
+    color: #3498db; /* Light blue color to indicate it's a link */
+    font-size: 1.0em;
+    text-decoration: none; /* Removing default underline */
+    transition: color 0.3s ease; /* Smooth transition for the color */
+    padding-bottom: 2px;
+    display: inline-block;
 }
 
 .publication {
-display: block; /* Move publication to next line */
-color: #888;
-margin-top: 10px; /* Add some space between authors and publication */
+    display: block; /* Move publication to next line */
+    color: #888;
+    margin-top: 10px; /* Add some space between authors and publication */
 }
 .paper-title, .authors, .publication {
-font-size: 16px; /* Adjust this value as needed */
-display: block;  /* Makes them appear on separate lines */
+    font-size: 16px; /* Adjust this value as needed */
+    display: block;  /* Makes them appear on separate lines */
 }
 .author-self {
-background-color: #f7f2e0; /* A softer shade close to an off-white or very pale yellow */
-padding: 2px 5px;  /* Small padding around the name for better visibility */
-border-radius: 3px; /* Optional: rounded corners */
-font-weight: bold;  /* Optional: bold font */
+    background-color: #f7f2e0; /* A softer shade close to an off-white or very pale yellow */
+    padding: 2px 5px;  /* Small padding around the name for better visibility */
+    border-radius: 3px; /* Optional: rounded corners */
+    font-weight: bold;  /* Optional: bold font */
 }
 </style>
 
