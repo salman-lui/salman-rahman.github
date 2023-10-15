@@ -72,43 +72,6 @@
      height: 3px;
      color: #2C3E50;
   }
-  /* Hover effects */
-.tabs .nav-pills .nav-link {
-    transform: translateY(0); /* Reset Position */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transform transition */
-}
-
-.tabs .nav-pills .nav-link:hover {
-    transform: translateY(-3px); /* Small lift on hover */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-}
-
-/* Improved Responsiveness */
-@media (max-width: 767px) {
-    .tabs .nav-pills {
-        flex-direction: column; /* Stack tabs on smaller devices */
-        align-items: flex-start;
-    }
-    
-    .nav-pills .nav-link {
-        margin-bottom: 10px;
-        width: 100%;
-    }
-}
-
-/* Publication Preview - Assuming you have a description under each publication */
-.paper-description {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease;
-    opacity: 0;
-}
-
-.paper:hover .paper-description {
-    max-height: 100px; /* Adjust this based on how long your description is */
-    opacity: 1;
-}
-
 </style>
 
 
