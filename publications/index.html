@@ -7,10 +7,23 @@
 <style>
   /* Updated styles */
 
-  body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f4; /* Soft background */
-  }
+  div {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        /* Navbar */
+        #navbar {
+    background-color: #f9f9f9;
+    }
+    .news .content-link, .content-link {
+    color: #2C3E50;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.news .content-link:hover, .content-link:hover {
+    color: #007bff;
+}
 
   .main-heading {
      color: #2C3E50;
@@ -67,10 +80,6 @@
       border-bottom: 1px solid #e0e0e0;
   }
 
-  .content-link:hover {
-      color: #2C3E50;
-  }
-
   .author-self {
       background-color: #f9f9f9;
       border: 1px solid #e0e0e0;
@@ -78,9 +87,6 @@
       padding: 5px 10px; /* Padding */
   }
 
-  nav#navbar {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  }
 
   progress[value] {
      appearance: none;
