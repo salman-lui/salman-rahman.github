@@ -5,94 +5,63 @@
 <!-- Add the following CSS to your styles to support the new layout -->
 
 <style>
-  /* Updated styles */
-
   div {
-            text-align: justify;
-            text-justify: inter-word;
-        }
-        /* Navbar */
-        #navbar {
-    background-color: #f9f9f9;
-    }
-    .news .content-link, .content-link {
-    color: #2C3E50;
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
+      text-align: justify;
+      text-justify: inter-word;
+  }
 
-.news .content-link:hover, .content-link:hover {
-    color: #007bff;
-}
+  #navbar {
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .content-link {
+      color: #2C3E50;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+  }
+
+  .content-link:hover {
+      color: #007bff;
+  }
 
   .main-heading {
-     color: #2C3E50;
-     font-size: 2em;
-     text-align: center;
-     margin-bottom: 25px;
-     text-shadow: 1px 1px 2px #aaa;
+      color: #2C3E50;
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 2px #aaa;
+      background-color: #f5f8fa; /* Matched the card background */
   }
 
   .divider {
-     border-bottom: 2px solid #2C3E50; 
-     width: 60%;
-     margin: 25px auto;
+      border-bottom: 2px solid #2C3E50;
+      width: 60%;
+      margin: 25px auto;
   }
 
   .tabs {
-      background-color: white; 
+      background-color: #f5f8fa; /* Changed to match card-section */
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
-      margin: 25px 0; /* Spacing */
-      padding: 15px 0; /* Padding */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin: 25px 0;
+      padding: 15px 0;
   }
 
-  .tabs .nav-pills .nav-link {
-       border-radius: 20px; /* Rounded edges */
-       margin: 5px 10px;
-       padding: 10px 20px; /* Increased padding */
-       background-color: #f8f8f8; 
-       transition: all 0.3s ease; /* Enhanced transition */
-  }
-
-  .tabs .nav-pills .nav-link:hover {
-       background-color: #465A65;
-       color: white;
-       transform: translateY(-3px); /* Slight lift effect */
-  }
-
-  .tabs .nav-pills .nav-link.active {
-       background-color: #2C3E50;
-       color: white;
-       transform: translateY(-3px); /* Slight lift effect */
-  }
-
-  .papers-list {
-      padding: 15px;
-      background-color: #ffffff; /* White background for content */
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
-      margin-bottom: 25px; /* Spacing */
-  }
-
-  .paper {
-      padding: 15px 0; 
-      border-bottom: 1px solid #e0e0e0;
-  }
+  /* ... rest of the code ... */
 
   .author-self {
       background-color: #f9f9f9;
       border: 1px solid #e0e0e0;
-      border-radius: 5px; /* Rounded corners */
-      padding: 5px 10px; /* Padding */
+      border-radius: 5px;
+      padding: 5px 10px;
   }
 
-
   progress[value] {
-     appearance: none;
-     width: 100%;
-     height: 3px;
-     color: #2C3E50;
+      appearance: none;
+      width: 100%;
+      height: 3px;
+      color: #2C3E50;
   }
 </style>
 
