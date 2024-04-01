@@ -1,6 +1,0 @@
-@inproceedings{lu2021theorem,
-  title={Theorem-Aware Geometry Problem Solving with Symbolic Reasoning and Theorem Prediction},
-  author={Lu, Pan and Gong, Ran and Jiang, Shibiao and Qiu, Liang and Huang, Siyuan and Liang, Xiaodan and Zhu, Song-Chun},
-  booktitle={The 35th Conference on Neural Information Processing Systems (NeurIPS) Workshop on Math AI for Education (MATHAI4ED)},
-  year={2021}
-}

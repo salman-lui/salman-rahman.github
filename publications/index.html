@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<!-- Add the following CSS to your styles to support the new layout -->
+
+<style>
+  /* Updated styles */
+
+  div {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        /* Navbar */
+        #navbar {
+    background-color: #f9f9f9;
+    }
+    .news .content-link, .content-link {
+    color: #2C3E50;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.news .content-link:hover, .content-link:hover {
+    color: #007bff;
+}
+
+  .main-heading {
+     color: #2C3E50;
+     font-size: 2em;
+     text-align: center;
+     margin-bottom: 25px;
+     text-shadow: 1px 1px 2px #aaa;
+  }
+
+  .divider {
+     border-bottom: 2px solid #2C3E50; 
+     width: 60%;
+     margin: 25px auto;
+  }
+
+  .tabs {
+      background-color: white; 
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+      margin: 25px 0; /* Spacing */
+      padding: 15px 0; /* Padding */
+  }
+
+  .tabs .nav-pills .nav-link {
+       border-radius: 20px; /* Rounded edges */
+       margin: 5px 10px;
+       padding: 10px 20px; /* Increased padding */
+       background-color: #f8f8f8; 
+       transition: all 0.3s ease; /* Enhanced transition */
+  }
+
+  .tabs .nav-pills .nav-link:hover {
+       background-color: #465A65;
+       color: white;
+       transform: translateY(-3px); /* Slight lift effect */
+  }
+
+  .tabs .nav-pills .nav-link.active {
+       background-color: #2C3E50;
+       color: white;
+       transform: translateY(-3px); /* Slight lift effect */
+  }
+
+  .papers-list {
+      padding: 15px;
+      background-color: #ffffff; /* White background for content */
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+      margin-bottom: 25px; /* Spacing */
+  }
+
+  .paper {
+      padding: 15px 0; 
+      border-bottom: 1px solid #e0e0e0;
+  }
+
+  .author-self {
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px; /* Rounded corners */
+      padding: 5px 10px; /* Padding */
+  }
+
+
+  progress[value] {
+     appearance: none;
+     width: 100%;
+     height: 3px;
+     color: #2C3E50;
+  }
+</style>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Salman Rahman | Publications</title>
+<meta name="description" content="A beautiful Jekyll theme for academics">
+
+<!-- Fonts, Icons and CSS -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
+<link rel="stylesheet" href="/assets/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="/publications/">
+
+<!-- Bootstrap CSS and JS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+  <!-- Header -->
+  <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
+    <div class="container-fluid p-0">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Salman</span> Rahman</a>
+      
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li>
+            
+              <!-- <li class="nav-item ">
+                  <a class="nav-link" href="/research/">
+                  Research
+                    
+                  </a>
+              </li> -->
+            
+        
+            
+              <li class="nav-item navbar-active font-weight-bold">
+                  <a class="nav-link" href="/publications/">
+                    Publications
+                    
+                      <span class="sr-only">(current)</span>
+                    
+                  </a>
+              </li>          
+              <li class="nav-item ">
+                  <a class="nav-link" href="/assets/pdf/cv_salman.pdf" target="_blank">
+                    CV
+                    
+                  </a>
+              </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scrolling Progress Bar -->
+  <progress id="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+
+<!-- Publication Section -->
+
+<!-- <section class="content">
+  <h1 class="main-heading">Publications</h1>
+  <div class="divider"></div>
+  <p style="text-align: center;"><small>* Indicates co-first authors</small></p> -->
+
+
+  <section class="content">
+    <!-- Main Heading -->
+    <h1 class="main-heading">Publications</h1>
+    <div class="divider"></div>
+
+
+
+<!-- Tab navigation -->
+<div class="tabs">
+  <ul class="nav nav-pills justify-content-center">
+      <li class="nav-item">
+          <a class="nav-link active" data-toggle="pill" href="#recent">Selected and Recent Papers</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#all">All</a>
+      </li>
+      <!-- <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#ai-ethics">AI Ethics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#ai-alignment">AI Alignment</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#ai-governance">AI Governance</a>
+  </li> -->
+
+      <!-- Add more tabs if needed -->
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#robustness">Robustness</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#comp-sustainability">Computational Sustainability</a>
+  </li>
+  </ul>
+</div>
+
+
+      
+<!-- Tab contents: -->
+<div class="tab-content">
+
+
+  <!-- Selected and Recent Papers content -->
+  <div class="tab-pane fade show active papers-list" id="recent">
+        <div class="paper">
+            <p>
+                <span class="paper-title">
+                    <a href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank" class="content-link">Out of Distribution Performance of State of Art Vision Model</a>
+                </span>
+            </p>
+            <p><span class="authors"><span class="author-self">Salman Rahman</span>, Wonkwon Lee</span></p>
+            <p><span class="publication">arXiv preprint, 2023</span></p>
+        </div>
+
+<!-- Paper 10 -->
+<div class="paper">
+  <p>
+      <span class="paper-title">
+          <a href="https://www.mdpi.com/2072-4292/12/20/3347" target="_blank" class="content-link">Improving Spatial Agreement in Machine Learning-based Landslide Susceptibility Mapping</a>
+      </span>
+  </p>
+  <p><span class="authors">Mohammed Sarfaraz Gani Adnan, <span class="author-self">Salman Rahman</span>, Nahian Ahmed, Bayes Ahmed, Md. Fazleh Rabbi, Rashedur M. Rahman</span></p>
+  <p><span class="publication">Remote Sensing, 2020</span></p>
+</div>
+</div>
+
+
+
+
+
+
+  <!-- All Papers content -->
+  <div class="tab-pane fade show papers-list" id="all">
+    <div class="paper">
+        <p>
+            <span class="paper-title">
+                <a href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank" class="content-link">Out of Distribution Performance of State of Art Vision Model</a>
+            </span>
+        </p>
+        <p><span class="authors"><span class="author-self">Salman Rahman</span>, Wonkwon Lee</span></p>
+        <p><span class="publication">arXiv preprint, 2023</span></p>
+    </div>
+
+    <div class="paper">
+      <p>
+          <span class="paper-title">
+              <a href="https://www.mdpi.com/1996-1073/16/3/1494" target="_blank" class="content-link">Current Scenario of Solar Energy Applications in Bangladesh: Techno-Economic Perspective, Policy Implementation, and Possibility of the Integration of Artificial Intelligence</a>
+          </span>
+      </p>
+      <p><span class="authors">Monirul Islam Miskat, Protap Sarker, Hemal Chowdhury, Tamal Chowdhury, <span class="author-self">Salman Rahman</span>, Nazia Hossain, Piyal Chowdhury, Sadiq M. Sait</span></p>
+      <p><span class="publication">Energies, 2023</span></p>
+  </div>
+
+  <div class="paper">
+      <p>
+          <span class="paper-title">
+              <a href="https://link.springer.com/article/10.1007/s11356-022-24889-3" target="_blank" class="content-link">Advanced Thermodynamics Analysis for Sustainable Residential Sector: A Case Study of Turkish Residential Sector</a>
+          </span>
+      </p>
+      <p><span class="authors">Monirul Islam Miskat*, <span class="author-self">Salman Rahman</span>*, Quddus Tushar, Shishir Barai, Nazia Hossain, Md. Fazleh Rabbi, Nadia Sultana Nisha, Sadiq M. Sait</span></p>
+      <p><span class="publication">Environmental Science and Pollution Research, 2022</span></p>
+  </div>
+
+  <div class="paper">
+      <p>
+          <span class="paper-title">
+              <a href="https://link.springer.com/article/10.1007/s11356-022-20339-2" target="_blank" class="content-link">A Simulation Study of Techno-Economics and Resilience of the Solar PV Irrigation System Against Grid Outages</a>
+          </span>
+      </p>
+      <p><span class="authors">Hemal Chowdhury, Tamal Chowdhury, <span class="author-self">Salman Rahman</span>, Hasan Masrur, Tomonobu Senjyu</span></p>
+      <p><span class="publication">Environmental Science and Pollution Research, 2022</span></p>
+  </div>
+
+
+    <!-- Paper 4 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S004896972107371X?via%3Dihub" target="_blank" class="content-link">Estimation of the Healthcare Waste Generation During COVID-19 Pandemic in Bangladesh</a>
+    </span>
+</p>
+<p><span class="authors">Tamal Chowdhury, Hemal Chowdhury, <span class="author-self">Salman Rahman</span>, Nazia Hossain, Ashfaq Ahmed, Sadiq M. Sait</span></p>
+<p><span class="publication">Science of The Total Environment, 2021</span></p>
+</div>
+
+<!-- Paper 5 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ird.2649" target="_blank" class="content-link">More Crops Whilst Saving Drops Using an Optimization Model—A Case from Bangladesh</a>
+    </span>
+</p>
+<p><span class="authors">Md. Reaz Akter Mullick, <span class="author-self">Salman Rahman</span>, Md. Panjarul Haque</span></p>
+<p><span class="publication">Irrigation and Drainage, 2021</span></p>
+</div>
+<!-- Paper 6 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S2352710221002023?dgcid=author" target="_blank" class="content-link">Design of a Stand-Alone Energy Hybrid System for a Makeshift Health Care Center: A Case Study</a>
+    </span>
+</p>
+<p><span class="authors">Tamal Chowdhury, Hemal Chowdhury, Samiul Hasan, <span class="author-self">Salman Rahman</span>, M.M.K.Bhuiya, Piyal Chowdhury</span></p>
+<p><span class="publication">Journal of Building Engineering, 2021</span></p>
+</div>
+
+<!-- Paper 7 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/B9780128231395000046" target="_blank" class="content-link">Biofuel Production from Food Waste Biomass and Application of Machine Learning for Process Management</a>
+    </span>
+</p>
+<p><span class="authors">Hemal Chowdhury, Tamal Chowdhury, Pranta Barua, <span class="author-self">Salman Rahman</span>, Nazia Hossain, Anish Khan</span></p>
+<p><span class="publication">Advanced Technology for the Conversion of Waste into Fuels and Chemicals, Volume 1: Biological Processes. Chapter 3, 2021</span></p>
+</div>
+
+<!-- Paper 8 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/B9780128238042000057" target="_blank" class="content-link">Membrane-Based Technologies for Industrial Wastewater Treatment and Resource Recovery</a>
+    </span>
+</p>
+<p><span class="authors">Tamal Chowdhury, Hemal Chowdhury, Monirul Islam Miskat, <span class="author-self">Salman Rahman</span>, Nazia Hossain</span></p>
+<p><span class="publication">Membrane-Based Hybrid Processes for Wastewater Treatment. Chapter 19, 2021</span></p>
+</div>
+
+<!-- Paper 9 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://www.eeer.org/journal/view.php?number=1237" target="_blank" class="content-link">An Overview of the Hydropower Production Potential in Bangladesh to Meet the Energy Requirements</a>
+    </span>
+</p>
+<p><span class="authors">Monirul Islam Miskat, Ashfaq Ahmed, <span class="author-self">Salman Rahman</span>, Hemal Chowdhury, Tamal Chowdhury, Piyal Chowdhury, Sadiq M. Sait, Young-Kwon Park</span></p>
+<p><span class="publication">Environmental Engineering Research, 2020</span></p>
+</div>
+
+<!-- Paper 10 -->
+<div class="paper">
+  <p>
+      <span class="paper-title">
+          <a href="https://www.mdpi.com/2072-4292/12/20/3347" target="_blank" class="content-link">Improving Spatial Agreement in Machine Learning-Based Landslide Susceptibility Mapping</a>
+      </span>
+  </p>
+  <p><span class="authors">Mohammed Sarfaraz Gani Adnan, <span class="author-self">Salman Rahman</span>, Nahian Ahmed, Bayes Ahmed, Md. Fazleh Rabbi, Rashedur M. Rahman</span></p>
+  <p><span class="publication">Remote Sensing, 2020</span></p>
+</div>
+
+</div>
+
+
+
+  <!-- Robustness Papers content -->
+  <div class="tab-pane fade show papers-list" id="robustness">
+    <div class="paper">
+      <p>
+          <span class="paper-title">
+              <a href="https://arxiv.org/pdf/2301.10750.pdf" target="_blank" class="content-link">Out of Distribution Performance of State of Art Vision Model</a>
+          </span>
+      </p>
+      <p><span class="authors"><span class="author-self">Salman Rahman</span>, Wonkwon Lee</span></p>
+      <p><span class="publication">arXiv preprint, 2023</span></p>
+  </div>
+</div>
+
+
+
+  <!-- Computational Sustainability content -->
+  <div class="tab-pane fade papers-list" id="comp-sustainability">
+    <div class="paper">
+      <p>
+          <span class="paper-title">
+              <a href="https://www.mdpi.com/1996-1073/16/3/1494" target="_blank" class="content-link">Current Scenario of Solar Energy Applications in Bangladesh: Techno-Economic Perspective, Policy Implementation, and Possibility of the Integration of Artificial Intelligence</a>
+          </span>
+      </p>
+      <p><span class="authors">Monirul Islam Miskat, Protap Sarker, Hemal Chowdhury, Tamal Chowdhury, <span class="author-self">Salman Rahman</span>, Nazia Hossain, Piyal Chowdhury, Sadiq M. Sait</span></p>
+      <p><span class="publication">Energies, 2023</span></p>
+  </div>
+
+  <div class="paper">
+      <p>
+          <span class="paper-title">
+              <a href="https://link.springer.com/article/10.1007/s11356-022-24889-3" target="_blank" class="content-link">Advanced Thermodynamics Analysis for Sustainable Residential Sector: A Case Study of Turkish Residential Sector</a>
+          </span>
+      </p>
+      <p><span class="authors">Monirul Islam Miskat*, <span class="author-self">Salman Rahman</span>*, Quddus Tushar, Shishir Barai, Nazia Hossain, Md. Fazleh Rabbi, Nadia Sultana Nisha, Sadiq M. Sait</span></p>
+      <p><span class="publication">Environmental Science and Pollution Research, 2022</span></p>
+  </div>
+
+  <div class="paper">
+      <p>
+          <span class="paper-title">
+              <a href="https://link.springer.com/article/10.1007/s11356-022-20339-2" target="_blank" class="content-link">A Simulation Study of Techno-Economics and Resilience of the Solar PV Irrigation System Against Grid Outages</a>
+          </span>
+      </p>
+      <p><span class="authors">Hemal Chowdhury, Tamal Chowdhury, <span class="author-self">Salman Rahman</span>, Hasan Masrur, Tomonobu Senjyu</span></p>
+      <p><span class="publication">Environmental Science and Pollution Research, 2022</span></p>
+  </div>
+
+
+    <!-- Paper 4 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S004896972107371X?via%3Dihub" target="_blank" class="content-link">Estimation of the Healthcare Waste Generation During COVID-19 Pandemic in Bangladesh</a>
+    </span>
+</p>
+<p><span class="authors">Tamal Chowdhury, Hemal Chowdhury, <span class="author-self">Salman Rahman</span>, Nazia Hossain, Ashfaq Ahmed, Sadiq M. Sait</span></p>
+<p><span class="publication">Science of The Total Environment, 2021</span></p>
+</div>
+
+<!-- Paper 5 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ird.2649" target="_blank" class="content-link">More Crops Whilst Saving Drops Using an Optimization Model—A Case from Bangladesh</a>
+    </span>
+</p>
+<p><span class="authors">Md. Reaz Akter Mullick, <span class="author-self">Salman Rahman</span>, Md. Panjarul Haque</span></p>
+<p><span class="publication">Irrigation and Drainage, 2021</span></p>
+</div>
+<!-- Paper 6 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S2352710221002023?dgcid=author" target="_blank" class="content-link">Design of a Stand-Alone Energy Hybrid System for a Makeshift Health Care Center: A Case Study</a>
+    </span>
+</p>
+<p><span class="authors">Tamal Chowdhury, Hemal Chowdhury, Samiul Hasan, <span class="author-self">Salman Rahman</span>, M.M.K.Bhuiya, Piyal Chowdhury</span></p>
+<p><span class="publication">Journal of Building Engineering, 2021</span></p>
+</div>
+
+<!-- Paper 7 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/B9780128231395000046" target="_blank" class="content-link">Biofuel Production from Food Waste Biomass and Application of Machine Learning for Process Management</a>
+    </span>
+</p>
+<p><span class="authors">Hemal Chowdhury, Tamal Chowdhury, Pranta Barua, <span class="author-self">Salman Rahman</span>, Nazia Hossain, Anish Khan</span></p>
+<p><span class="publication">Advanced Technology for the Conversion of Waste into Fuels and Chemicals, Volume 1: Biological Processes. Chapter 3, 2021</span></p>
+</div>
+
+<!-- Paper 8 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/B9780128238042000057" target="_blank" class="content-link">Membrane-Based Technologies for Industrial Wastewater Treatment and Resource Recovery</a>
+    </span>
+</p>
+<p><span class="authors">Tamal Chowdhury, Hemal Chowdhury, Monirul Islam Miskat, <span class="author-self">Salman Rahman</span>, Nazia Hossain</span></p>
+<p><span class="publication">Membrane-Based Hybrid Processes for Wastewater Treatment. Chapter 19, 2021</span></p>
+</div>
+
+<!-- Paper 9 -->
+<div class="paper">
+<p>
+    <span class="paper-title">
+        <a href="https://www.eeer.org/journal/view.php?number=1237" target="_blank" class="content-link">An Overview of the Hydropower Production Potential in Bangladesh to Meet the Energy Requirements</a>
+    </span>
+</p>
+<p><span class="authors">Monirul Islam Miskat, Ashfaq Ahmed, <span class="author-self">Salman Rahman</span>, Hemal Chowdhury, Tamal Chowdhury, Piyal Chowdhury, Sadiq M. Sait, Young-Kwon Park</span></p>
+<p><span class="publication">Environmental Engineering Research, 2020</span></p>
+</div>
+
+<!-- Paper 10 -->
+<div class="paper">
+  <p>
+      <span class="paper-title">
+          <a href="https://www.mdpi.com/2072-4292/12/20/3347" target="_blank" class="content-link">Improving Spatial Agreement in Machine Learning-Based Landslide Susceptibility Mapping</a>
+      </span>
+  </p>
+  <p><span class="authors">Mohammed Sarfaraz Gani Adnan, <span class="author-self">Salman Rahman</span>, Nahian Ahmed, Bayes Ahmed, Md. Fazleh Rabbi, Rashedur M. Rahman</span></p>
+  <p><span class="publication">Remote Sensing, 2020</span></p>
+</div>
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+<!-- </div> -->
+
+
+ 
+<!-- Core JavaScript Files -->
+<script src="/assets/js/mdb.min.js" type="text/javascript"></script>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+<script src="/assets/js/common.js"></script>
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    var navbarHeight = $('#navbar').outerHeight(true);
+    $('body').css({ 'padding-top': navbarHeight });
+    $('progress-container').css({ 'padding-top': navbarHeight });
+    var progressBar = $('#progress');
+    progressBar.css({ 'top': navbarHeight });
+    var getMax = function() { return $(document).height() - $(window).height(); }
+    var getValue = function() { return $(window).scrollTop(); }   
+    // Check if the browser supports the progress element.
+    if ('max' in document.createElement('progress')) {
+      // Set the 'max' attribute for the first time.
+      progressBar.attr({ max: getMax() });
+      progressBar.attr({ value: getValue() });
+  
+      $(document).on('scroll', function() {
+        // On scroll only the 'value' attribute needs to be calculated.
+        progressBar.attr({ value: getValue() });
+      });
+
+      $(window).resize(function() {
+        var navbarHeight = $('#navbar').outerHeight(true);
+        $('body').css({ 'padding-top': navbarHeight });
+        $('progress-container').css({ 'padding-top': navbarHeight });
+        progressBar.css({ 'top': navbarHeight });
+        // On resize, both the 'max' and 'value' attributes need to be calculated.
+        progressBar.attr({ max: getMax(), value: getValue() });
+      });
+    } else {
+      var max = getMax(), value, width;
+      var getWidth = function() {
+        // Calculate the window width as a percentage.
+        value = getValue();
+        width = (value/max) * 100;
+        width = width + '%';
+        return width;
+      }
+      var setWidth = function() { progressBar.css({ width: getWidth() }); };
+      setWidth();
+      $(document).on('scroll', setWidth);
+      $(window).on('resize', function() {
+        // Need to reset the 'max' attribute.
+        max = getMax();
+        setWidth();
+      });
+    }
+        // Your new code: Activate "Selected and Recent Papers" tab when "/publications/" is in the URL
+        if (window.location.href.indexOf("/publications/") !== -1) {
+        $('.nav-pills .nav-link').removeClass('active');
+        $('.nav-pills .nav-link[href="#recent"]').addClass('active');
+        $('.tab-content .tab-pane').removeClass('show active');
+        $('#recent').addClass('show active');
+    }
+  });
+</script>
+
+<!-- Code Syntax Highlighting -->
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<script src="/assets/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- Project Cards Layout -->
+<script type="text/javascript">
+  var $grid = $('#projects');
+
+
+  // Trigger after images load.
+  $grid.imagesLoaded().progress(function() {
+    $grid.masonry({ percentPosition: true });
+    $grid.masonry('layout');
+  });
+</script>
+
+<!-- Enable Tooltips -->
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
