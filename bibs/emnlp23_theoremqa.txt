@@ -1,0 +1,6 @@
+@inproceedings{chen2023theoremqa,
+  title={TheoremQA: A Theorem-driven Question Answering dataset},
+  author={Chen, Wenhu and Yin, Ming and Ku, Max and Lu, Pan and Wan, Elaine and Ma, Xueguang and Xu, Jianyu and Xia, Tony and Wang, Xinyi},
+  booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2023}
+}
