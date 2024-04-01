@@ -31,43 +31,48 @@
   h1, h2, h3, h4, h5, h6 {
       font-size: 28px;
   }
+  [id]:target {
+    padding-top: 70px;
+    margin-top: -70px;
+  }
 </style>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top header">
-        <div class="container">
-            <a class="navbar-brand" href="#">Salman Rahman</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#news">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#publications">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#awards">Awards</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top header">
+  <div class="container">
+    <a class="navbar-brand" href="#">Salman Rahman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home-section">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#news-section">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#publications-section">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education-section">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience-section">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#awards-section">Awards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-section">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     <div class="container">
         <div class="row my-3">
             <div class="col-md-3 text-center">
@@ -103,6 +108,7 @@
 
 <hr>
 
+<div id="news-section"></div>
 <div id="news">
   <h3>News</h3>
   <ul>
@@ -111,8 +117,7 @@
   </ul>
   </div>
 
-<hr id="publications">
-
+  <div id="publications-section"></div>
 <h3>Selected Publications</h3>
 
 <div class="row mb-3">
@@ -177,8 +182,7 @@
 </div>
 </div> -->
 
-<hr id="education">
-
+<div id="education-section"></div>
 <h3>Education</h3>
 <ul>
 <li>
@@ -196,8 +200,7 @@
 </li>  -->
 </ul>
 
-<hr id="experience">
-
+<div id="experience-section"></div>
 <h3>Selected Experience</h3>  
 <ul>
 <!-- <li>
@@ -210,8 +213,7 @@
 </li>
 </ul>  
 
-<hr id="awards">
-
+<div id="awards-section"></div>
 <h3>Selected Awards</h3>
 <ul>
 <li><strong>Amazon PhD Fellowship</strong>, 2023</li>
@@ -219,8 +221,7 @@
 <li><strong>National Scholarship</strong> (<em>for top 2% students</em>), 2014</li>
 </ul>
 
-<hr id="contact">
-
+<div id="contact-section"></div>
 <h3>Contact</h3>
 NYU Computer Science Department<br>
 New York, NY 10012<br>
