@@ -43,14 +43,58 @@
     line-height: 1.6;
     margin-bottom: 20px;
   }
-  .card-title {
+  /* .card-title {
     font-size: 22px;
     font-weight: bold;
     color: #333;
+  /* } */
+  .card-text {
+    font-size: 18px;
+    line-height: 1.6;
+  } */
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  .card-body {
+    padding: 30px;
+  }
+  .card-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  .card:hover .card-icon {
+    transform: scale(1.2);
+  }
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
   }
   .card-text {
     font-size: 18px;
     line-height: 1.6;
+    margin-bottom: 0;
+  }
+  .card:nth-child(1) {
+    background-color: #f8f9fa;
+  }
+  .card:nth-child(2) {
+    background-color: #e9ecef;
   }
   .img-fluid {
     max-width: 100%;
@@ -150,19 +194,30 @@
     <div class="col-md-9">
       <br>
       <p>I'm a Computer Science graduate student at <a href="https://www.nyu.edu/" target="_blank">New York University</a>. My research revolves around the development and understanding of artificial intelligence, prioritizing its safety, reliability, and ethical implications. Below are two key directions that shape my exploration:</p>
-  <div class="card mb-3">
-    <div class="card-body">
-      <h5 class="card-title"><i class="fas fa-adjust"></i> AI Ethics</h5>
-      <p class="card-text">Investigating the role of <a href="https://arxiv.org/abs/2108.07258" target="_blank">foundation models</a> in the propagation and mitigation of Fake News and Misinformation: analyzing rumors, deepfakes, and devising prebunking strategies among other ethical considerations.</p>
-    </div>
-  </div>
-  
-  <div class="card mb-3">
-    <div class="card-body">  
-      <h5 class="card-title"><i class="fas fa-adjust"></i> AI Alignment</h5>
-      <p class="card-text">Scalable Oversight: effectively monitor, manage, and guide the behavior of artificial intelligence systems, particularly as they increase in complexity and capability.</p>
-    </div>
-  </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="fas fa-balance-scale"></i>
+              </div>
+              <h5 class="card-title">AI Ethics</h5>
+              <p class="card-text">Investigating the role of <a href="https://arxiv.org/abs/2108.07258" target="_blank">foundation models</a> in the propagation and mitigation of Fake News and Misinformation: analyzing rumors, deepfakes, and devising prebunking strategies among other ethical considerations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="fas fa-compass"></i>
+              </div>
+              <h5 class="card-title">AI Alignment</h5>
+              <p class="card-text">Scalable Oversight: effectively monitor, manage, and guide the behavior of artificial intelligence systems, particularly as they increase in complexity and capability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
   <p>Earlier in my academic journey, I delved into computational sustainability during my undergrad and master's studies. I was captivated by the prospect of leveraging technology to provide solutions to the pressing societal and environmental challenges of the 21st century. Explore my publications on computational sustainability <a href="#publications">here</a>.</p>
 </div>
