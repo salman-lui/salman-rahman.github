@@ -100,7 +100,7 @@
         }
 
 
-       .author-self, .pdf-link {
+       .author-self {
            background-color: #f9f9f9;
            border: 1px solid #e0e0e0;
            border-radius: 5px;
@@ -127,11 +127,24 @@
     .paper-title {
       text-align: left !important; /* Force left alignment overriding other styles */
 }
-
-
-.pdf-link:hover, .pdf-link:focus {
+.pdf-link {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #2C3E50;
   text-decoration: none;
-  background-color: #e6e6e6; /* Or any other color you prefer for hover state */
+  margin-left: 10px;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.pdf-link:hover,
+.pdf-link:focus {
+  background-color: #e6e6e6;
+  border-color: #acb1b7;
+  text-decoration: none;
 }
 
 
