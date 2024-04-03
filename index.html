@@ -127,6 +127,17 @@
     .paper-title {
       text-align: left !important; /* Force left alignment overriding other styles */
 }
+.pdf-box {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #e0e0e0;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: bold;
+}
    </style>
 </head>
 <body>
@@ -241,7 +252,7 @@
                <div class="tab-pane fade show active papers-list" id="recent">
                     
                 
-            <!-- Paper 1 with Image and PDF icon -->
+            <!-- Paper 1 with Image and PDF box -->
             <div class="paper d-flex">
                 <!-- Image Container -->
                 <div class="paper-image mr-3">
@@ -257,14 +268,14 @@
                 <p>
                     <span class="authors">Vishwali Mhasawade, <span class="author-self">Salman Rahman</span>, Zoe Haskell-Craig, Rumi Chunara</span>
                 </p>
-                <p>
+                <p class="d-flex align-items-center">
                     <span class="publication">FAccT 2024</span>
-                    <a href="https://arxiv.org/pdf/2401.14539.pdf" target="_blank" class="content-link pdf-icon" aria-label="Download PDF">
-                    <i class="fas fa-file-pdf"></i>
-                    </a>
+                    <!-- PDF Box -->
+                    <a href="https://arxiv.org/pdf/2401.14539.pdf" target="_blank" class="pdf-box" aria-label="Download PDF">PDF</a>
                 </p>
                 </div>
             </div>
+  
   
 
                       
