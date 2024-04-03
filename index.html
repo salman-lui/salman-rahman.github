@@ -108,6 +108,18 @@
        #selected-publications {
         scroll-margin-top: 70px; /* Adjust this value based on the height of your fixed header */
     }
+    .news .text {
+    /* Ensures that text wraps normally */
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+/* Target the link directly if it's the cause of the issue */
+.news .text a {
+    /* Allow the link to break onto a new line, if necessary */
+    white-space: normal;
+    overflow-wrap: break-word;
+}
    </style>
 </head>
 <body>
