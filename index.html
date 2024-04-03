@@ -141,6 +141,10 @@
     li {
       margin-bottom: 10px;
     }
+    .img-fluid.img-rounded {
+      width: 300px;
+      height: auto;
+    }
   </style>
 </head>
 
@@ -180,30 +184,39 @@
     </div>
   </nav>
 
-  <div id="home"></div> 
+  <div id="home"></div>
   <div class="container">
-     <div class="row my-3">
-       <div class="col-md-3 text-center"> 
-        <img class="img-fluid rounded" src="/assets/img/1708414647101.JPG" alt="Salman Rahman"> 
-        <div class="mt-3"> <a href="mailto:salman@nyu.edu"><i class="fas fa-envelope fa-2x"></i></a> <a href="https://scholar.google.ca/citations?hl=en&user=vr7uTc8AAAAJ&view_op=list_works" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> <a href="https://www.researchgate.net/profile/Md_Salman_Rahman2" target="_blank"><i class="fab fa-researchgate fa-2x"></i></a> <a href="https://github.com/salman-lui" target="_blank"><i class="fab fa-github-square fa-2x"></i></a> <a href="https://www.linkedin.com/in/salman-rahman-853436166/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a> <a href="https://twitter.com/SalmanR08820449" target="_blank"><i class="fab fa-twitter fa-2x"></i></a> </div> </div> <div class="col-md-9"> <br> <p>I'm a Computer Science graduate student at <a href="https://www.nyu.edu/" target="_blank">New York University</a>. My research goal is to improve the <strong>trustworthiness of artificial intelligence systems</strong> and ensure that AI systems smarter than humans <strong>align with human interests</strong>. My research takes shape in three key directions:</p>
-
-          <ul>
-            <li><strong>Scalable oversight</strong> for supervising unreliable experts with multiagent debate.</li>
-            <li><strong>Large model evaluation for extreme risks</strong>, exploring adversarial attacks and jailbreaking of large models.</li>
-            <li><strong>Machine reasoning</strong> for improving commonsense reasoning and problem-solving capabilities.</li>
-          </ul>
-        
-          <p>In addition, I have previously worked on and am interested in:</p>
-        
-          <ul>
-            <li><strong>AI for social good</strong>, especially in the healthcare and sustainability domains [<a href="https://www.mdpi.com/2072-4292/12/20/3347" target="_blank">Remote Sensing</a>] [<a href="https://www.sciencedirect.com/science/article/pii/S004896972107371X" target="_blank">Science of Total Environment</a>] [<a href="https://scholar.google.ca/citations?hl=en&user=vr7uTc8AAAAJ&view_op=list_works" target="_blank">more..</a>]</li>
-            <li><strong>Explainable AI</strong> for understanding disparity in Post-Hoc explanation[<a href="https://arxiv.org/abs/2401.14539" target="_blank">FAccT 2024</a>]</li>
-          </ul>
+    <div class="row my-3">
+      <div class="col-md-3 text-center">
+        <img class="img-fluid rounded" src="/assets/img/1708414647101.JPG" alt="Salman Rahman">
+        <div class="mt-3">
+          <a href="mailto:salman@nyu.edu"><i class="fas fa-envelope fa-2x"></i></a>
+          <a href="https://scholar.google.ca/citations?hl=en&user=vr7uTc8AAAAJ&view_op=list_works" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a>
+          <a href="https://www.researchgate.net/profile/Md_Salman_Rahman2" target="_blank"><i class="fab fa-researchgate fa-2x"></i></a>
+          <a href="https://github.com/salman-lui" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/salman-rahman-853436166/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://twitter.com/SalmanR08820449" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
         </div>
       </div>
-       <!-- <hr>  -->
-      </div>
+      <div class="col-md-9">
+        <br>
+        <p>I'm a Computer Science graduate student at <a href="https://www.nyu.edu/" target="_blank">New York University</a>. My research goal is to improve the <strong>trustworthiness of artificial intelligence systems</strong> and ensure that AI systems smarter than humans <strong>align with human interests</strong>. My research takes shape in three key directions:</p>
 
+        <ul>
+          <li><strong>Scalable oversight</strong> for supervising unreliable experts with multiagent debate.</li>
+          <li><strong>Large model evaluation for extreme risks</strong>, exploring adversarial attacks and jailbreaking of large models.</li>
+          <li><strong>Machine reasoning</strong> for improving commonsense reasoning and problem-solving capabilities.</li>
+        </ul>
+
+        <p>In addition, I have previously worked on and am interested in:</p>
+
+        <ul>
+          <li><strong>AI for social good</strong>, especially in the healthcare and sustainability domains [<a href="https://www.mdpi.com/2072-4292/12/20/3347" target="_blank">Remote Sensing</a>] [<a href="https://www.sciencedirect.com/science/article/pii/S004896972107371X" target="_blank">Science of Total Environment</a>] [<a href="https://scholar.google.ca/citations?hl=en&user=vr7uTc8AAAAJ&view_op=list_works" target="_blank">more..</a>]</li>
+          <li><strong>Explainable AI</strong> for understanding disparity in Post-Hoc explanation[<a href="https://arxiv.org/abs/2401.14539" target="_blank">FAccT 2024</a>]</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div id="news" class="section-spacing"></div>
   <div class="content-wrapper">
@@ -213,12 +226,45 @@
         <li><strong>[03/2024]</strong> One paper on machine learning explanation disparity is accepted to <a href="https://facctconference.org/2024/" target="_blank">FAccT 2024</a>.</li>
       </ul>
     </div>
-    <hr>
+    <hr style="margin-right: -15px;">
   </div>
 
-  <div id="publications" class="section-spacing"></div> <div class="content-wrapper"> <h3>Selected Publications</h3> <!-- Understanding Disparities in Post Hoc Machine Learning Explanation --> <div class="row"> <div class="col-md-3"> <img class="img-fluid img-rounded" src="/assets/paper-img/explanation_disparity_dag.png" style="width: 200px; height: auto;" alt="Explanation"> </div> <div class="col-md-9"> <b> <font color="black">Understanding Disparities in Post Hoc Machine Learning Explanation</font> </b><br> Vishwali Mhasawade, <b>Salman Rahman</b>, Zoe Haskell-Craig, Rumi Chunara<br> <b><a href="https://arxiv.org/abs/2401.14539" target="_blank">FAccT 2024&nbsp;</a></b> <a href="https://arxiv.org/abs/2401.14539" target="_blank"> <small>[Paper]&nbsp;</small></a> <a href="https://arxiv.org/pdf/2401.14539.pdf" target="_blank"> <small>[PDF]&nbsp;</small></a> </div> </div> <hr> <!-- Generalization in Healthcare AI: Evaluation of a Clinical Large Language Model --> <div class="row"> <div class="col-md-3"> <img class="img-fluid img-rounded" src="/assets/paper-img/clinical_llm_generalization.png" style="width: 200px; height: auto;" alt="Clinical LLM Generalization"> </div> <div class="col-md-9"> <b> <font color="black">Generalization in Healthcare AI: Evaluation of a Clinical Large Language Model</font> </b><br> <b>Salman Rahman</b>, Lavender Yao Jiang, Saadia Gabriel, Yindalon Aphinyanaphongs, Eric Karl Oermann, Rumi Chunara<br> <b><a href="https://arxiv.org/abs/2402.10965" target="_blank">arXiv&nbsp;</a></b> <a href="https://arxiv.org/abs/2402.10965" target="_blank"> <small>[Paper]&nbsp;</small></a> <a href="https://arxiv.org/pdf/2402.10965.pdf" target="_blank"> <small>[PDF]&nbsp;</small></a> </div> </div> <hr> </div>
-
-
+  <div id="publications" class="section-spacing"></div>
+  <div class="content-wrapper">
+    <h3>Selected Publications</h3>
+    <!-- Understanding Disparities in Post Hoc Machine Learning Explanation -->
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-fluid img-rounded" src="/assets/paper-img/explanation_disparity_dag.png" alt="Explanation">
+      </div>
+      <div class="col-md-9">
+        <b>
+          <font color="black">Understanding Disparities in Post Hoc Machine Learning Explanation</font>
+        </b><br>
+        Vishwali Mhasawade, <b>Salman Rahman</b>, Zoe Haskell-Craig, Rumi Chunara<br>
+        <b><a href="https://arxiv.org/abs/2401.14539" target="_blank">FAccT 2024&nbsp;</a></b>
+        <a href="https://arxiv.org/abs/2401.14539" target="_blank"> <small>[Paper]&nbsp;</small></a>
+        <a href="https://arxiv.org/pdf/2401.14539.pdf" target="_blank"> <small>[PDF]&nbsp;</small></a>
+      </div>
+    </div>
+    <hr style="margin-right: -15px;">
+    <!-- Generalization in Healthcare AI: Evaluation of a Clinical Large Language Model -->
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-fluid img-rounded" src="/assets/paper-img/clinical_llm_generalization.png" alt="Clinical LLM Generalization">
+      </div>
+      <div class="col-md-9">
+        <b>
+          <font color="black">Generalization in Healthcare AI: Evaluation of a Clinical Large Language Model</font>
+        </b><br>
+        <b>Salman Rahman</b>, Lavender Yao Jiang, Saadia Gabriel, Yindalon Aphinyanaphongs, Eric Karl Oermann, Rumi Chunara<br>
+        <b><a href="https://arxiv.org/abs/2402.10965" target="_blank">arXiv&nbsp;</a></b>
+        <a href="https://arxiv.org/abs/2402.10965" target="_blank"> <small>[Paper]&nbsp;</small></a>
+        <a href="https://arxiv.org/pdf/2402.10965.pdf" target="_blank"> <small>[PDF]&nbsp;</small></a>
+      </div>
+    </div>
+    <hr style="margin-right: -15px;">
+  </div>
 
   <div id="education" class="section-spacing"></div>
   <div class="content-wrapper">
@@ -229,19 +275,19 @@
         Graduate Student in Computer Science
       </li>
     </ul>
-    <hr>
+    <hr style="margin-right: -15px;">
   </div>
 
   <div id="experience" class="section-spacing"></div>
   <div class="content-wrapper">
-    <h3>Selected Experience</h3>  
+    <h3>Selected Experience</h3>
     <ul class="list-unstyled mb-4">
       <li class="mb-2">
         <strong>Research Assistant</strong>, <em>New York University</em>, 2022.9 - Present<br>
         <!-- Mentor: Dr. <a href="https://www.microsoft.com/en-us/research/people/leiji/" target="_blank">Lei Ji</a> -->
       </li>
     </ul>
-    <hr>
+    <hr style="margin-right: -15px;">
   </div>
 
   <div id="awards" class="section-spacing"></div>
@@ -250,7 +296,7 @@
     <ul class="list-unstyled mb-4">
       <li><strong>Fellowship</strong>, 2023</li>
     </ul>
-    <hr>
+    <hr style="margin-right: -15px;">
   </div>
 
   <div id="contact" class="section-spacing"></div>
@@ -259,18 +305,4 @@
     NYU Computer Science Department<br>
     New York, NY 10012<br>
     salman [at] nyu [dot] edu<br>
-    <a href="https://scholar.google.com/citations?hl=en&user=vr7uTc8AAAAJ&view_op=list_works" target="_blank">[<span style="color:#4285F4">G</span><span style="color:#DB4437">o</span><span style="color:#F4B400">o</span><span style="color:#4285F4">g</span><span style="color:#0F9D58">l</span><span style="color:#DB4437">e</span> Scholar]</a>
-    <a href="https://github.com/salman-lui" target="_blank">[GitHub]</a>
-    <a href="https://www.linkedin.com/in/salman-rahman-853436166/" target="_blank">[LinkedIn]</a>
-    <hr>
-  </div>
-
-  <footer class="mt-5 py-3 text-center text-muted">
-    <div class="container">
-      <span>&copy; Salman Rahman 2023</span>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7
+    <a href="https://scholar.google.com/citations?hl=en&user=vr7uTc8AAAAJ&view_op=list_works" target="_blank">[<span style="color:#4285F4">G</span><span style="color:#DB4437">o</span><span style="color:#F4B400">o</span><span style="color:#4285F4
