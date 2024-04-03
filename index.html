@@ -88,12 +88,12 @@
             border-bottom: 1px solid #e0e0e0; /* Existing styles */
         }
 
-        .paper-image {
-            flex: 0 0 auto; /* Don't grow, don't shrink, base on width */
-            width: 100px; /* Set to your preferred width */
-            height: auto; /* Maintain aspect ratio */
-            margin-right: 15px; /* Adjust space between image and text */
+        .paper-image img {
+        width: 150px; /* New width */
+        height: auto;
+        display: block; /* Ensures no extra space for inline elements */
         }
+
 
         .paper-content {
             flex: 1; /* Take up the remaining space */
