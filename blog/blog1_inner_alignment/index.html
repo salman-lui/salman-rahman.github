@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+    /* Global */
+    body, div {
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+  
+    /* Navbar */
+    #navbar {
+        background-color: #f9f9f9;
+    }
+  
+    /* Content and Header Styles */
+    h1, h2 {
+        font-weight: 500;
+        line-height: 1.4;
+        color: rgba(0, 0, 0, 0.65);
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        text-align: left;
+    }
+  
+    /* Content Container */
+    .content-container {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 15px;
+    }
+  
+    /* Dividers */
+    .horizontal-divider {
+        border-top: 0.4px solid grey;
+        max-width: 65%;
+        margin: 20px auto;
+    }
+  
+    /* Author Details */
+    .author-details {
+        display: flex;
+        justify-content: space-between;
+        max-width: 65%;
+        margin: 20px auto;
+        background-color: #f9f9f9;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .author-details div {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  
+    .author-details div:hover {
+        background-color: #007BFF; 
+        color: white;
+    }
+  
+    .author-details div strong {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+  
+    /* Table of Contents */
+    .toc {
+        position: sticky;
+        top: 80px;
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        padding: 15px 20px;
+        width: 330px;
+        max-height: 70vh;
+        background-color: #f9f9f9;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: auto;
+        font-size: 0.8em;
+        line-height: 1.7em;
+        color: rgba(0, 0, 0, 0.5);
+        transition: width 0.3s ease;
+    }
+  
+    .toc h3 {
+        font-size: 15px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+  
+    .toc ul {
+        list-style-type: none;
+        padding: 0 0 0 30px;
+        margin-top: 5px;
+    }
+  
+    .toc li {
+        margin-bottom: 8px;
+        transition: transform 0.2s ease;
+    }
+  
+    .toc li:hover {
+        transform: translateX(5px);
+    }
+  
+    .toc a {
+        color: #444;
+        text-decoration: none;
+        padding: 5px 8px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .toc .main-section {
+        font-weight: bold;
+        margin-top: 2px;
+    }
+  
+    .toc a:hover {
+        background-color: #007BFF;
+        color: white;
+    }
+  
+    /* Flex Container */
+    .flex-container {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 50px;
+    }
+  
+    .main-content {
+        flex-grow: 1;
+        max-width: 800px;
+        margin-left: 40px;
+    }
+  
+    /* Enhanced Blog Title Style */
+    .blog-title {
+    font-weight: 700;
+    color: #333;
+    margin-top: 5px;  /* Reduced margin-top value */
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    margin: 0 0 30px; /* Updated margin value */
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+  
+    .blog-title:hover {
+      color: #333; /* Changing title color on hover */
+    }
+  
+    /* Styles specific to mobile screens */
+    @media (max-width: 767px) {
+        .toc {
+            position: static;  /* Resetting position */
+            top: unset;  /* Unsetting top value */
+            width: 100%;  /* Setting width to full */
+            margin-bottom: 20px;  /* Adding a bit of space between ToC and main content */
+        }
+  
+        /* Since we're moving ToC to the top, we might want to adjust the .flex-container as well */
+        .flex-container {
+            flex-direction: column;
+        }
+  
+        .main-content {
+            margin-left: 0;  /* Resetting the margin-left */
+        }
+        
+        /* Adjusting author-details for mobile view */
+        .author-details {
+            flex-direction: column;  /* Stacking the details vertically */
+            align-items: center;     /* Centering the content */
+            max-width: 100%;         /* Using full width */
+            padding: 10px 0;         /* Adjusting padding */
+        }
+  
+        .author-details div {
+            text-align: center;      /* Ensuring all text is centered */
+            margin-bottom: 10px;     /* Adding some space between each detail */
+        }
+  
+        .blog-title {
+            font-size: 1.5em;
+            margin: 15px 0 25px;
+            padding-bottom: 8px;
+        }
+    }
+  </style>  
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Salman Rahman</title>
+  <meta name="description" content="A beautiful Jekyll theme for academics">
+
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/assets/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/projects/uncertainty/">
+</head>
+<body>
+  <!-- Header -->
+  <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
+    <div class="container-fluid p-0">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Salman</span> Rahman</a>
+      
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li>
+            
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/research/">
+            Research
+              
+            </a>
+        </li>
+
+
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/publications/">
+              Publications
+              
+            </a>
+        </li>
+            
+            
+            <li class="nav-item navbar-active font-weight-bold">
+              <a class="nav-link" href="/blog/">
+                Blogs
+                
+                  <span class="sr-only">(current)</span>
+                
+              </a>
+          </li>
+          
+            
+                        <li class="nav-item ">
+                  <a class="nav-link" href="/assets/pdf/cv_salman.pdf" target="_blank">
+                    CV
+                    
+                  </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scrolling Progress Bar -->
+  <progress id="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+
+
+
+  <div class="flex-container">
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h3>Contents</h3>
+        <div class="main-section"><a href="#intro">Introduction</a></div>
+        <ul>
+            <li><a href="#motivation">Motivation</a></li>
+        </ul>
+        <div class="main-section"><a href="#approach">Approach</a></div>
+        <div class="main-section"><a href="#highlight">Highlight</a></div>
+        <ul>
+            <li><a href="#recent-work">Recent Work</a></li>
+        </ul>
+    </div>
+
+  <!-- Heading and intro -->
+  <div class="main-content">
+
+  <div class="content">
+
+    <h1 class="blog-title">A Dive into AI Safety: Key Resources and Influential Works</h1>
+    <p>
+      This focuses on providing a comprehensive overview of the AI Safety field, guiding the reader through seminal works, evolving discussions, and the ongoing dialogue around machine intelligence's ethical and practical implications.
+    </p>
+</div>
+
+
+<div class="content-container">
+
+  <!-- First Horizontal Divider -->
+  <hr class="horizontal-divider">
+
+  <!-- Author's Details -->
+  <div class="author-details">
+    <div>
+      <strong>AUTHORS</strong>
+      Salman Rahman
+    </div>
+    <div>
+      <strong>AFFILIATIONS</strong>
+      New York University
+    </div>
+    <div>
+      <strong>PUBLISHED</strong>
+      May 5, 2023
+    </div>
+  </div>
+
+  <!-- Second Horizontal Divider -->
+  <hr class="horizontal-divider">
+
+</div>
+
+
+
+
+
+
+
+<!-- Blog Content -->
+
+<div class="content">
+
+<!-- Introduction Section -->
+
+  <h2 id="intro" style="font-weight: bold; margin-top: -80px; padding-top: 80px;">Introduction</h2>
+
+  <hr> <!-- Horizontal divider -->
+
+  <p>
+      Existing generative modeling techniques can largely be grouped into two categories based on how they represent probability distributions.
+  </p>
+  <p>
+      Likelihood-based models, which directly learn the distribution’s probability density (or mass) function via (approximate) maximum likelihood. Typical likelihood-based models include autoregressive models 
+      <a href="#ref1">[1]</a>, <a href="#ref2">[2]</a>, <a href="#ref3">[3]</a>, normalizing flow models 
+      <a href="#ref4">[4]</a>, <a href="#ref5">[5]</a>, energy-based models (EBMs)
+      <a href="#ref6">[6]</a>, <a href="#ref7">[7]</a>, and variational auto-encoders (VAEs) 
+      <a href="#ref8">[8]</a>, <a href="#ref9">[9]</a>.
+  </p>
+
+
+<!-- Figure Section -->
+<div class="l-body">
+  <figure>
+      <img class="img-fluid rounded z-depth-1" src="fig/fig1.png" alt="Description of the figure for accessibility">
+      <figcaption style="text-align: center; margin-top: 10px; margin-bottom: 10px;">
+          Optional caption for the figure if needed.
+      </figcaption>
+  </figure>
+</div>
+
+  <!-- Motivation: Subitem -->
+  <p id="motivation" style="font-weight: bold; margin-top: -80px; padding-top: 80px;">Motivation</p>
+ <!-- Math -->
+
+
+<p>
+  In order to build such a generative model, we first need a way to represent a probability distribution. One such way, as in likelihood-based models, is to directly model the probability density function (p.d.f.) or probability mass function (p.m.f.). Let \( f_\theta \) be a real-valued function parameterized by a learnable parameter \( \theta \). We can define a p.d.f. \( p_\theta(x) \) via
+  </p>
+  
+  \begin{equation}
+  p_\theta(x) = \frac{e^{-f_\theta(x)}}{Z_\theta}
+  \end{equation}
+  
+  <p>
+  where \( Z_\theta \) is a normalizing constant dependent on \( \theta \), such that \( \int p_\theta(x) dx = 1 \). Here the function \( f_\theta \) is often called an unnormalized probabilistic model, or energy-based model <a href="#ref7">[7]</a>.
+  </p>
+  
+  <p>
+  We can train \( f_\theta \) by maximizing the log-likelihood of the data.
+  </p>  
+
+
+  <!-- Approach Section -->
+
+  <h2 id="approach" style="font-weight: bold; margin-top: -80px; padding-top: 80px;">Approach</h2>
+    <hr> <!-- Horizontal divider -->
+
+    <p>
+        No Hugo dependency, no theme dependency, it’s a very stable format with the ability to customize just enough with a bit of effort. Think a self-hosted Medium.com in appearance. Very minimal, lightly themed, focused on writing and code! Again, I think that for someone getting started with creating websites or blogs it’s a very good starting point.
+    </p>
+
+    <p>
+        With distill you render/knit your articles locally, so you can quickly check your work without having to deploy to a git branch or to production. I do think that eventually it is a good idea to have git branches for previews or collaboration, but that’s a lot to ask for an initial first stab at a blog/site.
+    </p>
+
+    <p>
+        distill also natively supports citations, footnotes and asides, a rich auto-generated table of contents, support for HTMLwidgets and/or custom javascript, and a reader friendly typography that is mobile friendly/auto-adapts to mobile.
+    </p>
+
+    <p>
+        Another nicety is the ability to import a post with import_post(). This means you can take an existing blogpost from another website and import it into your new blog. This “does not require the original R Markdown document used to author the post—you only need access to the published HTML of a post to import it.”
+    </p>
+
+    <p>
+        Lastly, I am always amazed at the power of both blogdown and the more recent hugodown, but you are still relying on a changing version of Hugo and your theme over time. For a personal blog I personally prefer distill because I can get busy, neglect my blog for a year, come back to write a new post, and it still just works.
+    </p>
+
+    <p>
+        However, blogdown and hugodown allow dramatically more customization. distill is truly an opinionated framework, and most of the easy customization you can do is fonts, colors, and the navbar. If you expect to create gorgeous custom-layout sites like education.rstudio.com or something like Desirée de Leon’s blog you’re likely going to be disappointed!
+    </p>
+
+    <p>
+        Again, for my blog I really just wanted a simple but in my opinion elegant minimalist theme, so I was fine with the tradeoff, as I would have built something similar with blogdown anyway!
+    </p>
+
+    <p>
+        Blogdown also supports other static site generators like Jekyll in place of Hugo, and a rich set of pre-built themes across the various generators. The structure of the site is extensible as well, so you can generate a site that truly looks like your own creation.
+    </p>
+
+    <p>
+        Lastly, note that you DO lose some niceties like hugo shortcodes for embedding, and again there is ONLY ONE THEME. Most appearance customization is done at the level of custom CSS.
+    </p>
+
+    <p>
+        If you’re still with me, here’s how to make it!
+    </p>
+
+
+   <!-- Highlight Section -->
+
+   <h2 id="highlight" style="font-weight: bold; margin-top: -80px; padding-top: 80px;">Highlight</h2>
+   <hr> <!-- Horizontal divider -->
+
+   <p>
+       No Hugo dependency, no theme dependency, it’s a very stable format with the ability to customize just enough with a bit of effort. Think a self-hosted Medium.com in appearance. Very minimal, lightly themed, focused on writing and code! Again, I think that for someone getting started with creating websites or blogs it’s a very good starting point.
+   </p> 
+   
+  <!-- Recent Work: Subitem -->
+  <p id="recent-work" style="font-weight: bold;">Recent Work</p>
+  <p>
+      This script tag will modify your post in your browser, adding the Distill styling and functionality. When we publish your article, we will bake in these transformations, but during development it’s handy to be able to preview it locally (It even works without a web server).
+  </p>
+   
+</div>
+
+
+
+<!-- Footnotes -->
+
+<div class="content" style="
+    font-size: 0.92em;
+    line-height: 1.7em;
+    color: rgba(0, 0, 0, 0.5);">
+    <h3 style="
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 1em;
+        margin-bottom: 0;
+        color: rgba(0, 0, 0, 0.65);">Footnotes</h3>
+    <p id="note1" style="
+        margin: 0;
+        padding: 0;">1. Hereafter we only consider probability ... <a href="#fn1ref" style="color: rgba(0, 0, 0, 0.6);">[↩]</a></p>
+    <p id="note2" style="
+        margin: 0;
+        padding: 0;">2. Fisher divergence is ... <a href="#fn2ref" style="color: rgba(0, 0, 0, 0.6);">[↩]</a></p>
+</div>
+
+<!--  References  -->
+
+  <div class="content" style="
+  font-size: 0.92em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.5);">
+  <h2 style="
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 1em;
+      margin-bottom: 0;
+      color: rgba(0, 0, 0, 0.65);">References</h2>
+  <ol style="
+      padding: 0 0 0 15px;
+      @media (min-width: 768px) {
+        padding: 0 0 0 30px;
+        margin-left: -30px;
+      }">
+      <li id="ref1">The neural autoregressive distribution estimator ...</li>
+      <li id="ref2">Made: Masked autoencoder for distribution estimation ...</li>
+      <!-- Add the remaining references in the same format -->
+  </ol>
+</div>
+
+</div>
+
+
+
+  <!-- Core JavaScript Files -->
+  <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/assets/js/popper.min.js" type="text/javascript"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/assets/js/mdb.min.js" type="text/javascript"></script>
+  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="/assets/js/common.js"></script>
+
+  <!-- Scrolling Progress Bar -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      var progressBar = $('#progress');
+      progressBar.css({ 'top': navbarHeight });
+      var getMax = function() { return $(document).height() - $(window).height(); }
+      var getValue = function() { return $(window).scrollTop(); }   
+      // Check if the browser supports the progress element.
+      if ('max' in document.createElement('progress')) {
+        // Set the 'max' attribute for the first time.
+        progressBar.attr({ max: getMax() });
+        progressBar.attr({ value: getValue() });
+    
+        $(document).on('scroll', function() {
+          // On scroll only the 'value' attribute needs to be calculated.
+          progressBar.attr({ value: getValue() });
+        });
+
+        $(window).resize(function() {
+          var navbarHeight = $('#navbar').outerHeight(true);
+          $('body').css({ 'padding-top': navbarHeight });
+          $('progress-container').css({ 'padding-top': navbarHeight });
+          progressBar.css({ 'top': navbarHeight });
+          // On resize, both the 'max' and 'value' attributes need to be calculated.
+          progressBar.attr({ max: getMax(), value: getValue() });
+        });
+      } else {
+        var max = getMax(), value, width;
+        var getWidth = function() {
+          // Calculate the window width as a percentage.
+          value = getValue();
+          width = (value/max) * 100;
+          width = width + '%';
+          return width;
+        }
+        var setWidth = function() { progressBar.css({ width: getWidth() }); };
+        setWidth();
+        $(document).on('scroll', setWidth);
+        $(window).on('resize', function() {
+          // Need to reset the 'max' attribute.
+          max = getMax();
+          setWidth();
+        });
+      }
+    });
+  </script>
+
+  <!-- Code Syntax Highlighting -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <script src="/assets/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- Project Cards Layout -->
+  <script type="text/javascript">
+    var $grid = $('#projects');
+
+    // $grid.masonry({ percentPosition: true });
+    // $grid.masonry('layout');
+
+    // Trigger after images load.
+    $grid.imagesLoaded().progress(function() {
+      $grid.masonry({ percentPosition: true });
+      $grid.masonry('layout');
+    });
+  </script>
+
+  <!-- Enable Tooltips -->
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
