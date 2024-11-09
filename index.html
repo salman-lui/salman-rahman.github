@@ -153,52 +153,6 @@
   font-weight: bold; /* Make the font bold */
   color: #007bff; /* Set a color to make the name stand out */
 }
-.profile-wrapper {
-        position: sticky;
-        top: 100px;
-    }
-    
-    .profile-img {
-        max-width: 300px;
-        border: 3px solid #fff;
-        transition: transform 0.3s ease;
-    }
-    
-    .profile-img:hover {
-        transform: scale(1.02);
-    }
-    
-    .bio-content {
-        font-size: 1.1rem;
-        line-height: 1.6;
-    }
-    
-    .lead {
-        font-size: 1.25rem;
-        color: #2C3E50;
-    }
-    
-    .research-focus, .current-work, .experience, .background {
-        padding: 15px;
-        border-left: 4px solid #007bff;
-        background-color: #f8f9fa;
-        margin-bottom: 20px;
-        border-radius: 0 5px 5px 0;
-    }
-    
-    .contact-info {
-        margin-top: 15px;
-    }
-    
-    .btn-light {
-        border: 1px solid #dee2e6;
-        transition: all 0.3s ease;
-    }
-    
-    .btn-light:hover {
-        background-color: #007bff;
-        color: white;
-    }
    </style>
 </head>
 <body>
@@ -252,73 +206,37 @@
 
    <!-- Content Section -->
    <div class="content">
-    <div class="col p-0 pt-4 pb-4">
-        <h1 class="pb-3 title text-left font-weight-bold">Salman Rahman</h1>
-        <h5 class="text-muted">Ph.D. Student in Computer Science • UCLA</h5>
-    </div>
+       <div class="col p-0 pt-4 pb-4">
+           <h1 class="pb-3 title text-left font-weight-bold">Salman Rahman</h1>
+           <h5 class="text-muted">Ph.D. Student in Computer Science • UCLA</h5>
+       </div>
 
-    <!-- Introduction about me -->
-    <div class="row">
-        <!-- Profile Image Column -->
-        <div class="col-12 col-md-4 text-center mb-4">
-            <div class="profile-wrapper">
-                <img class="profile-img img-fluid rounded shadow" src="/assets/salman-img.jpg" alt="Salman Rahman" />
-                <div class="contact-info mt-3">
-                    <a href="mailto:salman@cs.ucla.edu" class="btn btn-light btn-sm mr-2">
-                        <i class="fa fa-envelope"></i> Email
-                    </a>
-                    <a href="/assets/pdf/cv_salman.pdf" class="btn btn-light btn-sm" target="_blank">
-                        <i class="fa fa-file-pdf"></i> CV
-                    </a>
-                </div>
+       <!-- Introduction about me -->
+       <div style="display: flex; flex-wrap: wrap;">
+        <div class="text-justify p-0">
+            <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
+              <img class="profile-img img-responsive" src="/assets/salman-img.jpg" />
             </div>
-        </div>
+            <p>
+                I am a Computer Science Ph.D. student at the <a href="https://www.cs.ucla.edu/" target="_blank" class="content-link">University of California, Los Angeles</a>, working under the supervision of <a href="https://saadiagabriel.com/index.html" target="_blank" class="content-link">Professor Saadia Gabriel</a>. My research focuses on AI alignment and improving the trustworthiness of artificial intelligence systems, 
+                particularly ensuring that future AI systems more advanced than humans remain aligned with human interests. For instance, as AI systems become capable of writing millions of lines of code or discovering novel knowledge beyond human expertise, how can we ensure their outputs remain safe and reliable?
+            </p>
 
-        <!-- Bio Content Column -->
-        <div class="col-12 col-md-8">
-            <div class="bio-content">
-                <p class="lead mb-4">
-                    I am a Computer Science Ph.D. student at the <a href="https://www.cs.ucla.edu/" target="_blank" class="content-link">University of California, Los Angeles</a>, working under the supervision of <a href="https://saadiagabriel.com/index.html" target="_blank" class="content-link">Professor Saadia Gabriel</a>.
-                </p>
+            <p>
+                My current research spans two main areas: Scalable Oversight of large language models (LLMs) and multimodal models, where I study methods to reliably evaluate LLM outputs on complex tasks that are challenging for direct human evaluation; and red-teaming of LLMs and 
+                multi-agent LLM systems to understand and mitigate potential risks. I collaborate with the <a href="https://wp.nyu.edu/arg/" target="_blank" class="content-link">NYU alignment group</a> on these topics. Additionally, I am interested in the development of safe and reliable LLM agents and investigating the implications of LLM-assisted scientific research.
+            </p>
+            <p>
+                I interned at Apple's machine learning team in Summer 2024, where I worked on building, training, and evaluating efficient small-scale state-of-the-art multimodal LLMs for specialized computer vision tasks, designed for on-device deployment. 
+                At UCLA, I help organize the <a href="https://uclanlp.github.io/nlp-seminar/" target="_blank" class="content-link">UCLA NLP Seminar Series</a> - stay tuned!
+            </p>
 
-                <div class="research-focus mb-4">
-                    <h5 class="font-weight-bold">Research Focus</h5>
-                    <p>
-                        My research focuses on AI alignment and improving the trustworthiness of artificial intelligence systems, particularly ensuring that future AI systems more advanced than humans remain aligned with human interests. For instance, as AI systems become capable of writing millions of lines of code or discovering novel knowledge beyond human expertise, how can we ensure their outputs remain safe and reliable?
-                    </p>
-                </div>
-
-                <div class="current-work mb-4">
-                    <h5 class="font-weight-bold">Current Work</h5>
-                    <p>
-                        My current research spans two main areas:
-                    </p>
-                    <ul>
-                        <li><strong>Scalable Oversight</strong> of large language models (LLMs) and multimodal models</li>
-                        <li><strong>Red-teaming of LLMs</strong> and multi-agent LLM systems to understand and mitigate potential risks</li>
-                    </ul>
-                    <p>
-                        I collaborate with the <a href="https://wp.nyu.edu/arg/" target="_blank" class="content-link">NYU alignment group</a> on these topics.
-                    </p>
-                </div>
-
-                <div class="experience mb-4">
-                    <h5 class="font-weight-bold">Experience</h5>
-                    <p>
-                        I interned at Apple's machine learning team in Summer 2024, working on building efficient small-scale state-of-the-art multimodal LLMs. At UCLA, I help organize the <a href="https://uclanlp.github.io/nlp-seminar/" target="_blank" class="content-link">UCLA NLP Seminar Series</a>.
-                    </p>
-                </div>
-
-                <div class="background">
-                    <h5 class="font-weight-bold">Background</h5>
-                    <p>
-                        During my undergraduate and master's studies, I focused on computational sustainability, exploring how AI systems can address pressing societal and environmental challenges. View my publications on computational sustainability <a href="https://scholar.google.ca/citations?hl=en&user=vr7uTc8AAAAJ&view_op=list_works" target="_blank" class="content-link">here</a>.
-                    </p>
-                </div>
-            </div>
+            <p>
+                During my undergraduate and master's studies, I focused on computational sustainability, exploring how AI systems can address pressing societal and environmental challenges of the 21st century.
+                Explore my publications on computational sustainability <a href="https://scholar.google.ca/citations?hl=en&user=vr7uTc8AAAAJ&view_op=list_works" target="_blank" class="content-link">here</a>.
+            </p>
         </div>
     </div>
-</div>
 
                <!-- Scalable Oversight Card -->
                <!-- <div class="card-section">
