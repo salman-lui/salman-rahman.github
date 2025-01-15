@@ -39,16 +39,19 @@
             display: flex;
             align-items: flex-start;
             gap: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+            min-height: 160px; /* Added minimum height */
         }
         .profile-image {
             width: 200px;
-            height: auto;
-            border-radius: 50%;
+            height: 160px; /* Fixed height */
+            object-fit: cover; /* This will ensure the image covers the area nicely */
+            border-radius: 8px; /* Changed from 50% to 8px for rectangular shape */
             flex-shrink: 0;
         }
         .profile-content {
             flex-grow: 1;
+            padding-top: 0; /* Removed top padding */
         }
         hr {
             border: none;
