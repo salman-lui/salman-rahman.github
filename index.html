@@ -1,522 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-   <title>Salman Rahman</title>
-   <meta name="description" content="A beautiful Jekyll theme for academics">
-   <link rel="canonical" href="/">
-
-   <!-- Fonts and Icons -->
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
-
-   <!-- CSS Files -->
-   <link rel="stylesheet" href="/assets/css/all.min.css">
-   <link rel="stylesheet" href="/assets/css/academicons.min.css">
-   <link rel="stylesheet" href="/assets/css/main.css">
-
-   <!-- Inline Styles -->
-   <style>
-       /* Global styles */
-       div {
-           text-align: left;
-           text-justify: inter-word;
-       }
-
-       /* Navbar styles */
-       #navbar {
-           background-color: #f9f9f9;
-       }
-
-       .news .content-link,
-       .content-link {
-           color: #2C3E50;
-           text-decoration: underline;
-           transition: color 0.3s ease;
-       }
-
-       .news .content-link:hover,
-       .content-link:hover {
-           color: #007bff;
-       }
-
-       /* Card section styles */
-       .card-section {
-           display: flex;
-           align-items: center;
-           border-radius: 5px;
-           margin-bottom: 15px;
-           background-color: #f5f8fa;
-           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-       }
-
-       .card-section-icon {
-           flex: 0 0 40px;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           padding: 10px;
-           font-size: 1.5rem;
-           background-color: #007bff;
-           color: #fff;
-           border-radius: 5px 0 0 5px;
-       }
-
-       .card-section-content {
-           flex: 1;
-           padding: 10px 20px;
-       }
-
-       .card-section-title {
-           font-weight: bold;
-           margin-bottom: 5px;
-       }
-
-       /* Publications list styles */
-       .papers-list {
-           padding: 15px;
-           background-color: #ffffff;
-           border-radius: 5px;
-           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-           margin-bottom: 25px;
-       }
-              .paper {
-            display: flex;
-            align-items: center; /* Adjust vertical alignment as needed */
-            padding: 15px 0; /* Existing styles */
-            border-bottom: 1px solid #e0e0e0; /* Existing styles */
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Salman Rahman</title>
+    <style type="text/css">
+        body {
+            margin: 40px auto;
+            max-width: 650px;
+            line-height: 1.6;
+            font-size: 18px;
+            color: #444;
+            padding: 0 10px;
         }
-
-        .paper-image img {
-        width: 150px; /* New width */
-        height: auto;
-        display: block; /* Ensures no extra space for inline elements */
+        
+        h1, h2, h3 {
+            line-height: 1.2;
         }
-
-
-        .paper-content {
-            flex: 1; /* Take up the remaining space */
+        
+        .paper-title {
+            font-weight: normal;
         }
-
-
-       .author-self {
-           background-color: #f9f9f9;
-           border: 1px solid #e0e0e0;
-           border-radius: 5px;
-           padding: 5px 10px;
-       }
-
-       nav#navbar {
-           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-       }
-
-       /* Scrolling progress bar styles */
-       progress[value] {
-           appearance: none;
-           width: 100%;
-           height: 3px;
-           color: #2C3E50;
-       }
-       #selected-publications {
-        scroll-margin-top: 70px; 
-    }
-    #news {
-        scroll-margin-top: 70px; 
-    }
-    #teaching {
-  scroll-margin-top: 70px; 
-}
-    .paper-title {
-      text-align: left !important; 
-}
-.pdf-link {
-  background-color: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: #2C3E50;
-  text-decoration: none;
-  margin-left: 10px;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
-.pdf-link:hover,
-.pdf-link:focus {
-  background-color: #e6e6e6;
-  border-color: #acb1b7;
-  text-decoration: none;
-}
-.author-highlight {
-  font-weight: bold; /* Make the font bold */
-  color: #007bff; /* Set a color to make the name stand out */
-}
-   </style>
+        
+        .author-name {
+            font-weight: bold;
+        }
+        
+        .conference {
+            font-style: italic;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .footnote {
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
-   <!-- Header -->
-   <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
-    <div class="container-fluid p-0">
-           <div class="row ml-1 ml-sm-0">
-               <span class="contact-icon text-center" style="line-height: 1em;">
-                   <a href="mailto:salman@cs.ucla.edu"><i class="fa fa-envelope-square gm-icon"></i></a>
-                   <a href="https://scholar.google.ca/citations?hl=en&user=vr7uTc8AAAAJ&view_op=list_works" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square gs-icon"></i></a>
-                   <!-- <a href="https://www.researchgate.net/profile/Md_Salman_Rahman2" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></i></a> -->
-                   <a href="https://github.com/salman-lui" target="_blank" title="GitHub"><i class="fab fa-github-square gh-icon"></i></a>
-               </span>
-           </div>
-           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse text-right" id="navbarNav">
-               <ul class="navbar-nav ml-auto flex-nowrap">
-                   <li class="nav-item navbar-active font-weight-bold">
-                       <a class="nav-link" href="/">
-                           About
-                           <span class="sr-only">(current)</span>
-                       </a>
-                   </li>
-                   <li class="nav-item">
-                    <a class="nav-link" href="#news">News</a>
-                </li>   
-                   <li class="nav-item">
-                    <a class="nav-link" href="#selected-publications">Publications</a>
-                </li>   
-                <li class="nav-item">
-                    <a class="nav-link" href="#teaching">Teaching</a>
-                </li>               
-                   <!-- <li class="nav-item">
-                       <a class="nav-link" href="/assets/pdf/cv_salman.pdf" target="_blank">
-                           CV
-                       </a>
-                   </li> -->
-               </ul>
-           </div>
-       </div>
-   </nav>
+    <header>
+        <img src="assets/salman-img.jpg" alt="Headshot of Salman Rahman" style="float:left; margin-right:20px; width:120px; height:auto; border-radius:50%;">
+        <h1>Collin Burns</h1>
+        <aside>
+            <p>I am a CS PhD student at UCLA working with Professor Saadia Gabriel NLP lab. Before that I was a Research Assistant at NYU and worked with <a href="https://saadiagabriel.com/mars_lab.html">MARS lab</a> and <a href="https://wp.nyu.edu/arg/people/">NYU Alignment group</a>.</p>
+            
+            <p>My research interests include (i) responsible development of LLM (ii) scalable oversight of LLM to reliably evaluate LLM outputs on complex tasks with multiagent learning settings.</p>
+        </aside>
+    </header>
 
-   <!-- Scrolling Progress Bar -->
-   <progress id="progress" value="0">
-       <div class="progress-container">
-           <span class="progress-bar"></span>
-       </div>
-   </progress>
+    <h2>Selected Papers</h2>
 
-   <!-- Content Section -->
-   <div class="content">
-       <div class="col p-0 pt-4 pb-4">
-           <h1 class="pb-3 title text-left font-weight-bold">Salman Rahman</h1>
-           <h5 class="text-muted">Ph.D. Student in Computer Science • UCLA</h5>
-       </div>
+    <p>
+        <a href="https://dl.acm.org/doi/10.1145/3630106.3659043">Understanding Disparities in Post Hoc Machine Learning Explanation</a><br>
+        Vishwali Mhasawade, <span class="author-name">Salman Rahman</span>, Zoe Haskell-Craig, Rumi Chunara<br>
+        <span class="conference">FAccT 2024</span>
+    </p>
 
-       <!-- Introduction about me -->
-       <div style="display: flex; flex-wrap: wrap;">
-        <div class="text-justify p-0">
-            <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
-              <img class="profile-img img-responsive" src="/assets/salman-img.jpg" />
-            </div>
-            <p>
-                I am a Computer Science Ph.D. student at the <a href="https://www.cs.ucla.edu/" target="_blank" class="content-link">University of California, Los Angeles</a>, working under the supervision of <a href="https://saadiagabriel.com/index.html" target="_blank" class="content-link">Professor Saadia Gabriel</a>. My research focuses on AI alignment and improving the trustworthiness of artificial intelligence systems, 
-                particularly ensuring that future AI systems more advanced than humans remain aligned with human interests. For instance, as AI systems become capable of writing millions of lines of code or discovering novel knowledge beyond human expertise, how can we ensure their outputs remain safe and reliable?
-            </p>
+    <p>
+        <a href="https://arxiv.org/abs/2402.10965">Generalization in Healthcare AI: Evaluation of a Clinical Large Language Model</a><br>
+        <span class="author-name">Salman Rahman</span>, Lavender Yao Jiang, Saadia Gabriel, Yindalon Aphinyanaphongs, Eric Karl Oermann, Rumi Chunara<br>
+        <span class="conference">arXiv 2024</span>
+    </p>
 
-            <p>
-                My current research spans two main areas: Scalable Oversight of large language models (LLMs) and multimodal models, where I study methods to reliably evaluate LLM outputs on complex tasks that are challenging for direct human evaluation; and red-teaming of LLMs and 
-                multi-agent LLM systems to understand and mitigate potential risks. I collaborate with the <a href="https://wp.nyu.edu/arg/" target="_blank" class="content-link">NYU alignment group</a> on these topics. Additionally, I am interested in the development of safe and reliable LLM agents and investigating the implications of LLM-assisted scientific research.
-            </p>
-            <p>
-                I interned at Apple's machine learning team in Summer 2024, where I worked on building, training, and evaluating efficient small-scale state-of-the-art multimodal LLMs for specialized computer vision tasks, designed for on-device deployment. 
-                At UCLA, I help organize the <a href="https://uclanlp.github.io/nlp-seminar/" target="_blank" class="content-link">UCLA NLP Seminar Series</a> - stay tuned!
-            </p>
+    <p>
+        <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2402387121">Utilizing big data without domain knowledge impacts public health decision-making</a><br>
+        Miao Zhang, <span class="author-name">Salman Rahman</span>, Vishwali Mhasawade, Rumi Chunara<br>
+        <span class="journal">PNAS 2024</span>
+    </p>
 
-            <p>
-                During my undergraduate and master's studies, I focused on computational sustainability, exploring how AI systems can address pressing societal and environmental challenges of the 21st century.
-                Explore my publications on computational sustainability <a href="https://scholar.google.ca/citations?hl=en&user=vr7uTc8AAAAJ&view_op=list_works" target="_blank" class="content-link">here</a>.
-            </p>
-        </div>
-    </div>
+    <p>
+        <a href="https://arxiv.org/abs/2006.02275">Improving Spatial Agreement in Machine Learning-based Landslide Susceptibility Mapping</a><br>
+        Mohammed Sarfaraz Gani Adnan, <span class="author-name">Salman Rahman</span>, Nahian Ahmed, Bayes Ahmed, Md. Fazleh Rabbi, Rashedur M. Rahman<br>
+        <span class="journal">Remote Sensing 2020</span>
+    </p>
 
-               <!-- Scalable Oversight Card -->
-               <!-- <div class="card-section">
-                <div class="card-section-icon">
-                    <i class="material-icons">adjust</i>
-                </div>
-                <div class="card-section-content">
-                    <div class="card-section-title">Scalable Oversight</div>
-                    Supervising capable but unreliable experts on complex tasks using multiagent debate.
-                </div>
-            </div> -->
+    <!-- <p class="footnote">
+        *: equal contribution, †: primary contributor
+    </p> -->
 
-            <!-- Large Model Evaluation for Extreme Risks Card -->
-            <!-- <div class="card-section">
-                <div class="card-section-icon">
-                    <i class="material-icons">adjust</i>
-                </div>
-                <div class="card-section-content">
-                    <div class="card-section-title">Model Evaluation for Extreme Risks</div>
-                    Evaluation and mitigation of risks posed by large models.
-                </div>
-            </div> -->
+    <hr>
 
+    <h2>Others</h2>
 
-                   <!-- News Section -->
-       <div class="news mt-3 p-0" id="news">
-        <h4 class="title mb-4 p-0"><b>News</b></h4>
-        <!-- First News Item -->
-        <div class="row p-0">
-            <div class="col-sm-2 p-0">
-                <span class="badge light-green darken-1 font-weight-bold text-uppercase align-middle date ml-3">
-                    July, 2024
-                </span>
-            </div>
-            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p>New <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2402387121" target="_blank" class="content-link">paper</a> accepted in Proceedings of the National Academy of Sciences (PNAS) on big data in healthcare.</p>
-            </div>
-        </div>
-
-        <!-- Second News Item -->
-        <div class="row p-0">
-            <div class="col-sm-2 p-0">
-                <span class="badge light-green darken-1 font-weight-bold text-uppercase align-middle date ml-3">
-                    May, 2024
-                </span>
-            </div>
-            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p>Excited to join Apple's machine learning team as an intern!</p>
-            </div>
-        </div>
-
-        <!-- Third News Item -->
-        <div class="row p-0">
-            <div class="col-sm-2 p-0">
-                <span class="badge light-green darken-1 font-weight-bold text-uppercase align-middle date ml-3">
-                    March, 2024
-                </span>
-            </div>
-            <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-                <p>One <a href="https://arxiv.org/abs/2401.14539" target="_blank" class="content-link">paper</a> on machine learning explanation disparity is accepted to <a href="https://facctconference.org/2024/" target="_blank" class="content-link">ACM FAccT 2024</a>.</p>
-            </div>
-        </div>
-       </div>
-       
-
-           <!-- Selected Publication Section -->
-           <div class="news mt-3 p-0" id="selected-publications">
-            <h4 class="title mb-4 p-0"><b>Selected Publications</b></h4>
-               <div class="tab-pane fade show active papers-list" id="recent">
-                    
-                
-            <!-- Paper 1 with Image and PDF box -->
-            <div class="paper d-flex">
-                <!-- Image Container -->
-                <div class="paper-image mr-3">
-                <img src="assets/paper-img/explanation_disparity_dag.png" alt="Image description" style="width: 200px; height: auto;">
-                </div>
-                <!-- Text Content Container -->
-                <div class="paper-content">
-                <p>
-                    <span class="paper-title">
-                    <a href="https://arxiv.org/abs/2401.14539" target="_blank" class="content-link">Understanding Disparities in Post Hoc Machine Learning Explanation</a>
-                    </span>
-                </p>
-                <p>
-                    <span class="authors">Vishwali Mhasawade, <span class="author-highlight">Salman Rahman</span>, Zoe Haskell-Craig, Rumi Chunara</span>
-                </p>
-                <p class="d-flex align-items-center">
-                    <span class="publication">FAccT, 2024</span>
-                    <!-- PDF Box -->
-                    <a href="https://arxiv.org/pdf/2401.14539.pdf" target="_blank" class="pdf-link" aria-label="PDF">PDF</a>
-                    <a href="https://github.com/ChunaraLab/Disparities-Posthoc_Explanations" target="_blank" class="pdf-link" aria-label="CODE">CODE</a>
-                </p>
-                </div>
-            </div>
-  
-  
-
-                      
-              <!-- Paper 2 with Image -->
-              <div class="paper d-flex">
-                <div class="paper-image mr-3">
-                    <img src="assets/paper-img/clinical_llm_generalization.png" alt="Healthcare AI Model" style="width: 200px; height: auto;">
-                </div>
-                <div class="paper-content">
-                    <p>
-                        <span class="paper-title">
-                            <a href="https://arxiv.org/abs/2402.10965" target="_blank" class="content-link">Generalization in Healthcare AI: Evaluation of a Clinical Large Language Model</a>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="authors"><span class="author-highlight">Salman Rahman</span>, Lavender Yao Jiang, Saadia Gabriel, Yindalon Aphinyanaphongs, Eric Karl Oermann, Rumi Chunara</span>
-                    </p>
-                    <p>
-                        <span class="publication">arXiv preprint, 2024</span>
-                                            <!-- PDF Box -->
-                    <a href="https://arxiv.org/pdf/2402.10965.pdf" target="_blank" class="pdf-link" aria-label="PDF">PDF</a>
-                    </p>
-                </div>
-              </div>
-
-                                    
-              <!-- Paper 3 with Image -->
-              <div class="paper d-flex">
-                <div class="paper-image mr-3">
-                    <img src="assets/paper-img/gsv_fig.png" alt="PNAS Paper" style="width: 200px; height: auto;">
-                </div>
-                <div class="paper-content">
-                    <p>
-                        <span class="paper-title">
-                            <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2402387121" target="_blank" class="content-link">Utilizing big data without domain knowledge impacts public health decision-making
-                            </a>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="authors">Miao Zhang, <span class="author-highlight">Salman Rahman</span>, Vishwali Mhasawade, Rumi Chunara</span>
-                    </p>
-                    <p>
-                        <span class="publication">Proceedings of the National Academy of Sciences (PNAS), 2024</span>
-                                            <!-- PDF Box -->
-                    <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2402387121" target="_blank" class="pdf-link" aria-label="HTML">HTML</a>
-                    </p>
-                </div>
-              </div>
-
-
-              <!-- Paper 4 with Image -->
-              <div class="paper d-flex">
-                <div class="paper-image mr-3">
-                    <img src="assets/paper-img/landslide.webp" alt="Landslide Susceptibility Mapping" style="width: 200px; height: auto;">
-                </div>
-                <div class="paper-content">
-                    <p>
-                        <span class="paper-title">
-                            <a href="https://www.mdpi.com/2072-4292/12/20/3347" target="_blank" class="content-link">Improving Spatial Agreement in Machine Learning-based Landslide Susceptibility Mapping</a>
-                        </span>
-                    </p>
-                    <p>
-                        <span class="authors">Mohammed Sarfaraz Gani Adnan, <span class="author-highlight">Salman Rahman</span>, Nahian Ahmed, Bayes Ahmed, Md. Fazleh Rabbi, Rashedur M. Rahman</span>
-                    </p>
-                    <p>
-                        <span class="publication">Remote Sensing, 2020</span>
-                    <!-- PDF Box -->
-                    <a href="https://www.mdpi.com/2072-4292/12/20/3347" target="_blank" class="pdf-link" aria-label="HTML">HTML</a>
-                    </p>
-                </div>
-              </div>
-            </div>
-
-
-
-<!-- Teaching Section -->
-<div class="news mt-3 p-0" id="teaching">
-    <h4 class="title mb-4 p-0"><b>Teaching</b></h4>
-    <div class="row p-0">
-      <div class="col-sm-2 p-0">
-        <span class="badge light-green darken-1 font-weight-bold text-uppercase align-middle ml-3">
-          Fall 2023
-        </span>
-      </div>
-      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-        <p>
-          <b>Guest Lecturer</b>, <i>Foundation(Large) Language Model</i><br>
-          CS-GY 9223: Foundations of Data Science, Graduate, NYU
-        </p>
-      </div>
-    </div>
-  </div>
-
-
-   <!-- Core JavaScript Files -->
-   <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
-   <script src="/assets/js/popper.min.js" type="text/javascript"></script>
-   <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
-   <script src="/assets/js/mdb.min.js" type="text/javascript"></script>
-   <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
-   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
-   <script src="/assets/js/common.js"></script>
-
-   <!-- Scrolling Progress Bar Script -->
-   <script type="text/javascript">
-       $(document).ready(function() {
-           var navbarHeight = $('#navbar').outerHeight(true);
-           $('body').css({ 'padding-top': navbarHeight });
-           $('progress-container').css({ 'padding-top': navbarHeight });
-           var progressBar = $('#progress');
-           progressBar.css({ 'top': navbarHeight });
-           var getMax = function() { return $(document).height() - $(window).height(); }
-           var getValue = function() { return $(window).scrollTop(); }   
-           // Check if the browser supports the progress element.
-           if ('max' in document.createElement('progress')) {
-               // Set the 'max' attribute for the first time.
-               progressBar.attr({ max: getMax() });
-               progressBar.attr({ value: getValue() });
-
-               $(document).on('scroll', function() {
-                   // On scroll only the 'value' attribute needs to be calculated.
-                   progressBar.attr({ value: getValue() });
-               });
-
-               $(window).resize(function() {
-                   var navbarHeight = $('#navbar').outerHeight(true);
-                   $('body').css({ 'padding-top': navbarHeight });
-                   $('progress-container').css({ 'padding-top': navbarHeight });
-                   progressBar.css({ 'top': navbarHeight });
-                   // On resize, both the 'max' and 'value' attributes need to be calculated.
-                   progressBar.attr({ max: getMax(), value: getValue() });
-               });
-           } else {
-               var max = getMax(), value, width;
-               var getWidth = function() {
-                   // Calculate the window width as a percentage.
-                   value = getValue();
-                   width = (value/max) * 100;
-                   width = width + '%';
-                   return width;
-               }
-               var setWidth = function() { progressBar.css({ width: getWidth() }); };
-               setWidth();
-               $(document).on('scroll', setWidth);
-               $(window).on('resize', function() {
-                   // Need to reset the 'max' attribute.
-                   max = getMax();
-                   setWidth();
-               });
-           }
-       });
-   </script>
-
-   <!-- Code Syntax Highlighting -->
-   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-   <script src="/assets/js/highlight.pack.js"></script>
-   <script>hljs.initHighlightingOnLoad();</script>
-
-   <!-- Project Cards Layout -->
-   <script type="text/javascript">
-       var $grid = $('#projects');
-       // Trigger after images load.
-       $grid.imagesLoaded().progress(function() {
-           $grid.masonry({ percentPosition: true });
-           $grid.masonry('layout');
-       });
-   </script>
-
-   <!-- Enable Tooltips -->
-   <script type="text/javascript">
-       $(function () {
-           $('[data-toggle="tooltip"]').tooltip()
-       })
-   </script>
-
-   <!-- Google Analytics -->
-   <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-       ga('create', '', 'auto');
-       ga('send', 'pageview');
-   </script>
+    <p>
+        <strong>Speedcubing.</strong> I used to be very involved in competitive Rubik's Cube solving ("speedcubing"). In 2015 I <a href="https://www.youtube.com/watch?v=i8RBl7NmL8g">broke the official world record</a> for a single 3x3 solve with a time of 5.25 seconds. I've also had a national championship title, a continental record, and four national records.
+    </p>
 </body>
 </html>
