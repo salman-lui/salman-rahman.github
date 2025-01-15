@@ -22,7 +22,7 @@
             margin-bottom: 5px;
         }
         .author-name {
-            font-weight: 700;
+            font-weight: 700;  /* Changed from 500 to 700 for stronger boldness */
         }
         a {
             color: #1a0dab;
@@ -37,17 +37,19 @@
         }
         .profile-section {
             display: flex;
-            align-items: flex-start;
+            align-items: center;  /* Changed from flex-start to center */
             gap: 30px;
             margin-bottom: 30px;
-            min-height: 160px; /* Added minimum height */
+            min-height: 200px;  /* Increased to create more balanced space */
+            padding: 20px 0;    /* Added padding for even spacing */
         }
         .profile-image {
             width: 200px;
-            height: 160px; /* Fixed height */
-            object-fit: cover; /* This will ensure the image covers the area nicely */
-            border-radius: 8px; /* Changed from 50% to 8px for rectangular shape */
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
             flex-shrink: 0;
+            align-self: center;  /* Added to ensure image stays centered */
         }
         .profile-content {
             flex-grow: 1;
