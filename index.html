@@ -44,12 +44,12 @@
             padding: 20px 0;    /* Added padding for even spacing */
         }
         .profile-image {
-            width: 200px;
+            width: 160px;  /* Made width and height equal for perfect circle */
             height: 160px;
             object-fit: cover;
-            border-radius: 8px;
+            border-radius: 50%;  /* Changed to 50% for circular shape */
             flex-shrink: 0;
-            align-self: center;  /* Added to ensure image stays centered */
+            align-self: center;
         }
         .profile-content {
             flex-grow: 1;
